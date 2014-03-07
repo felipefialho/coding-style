@@ -49,8 +49,15 @@ git commit -m "Add placeholder in input"
 <a name="html"></a>
 ### 2.1 Syntax
 
-* Use soft tabs with two spaces. You can configure your editor for this
+* Use soft tabs with two spaces. You can configure your editor for this.
 * Always use double quotes
+  ```javascript
+  // Good
+  <div class="main">
+
+  // Bad
+  <div class='main'>
+  ```
 
 
 <a name="css"></a>
