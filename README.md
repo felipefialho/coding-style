@@ -13,11 +13,13 @@ Like this is a new document, some rules may not have been applied in old project
 
 1. [Commits] (#commits) 
 2. [HTML] (#html) 
-3. [License](#license)
-4. [References](#references)
+3. [CSS] (#css) 
+4. [Javascript] (#js) 
+5. [License](#license)
+6. [References](#references)
  
 <a name="commits"></a>
-## Commits
+## 1. Commits
 
 For facilitate the contribution of any people in projects, all commit message, pull request title or issue discussion must be in **English**.
 
@@ -30,8 +32,9 @@ git commit -m "Add placeholder in input #10"
 // Bad
 git commit -m "Add placeholder in input"
 ```
+
 <a name="html"></a>
-## HTML
+## 2. HTML
 
 ### HTML Summary
 
@@ -43,8 +46,14 @@ git commit -m "Add placeholder in input"
 6. [Old Browsers] (#old-browsers)
 7. [Base] (#html-base)
 
+<a name="css"></a>
+## 3. CSS
+
+<a name="js"></a>
+## 4. Javascript
+ 
 <a name="references"></a>
-## References
+## 5. References
 
 * [Mdo Code Guide](https://github.com/mdo/code-guide)
 * [idiomatic.css](https://github.com/necolas/idiomatic-css/)
@@ -52,6 +61,6 @@ git commit -m "Add placeholder in input"
 * [Zeno Rocha Coding Style](https://github.com/zenorocha/my-coding-style/) 
 
 <a name="license"></a>
-## License
+## 6. License
  
 [MIT License](https://github.com/LFeh/MITLicense) © Luiz Felipe Tartarotti Fialho
