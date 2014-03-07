@@ -54,14 +54,16 @@ Use soft tabs with two spaces. You can configure your editor for this.
 
 ```javascript
 // Good
-  <nav class="nav">
-    <ul class="nav-menu">
-      <li class="nav-item">
+<nav class="nav">
+  <ul class="nav-menu">
+    <li class="nav-item">
+      <a class="nav-link">
 
 // Bad
-    <nav class="nav">
-        <ul class="nav-menu">
-            <li class="nav-item">
+<nav class="nav">
+    <ul class="nav-menu">
+        <li class="nav-item">
+            <a class="nav-link">
 ```
 
 Always use double quotes
