@@ -21,13 +21,11 @@ For facilitate the contribution of any people in projects, all commit message, p
 Before commit adjusts in project, check if exists one open issue and make references for this issue using '#' in your commit message.
 
 ```javascript
-
 // Good
 git commit -m "Add placeholder in input #10"
 
 // Bad
 git commit -m "Add placeholder in input"
-
 ```
   
 <a name="references"></a>
