@@ -36,6 +36,8 @@ git commit -m "Add placeholder in input"
 <a name="html"></a>
 ## 2. HTML
 
+The main influence for the HTML rules is the [Code Guide by @mdo](https://github.com/mdo/code-guide)
+
 ### HTML Summary
 
 1. [Syntax] (#syntax) 
@@ -77,6 +79,26 @@ Always use UTF-8 for character encoding
 </head>
 ```
 
+<a name="attribute"></a>
+### 2.3 Attribute order
+
+HTML attributes should be in this order for facilitate the reading
+
+1. `class`
+1. `id`, `name`
+1. `data-*`
+1. `src`, `for`, `type`, `href`
+1. `title`, `alt`
+1. `aria-*`, `role`
+
+```html
+<a class="..." id="..." data-modal="toggle" href="#"> 
+
+<input class="form-control" type="text">
+
+<img src="..." alt="...">
+```
+
 <a name="css"></a>
 ## 3. CSS
 
@@ -86,7 +108,7 @@ Always use UTF-8 for character encoding
 <a name="references"></a>
 ## 5. References
 
-* [Mdo Code Guide](https://github.com/mdo/code-guide)
+* [Code Guide by @mdo](https://github.com/mdo/code-guide)
 * [idiomatic.css](https://github.com/necolas/idiomatic-css/)
 * [idiomatic.js](https://github.com/rwldrn/idiomatic.js/)
 * [Zeno Rocha Coding Style](https://github.com/zenorocha/my-coding-style/) 
