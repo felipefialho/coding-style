@@ -10,7 +10,7 @@ The idea of this repository is to have a place for myself and other developers w
 Like this is a new document, some rules may not have been applied in old projects.
 
 ## Summary
-
+ 
 1. [Commits] (#commits) 
 1. [HTML] (#html) 
 1. [CSS] (#css) 
@@ -38,13 +38,20 @@ git commit -m "Add placeholder in input"
 
 ### HTML Summary
 
-1. [Doctype] (#doctype)
 1. [Syntax] (#syntax)
+1. [Doctype] (#doctype)
 1. [Character encoding] (#encoding)
 1. [Attribute order] (#attribute)
 1. [Performance] (#html-performance)
 1. [Old Browsers] (#old-browsers)
 1. [Base] (#html-base)
+
+<a name="html"></a>
+### 2.1 Syntax
+
+* Use soft tabs with two spaces. You can configure your editor for this, my [Sublime configs] (https://github.com/LFeh/sublime.config)
+* Always use double quotes
+
 
 <a name="css"></a>
 ## 3. CSS
