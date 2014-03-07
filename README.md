@@ -38,18 +38,17 @@ git commit -m "Add placeholder in input"
 
 ### HTML Summary
 
-1. [Syntax] (#syntax)
-1. [Doctype] (#doctype)
+1. [Syntax] (#syntax) 
 1. [Character encoding] (#encoding)
 1. [Attribute order] (#attribute)
 1. [Performance] (#html-performance)
 1. [Old Browsers] (#old-browsers)
-1. [Base] (#html-base)
+1. [Base Code] (#html-base)
 
-<a name="html"></a>
+<a name="syntax"></a>
 ### 2.1 Syntax
 
-* Use soft tabs with two spaces. You can configure your editor for this.
+* Use soft tabs with two spaces. You can configure your editor for this. 
 * Always use double quotes
   ```javascript
   // Good
@@ -58,7 +57,25 @@ git commit -m "Add placeholder in input"
   // Bad
   <div class='main'>
   ```
+* Don't include a `/` in self-closing elements
+  ```javascript
+  // Good
+  <hr>
 
+  // Bad
+  <hr />
+  ```
+
+<a name="encoding"></a>
+### 2.2 Character encoding
+
+Always use UTF-8 for character encoding
+
+```html
+<head>
+  <meta charset="UTF-8">
+</head>
+```
 
 <a name="css"></a>
 ## 3. CSS
