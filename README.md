@@ -12,11 +12,11 @@ Like this is a new document, some rules may not have been applied in old project
 ## Summary
 
 1. [Commits] (#commits) 
-2. [HTML] (#html) 
-3. [CSS] (#css) 
-4. [Javascript] (#js) 
-5. [License](#license)
-6. [References](#references)
+1. [HTML] (#html) 
+1. [CSS] (#css) 
+1. [Javascript] (#js) 
+1. [License](#license)
+1. [References](#references)
  
 <a name="commits"></a>
 ## 1. Commits
@@ -39,12 +39,12 @@ git commit -m "Add placeholder in input"
 ### HTML Summary
 
 1. [Doctype] (#doctype)
-2. [Syntax] (#syntax)
-3. [Character encoding] (#encoding)
-4. [Attribute order] (#attribute)
-5. [Performance] (#html-performance)
-6. [Old Browsers] (#old-browsers)
-7. [Base] (#html-base)
+1. [Syntax] (#syntax)
+1. [Character encoding] (#encoding)
+1. [Attribute order] (#attribute)
+1. [Performance] (#html-performance)
+1. [Old Browsers] (#old-browsers)
+1. [Base] (#html-base)
 
 <a name="css"></a>
 ## 3. CSS
