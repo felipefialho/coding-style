@@ -1,6 +1,8 @@
 My Coding Style
 ============
 
+> Every line of code should appear to be written by a single person, no matter the number of contributors.
+
 The following document describes the rules of writing in development languages that I use: HTML, CSS and Javascript.
 
 The idea of this repository is to have a place for myself and other developers who participate in my projects able to inform the coding standards used.
@@ -10,8 +12,9 @@ Like this is a new document, some rules may not have been applied in old project
 ## Summary
 
 1. [Commits] (#commits) 
-2. [License](#license)
-3. [References](#references)
+2. [HTML] (#html) 
+3. [License](#license)
+4. [References](#references)
  
 <a name="commits"></a>
 ## Commits
@@ -27,7 +30,19 @@ git commit -m "Add placeholder in input #10"
 // Bad
 git commit -m "Add placeholder in input"
 ```
-  
+<a name="html"></a>
+## HTML
+
+### HTML Summary
+
+1. [Doctype] (#doctype)
+2. [Syntax] (#syntax)
+3. [Character encoding] (#encoding)
+4. [Attribute order] (#attribute)
+5. [Performance] (#html-performance)
+6. [Old Browsers] (#old-browsers)
+7. [Base] (#html-base)
+
 <a name="references"></a>
 ## References
 
@@ -37,7 +52,6 @@ git commit -m "Add placeholder in input"
 * [Zeno Rocha Coding Style](https://github.com/zenorocha/my-coding-style/) 
 
 <a name="license"></a>
-
 ## License
  
 [MIT License](https://github.com/LFeh/MITLicense) © Luiz Felipe Tartarotti Fialho
