@@ -52,23 +52,37 @@ The main influence for the HTML rules is the [Code Guide by @mdo](https://github
 
 Use soft tabs with two spaces. You can configure your editor for this. 
 
-Always use double quotes
-  ```javascript
-  // Good
-  <div class="main">
+```javascript
+// Good
+  <nav class="nav">
+    <ul class="nav-menu">
+      <li class="nav-item">
 
-  // Bad
-  <div class='main'>
-  ```
+// Bad
+    <nav class="nav">
+        <ul class="nav-menu">
+            <li class="nav-item">
+```
+
+Always use double quotes
+
+```javascript
+// Good
+<div class="main">
+
+// Bad
+<div class='main'>
+```
   
 Don't include a `/` in self-closing elements
-  ```javascript
-  // Good
-  <hr>
 
-  // Bad
-  <hr />
-  ```
+```javascript
+// Good
+<hr>
+
+// Bad
+<hr />
+```
 
 <a name="encoding"></a>
 ### 2.2 Character encoding
