@@ -50,8 +50,9 @@ The main influence for the HTML rules is the [Code Guide by @mdo](https://github
 <a name="syntax"></a>
 ### 2.1 Syntax
 
-* Use soft tabs with two spaces. You can configure your editor for this. 
-* Always use double quotes
+Use soft tabs with two spaces. You can configure your editor for this. 
+
+Always use double quotes
   ```javascript
   // Good
   <div class="main">
@@ -59,7 +60,8 @@ The main influence for the HTML rules is the [Code Guide by @mdo](https://github
   // Bad
   <div class='main'>
   ```
-* Don't include a `/` in self-closing elements
+  
+Don't include a `/` in self-closing elements
   ```javascript
   // Good
   <hr>
