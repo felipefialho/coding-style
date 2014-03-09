@@ -132,6 +132,7 @@ HTML attributes should be in this order for facilitate the reading
 * [Zeno Rocha Coding Style](https://github.com/zenorocha/my-coding-style/) 
 
 <a name="license"></a>
+
 ## 6. License
  
-[MIT License](https://github.com/LFeh/MITLicense) © Luiz Felipe Tartarotti Fialho
+[MIT License](http://felipefialho.mit-license.org/) © Luiz Felipe Tartarotti Fialho
