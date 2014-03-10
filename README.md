@@ -153,7 +153,7 @@ For a better performance, all javascripts files must be at the end of the code. 
 <body>
 ```
 
-Always minify the code in projects only in HTML. Task builders like Grunt leaves this easier.
+Always minify the code in projects only in HTML. Task builders like [Grunt](http://gruntjs.com/) leaves this easier.
 
 ```html
 <!-- Good -->
