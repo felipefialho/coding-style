@@ -172,6 +172,52 @@ Always minify the code in projects only in HTML. Task builders like [Grunt](http
 </html>
 ```
 
+<a name="html-base"></a>
+### 2.5. Base Code
+
+The following code is a HTML base for faster start the projects
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width">
+ 
+<link rel="shortcut icon" href="assets/img/ico/favicon.ico" />
+
+<!-- SVG Logo --> 
+<link rel="logo" type="image/svg" href="../assets/img/logo/logo.svg" />
+ 
+<title></title>
+
+<link rel="stylesheet" href="assets/css/style.css" />
+ 
+</head>
+<body>
+
+<!-- Scripts -->
+<script src="assets/js/scripts.min.js"></script>
+
+</body>
+</html>
+```
+
+For give support a olds Internet Explorer... 
+
+```html
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<!--[if IE 7 ]> <html lang="en" class="ie7">    <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8">    <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie9">    <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
+<head>
+...
+```
+
 <a name="css"></a>
 ## 3. CSS
 
