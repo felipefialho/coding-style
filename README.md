@@ -48,18 +48,18 @@ The main influence for the HTML rules is the [Code Guide by @mdo](https://github
 1. [Base Code] (#html-base)
 
 <a name="syntax"></a>
-### 2.1 Syntax
+### 2.1. Syntax
 
 Use soft tabs with two spaces. You can configure your editor for this. 
 
-```javascript
-// Good
+```html
+<!-- Good -->
 <nav class="nav">
   <ul class="nav-menu">
     <li class="nav-item">
       <a class="nav-link">
 
-// Bad
+<!-- Bad-->
 <nav class="nav">
       <ul class="nav-menu">
             <li class="nav-item">
@@ -68,26 +68,33 @@ Use soft tabs with two spaces. You can configure your editor for this.
 
 Always use double quotes
 
-```javascript
-// Good
+```html
+<!-- Good -->
 <div class="main">
 
-// Bad
+<!-- Bad-->
 <div class='main'>
 ```
   
 Don't include a `/` in self-closing elements
 
-```javascript
-// Good
+```html
+<!-- Good -->
 <hr>
 
-// Bad
+<!-- Bad-->
 <hr />
 ```
 
+Follow this rule to add comments in HTML
+
+```html
+<!-- This is a good example -->
+<!-- /Closing a good example -->
+```
+
 <a name="encoding"></a>
-### 2.2 Character encoding
+### 2.2. Character encoding
 
 Always use UTF-8 for character encoding
 
@@ -98,7 +105,7 @@ Always use UTF-8 for character encoding
 ```
 
 <a name="attribute"></a>
-### 2.3 Attribute order
+### 2.3. Attribute order
 
 HTML attributes should be in this order for facilitate the reading
 
@@ -114,7 +121,55 @@ HTML attributes should be in this order for facilitate the reading
 
 <input class="form-control" type="text">
 
-<img src="..." alt="...">
+<img class="img-rounded" src="..." alt="...">
+```
+
+<a name="html-performance"></a>
+### 2.4. Performance
+
+No need to specify a type when including CSS and JavaScript files as `text/css` and `text/javascript`
+
+```html
+<!-- Good -->
+<link rel="stylesheet" href="assets/css/style.css" />
+<script src="scripts.min.js"></script> 
+
+<!-- Bad -->
+<script src="scripts.min.js"></script>
+</head>
+<body>
+```
+
+For a better performance, all javascripts files must be at the end of the code. Before closing the `<body>`
+
+```html
+<!-- Good -->
+<script src="scripts.min.js"></script>
+</body>
+
+<!-- Bad -->
+<script src="scripts.min.js"></script>
+</head>
+<body>
+```
+
+Always minify the code in projects only in HTML. Task builders like Grunt leaves this easier.
+
+```html
+<!-- Good -->
+<html><head>...</head><body><div class="container">...</div></body></html>
+
+<!-- Bad -->
+<html>
+  <head>
+    ...
+  </head>
+  <body>
+    <div class="container">
+      ...
+    </div>
+  </body>
+</html>
 ```
 
 <a name="css"></a>
