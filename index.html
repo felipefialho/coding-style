@@ -1,0 +1,492 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Felipe Fialho Coding Style by LFeh</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Felipe Fialho Coding Style</h1>
+        <p>My rules coding for HTML, CSS and JavaScript development .</p>
+
+        <p class="view"><a href="https://github.com/LFeh/coding-style">View the Project on GitHub <small>LFeh/coding-style</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/LFeh/coding-style/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/LFeh/coding-style/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/LFeh/coding-style">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="my-coding-style" class="anchor" href="#my-coding-style"><span class="octicon octicon-link"></span></a>My Coding Style</h1>
+
+<blockquote>
+<p>Every line of code should appear to be written by a single person, no matter the number of contributors.</p>
+</blockquote>
+
+<p>The following document describes the rules of writing in development languages that I use: HTML, CSS and Javascript.</p>
+
+<p>The idea of this repository is to have a place for myself and other developers who participate in my projects able to inform the coding standards used.</p>
+
+<p>Like this is a new document, some rules may not have been applied in old projects.</p>
+
+<h2>
+<a name="summary" class="anchor" href="#summary"><span class="octicon octicon-link"></span></a>Summary</h2>
+
+<ol>
+<li>
+<a href="#commits">Commits</a> </li>
+<li>
+<a href="#html">HTML</a> </li>
+<li>
+<a href="#css">CSS</a> </li>
+<li>
+<a href="#js">Javascript</a> </li>
+<li><a href="#license">License</a></li>
+<li><a href="#references">References</a></li>
+</ol><p><a name="commits"></a></p>
+
+<h2>
+<a name="1-commits" class="anchor" href="#1-commits"><span class="octicon octicon-link"></span></a>1. Commits</h2>
+
+<p>For facilitate the contribution of any people in projects, all commit message, pull request title or issue discussion must be in <strong>English</strong>.</p>
+
+<p>Before commit adjusts in project, check if exists one open issue and make references for this issue using '#' in your commit message.</p>
+
+<div class="highlight highlight-javascript"><pre><span class="c1">// Good</span>
+<span class="nx">git</span> <span class="nx">commit</span> <span class="o">-</span><span class="nx">m</span> <span class="s2">"Add placeholder in input #10"</span>
+
+<span class="c1">// Bad</span>
+<span class="nx">git</span> <span class="nx">commit</span> <span class="o">-</span><span class="nx">m</span> <span class="s2">"Add placeholder in input"</span>
+</pre></div>
+
+<p><a name="html"></a></p>
+
+<h2>
+<a name="2-html" class="anchor" href="#2-html"><span class="octicon octicon-link"></span></a>2. HTML</h2>
+
+<p>The main influence for the HTML rules is the <a href="https://github.com/mdo/code-guide">Code Guide by @mdo</a>.</p>
+
+<h3>
+<a name="html-summary" class="anchor" href="#html-summary"><span class="octicon octicon-link"></span></a>HTML Summary</h3>
+
+<ol>
+<li>
+<a href="#html-syntax">HTML Syntax</a> </li>
+<li><a href="#html-encoding">Character encoding</a></li>
+<li><a href="#html-attribute-order">Attribute order</a></li>
+<li>
+<a href="#html-performance">Performance</a> </li>
+<li><a href="#html-base">Base Code</a></li>
+</ol><p><a name="html-syntax"></a></p>
+
+<h3>
+<a name="21-html-syntax" class="anchor" href="#21-html-syntax"><span class="octicon octicon-link"></span></a>2.1. HTML Syntax</h3>
+
+<p>Use soft tabs with two spaces. You can configure your editor for this. </p>
+
+<div class="highlight highlight-html"><pre><span class="c">&lt;!-- Good --&gt;</span>
+<span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"nav"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav-menu"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Bad--&gt;</span>
+<span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"nav"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav-menu"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span><span class="nt">&gt;</span>
+</pre></div>
+
+<p>Always use double quotes.</p>
+
+<div class="highlight highlight-html"><pre><span class="c">&lt;!-- Good --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"main"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Bad--&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'main'</span><span class="nt">&gt;</span>
+</pre></div>
+
+<p>Don't include a <code>/</code> in self-closing elements.</p>
+
+<div class="highlight highlight-html"><pre><span class="c">&lt;!-- Good --&gt;</span>
+<span class="nt">&lt;hr&gt;</span>
+
+<span class="c">&lt;!-- Bad--&gt;</span>
+<span class="nt">&lt;hr</span> <span class="nt">/&gt;</span>
+</pre></div>
+
+<p>Follow this rule to add comments in HTML.</p>
+
+<div class="highlight highlight-html"><pre><span class="c">&lt;!-- This is a good example --&gt;</span>
+<span class="c">&lt;!-- /Closing a good example --&gt;</span>
+</pre></div>
+
+<p><a name="html-encoding"></a></p>
+
+<h3>
+<a name="22-character-encoding" class="anchor" href="#22-character-encoding"><span class="octicon octicon-link"></span></a>2.2. Character encoding</h3>
+
+<p>Always use UTF-8 for character encoding.</p>
+
+<div class="highlight highlight-html"><pre><span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+</pre></div>
+
+<p><a name="html-attribute-order"></a></p>
+
+<h3>
+<a name="23-attribute-order" class="anchor" href="#23-attribute-order"><span class="octicon octicon-link"></span></a>2.3. Attribute order</h3>
+
+<p>HTML attributes should be in this order for facilitate the reading.</p>
+
+<ol>
+<li><code>class</code></li>
+<li>
+<code>id</code>, <code>name</code>
+</li>
+<li><code>data-*</code></li>
+<li>
+<code>src</code>, <code>for</code>, <code>type</code>, <code>href</code>
+</li>
+<li>
+<code>title</code>, <code>alt</code>
+</li>
+<li>
+<code>aria-*</code>, <code>role</code>
+</li>
+</ol><div class="highlight highlight-html"><pre><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"..."</span> <span class="na">id=</span><span class="s">"..."</span> <span class="na">data-modal=</span><span class="s">"toggle"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span> 
+
+<span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
+
+<span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"img-rounded"</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">alt=</span><span class="s">"..."</span><span class="nt">&gt;</span>
+</pre></div>
+
+<p><a name="html-performance"></a></p>
+
+<h3>
+<a name="24-performance" class="anchor" href="#24-performance"><span class="octicon octicon-link"></span></a>2.4. Performance</h3>
+
+<p>No need to specify a type when including CSS and JavaScript files as <code>text/css</code> and <code>text/javascript</code>.</p>
+
+<div class="highlight highlight-html"><pre><span class="c">&lt;!-- Good --&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"assets/css/style.css"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"scripts.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span> 
+
+<span class="c">&lt;!-- Bad --&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"scripts.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+</pre></div>
+
+<p>For a better performance, all javascripts files must be at the end of the code. Before closing the <code>&lt;body&gt;</code>.</p>
+
+<div class="highlight highlight-html"><pre><span class="c">&lt;!-- Good --&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"scripts.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>t
+<span class="nt">&lt;/body&gt;</span>
+
+<span class="c">&lt;!-- Bad --&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"scripts.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+</pre></div>
+
+<p>Always minify the code in projects only in HTML. Task builders like <a href="http://gruntjs.com/">Grunt</a> leaves this easier.</p>
+
+<div class="highlight highlight-html"><pre><span class="c">&lt;!-- Good --&gt;</span>
+<span class="nt">&lt;html&gt;&lt;head&gt;</span>...<span class="nt">&lt;/head&gt;&lt;body&gt;&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</span>
+
+<span class="c">&lt;!-- Bad --&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    ...
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+      ...
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</pre></div>
+
+<p><a name="html-base"></a></p>
+
+<h3>
+<a name="25-base-code" class="anchor" href="#25-base-code"><span class="octicon octicon-link"></span></a>2.5. Base Code</h3>
+
+<p>The following code is a HTML base for faster start the projects.</p>
+
+<div class="highlight highlight-html"><pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+
+<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"Content-Type"</span> <span class="na">content=</span><span class="s">"text/html; charset=utf-8"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"format-detection"</span> <span class="na">content=</span><span class="s">"telephone=no"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width"</span><span class="nt">&gt;</span>
+
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"shortcut icon"</span> <span class="na">href=</span><span class="s">"assets/img/ico/favicon.ico"</span> <span class="nt">/&gt;</span>
+
+<span class="c">&lt;!-- SVG Logo --&gt;</span> 
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"logo"</span> <span class="na">type=</span><span class="s">"image/svg"</span> <span class="na">href=</span><span class="s">"../assets/img/logo/logo.svg"</span> <span class="nt">/&gt;</span>
+
+<span class="nt">&lt;title&gt;&lt;/title&gt;</span>
+
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"assets/css/style.css"</span> <span class="nt">/&gt;</span>
+
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+
+<span class="c">&lt;!-- Scripts --&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"assets/js/scripts.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</pre></div>
+
+<p>For give support a olds Internet Explorer... </p>
+
+<div class="highlight highlight-html"><pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="c">&lt;!--[if IE]&gt;&lt;![endif]--&gt;</span>
+<span class="c">&lt;!--[if IE 7 ]&gt; &lt;html lang="en" class="ie7"&gt;    &lt;![endif]--&gt;</span>
+<span class="c">&lt;!--[if IE 8 ]&gt;    &lt;html lang="en" class="ie8"&gt;    &lt;![endif]--&gt;</span>
+<span class="c">&lt;!--[if IE 9 ]&gt;    &lt;html lang="en" class="ie9"&gt;    &lt;![endif]--&gt;</span>
+<span class="c">&lt;!--[if (gt IE 9)|!(IE)]&gt;&lt;!--&gt;</span><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span><span class="c">&lt;!--&lt;![endif]--&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+...
+</pre></div>
+
+<p><a name="css"></a></p>
+
+<h2>
+<a name="3-css" class="anchor" href="#3-css"><span class="octicon octicon-link"></span></a>3. CSS</h2>
+
+<p>The main influences for the CSS rules are <a href="https://github.com/mdo/code-guide">Code Guide by @mdo</a> and <a href="https://github.com/necolas/idiomatic-css/">idiomatic CSS</a>.</p>
+
+<h3>
+<a name="css-summary" class="anchor" href="#css-summary"><span class="octicon octicon-link"></span></a>CSS Summary</h3>
+
+<ol>
+<li>
+<a href="#css-syntax">CSS Syntax</a> </li>
+<li><a href="#css-order">Declaration order</a></li>
+<li><a href="#css-performance">Performance</a></li>
+<li><a href="#css-media-querie">Media query</a></li>
+<li><a href="#css-pre-processors">Pre-processors</a></li>
+<li><a href="#css-comments">Comments</a></li>
+<li><a href="#css-code-example">Code Example</a></li>
+</ol><p><a name="css-syntax"></a></p>
+
+<h3>
+<a name="31-css-syntax" class="anchor" href="#31-css-syntax"><span class="octicon octicon-link"></span></a>3.1. CSS Syntax</h3>
+
+<p>Use soft tabs with two spaces. You can configure your editor for this. </p>
+
+<div class="highlight highlight-css"><pre><span class="c">/* Good */</span>
+<span class="nc">.nav-item</span> <span class="p">{</span>
+  <span class="k">display</span><span class="o">:</span> <span class="k">inline</span><span class="o">-</span><span class="k">block</span><span class="p">;</span>
+  <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="m">5px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Bad */</span>
+<span class="nc">.nav-item</span> <span class="p">{</span>
+    <span class="k">display</span><span class="o">:</span> <span class="k">inline</span><span class="o">-</span><span class="k">block</span><span class="p">;</span>
+    <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="m">5px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>Always use double quotes.</p>
+
+<div class="highlight highlight-css"><pre><span class="c">/* Good */</span>
+<span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="s2">"text"</span><span class="o">]</span>
+<span class="o">[</span><span class="nt">class</span><span class="o">^=</span><span class="s2">"..."</span><span class="o">]</span>
+
+<span class="nc">.nav-item</span><span class="nd">:after</span> <span class="p">{</span>
+  <span class="k">content</span><span class="o">:</span> <span class="s2">""</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Bad */</span>
+<span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="s1">'text'</span><span class="o">]</span>
+<span class="o">[</span><span class="nt">class</span><span class="o">^=</span><span class="s1">'...'</span><span class="o">]</span>
+
+<span class="nc">.nav-item</span><span class="nd">:after</span> <span class="p">{</span>
+  <span class="k">content</span><span class="o">:</span> <span class="s1">''</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>Include a single space before the opening brace of a ruleset.</p>
+
+<div class="highlight highlight-css"><pre><span class="c">/* Good */</span>
+<span class="nc">.header</span> <span class="p">{</span>
+  <span class="o">...</span>
+<span class="p">}</span>
+
+<span class="c">/* Bad */</span>
+<span class="nc">.header</span><span class="p">{</span>
+  <span class="o">...</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>Include a single space after the colon of a declaration.</p>
+
+<div class="highlight highlight-css"><pre><span class="c">/* Good */</span>
+<span class="nc">.header</span> <span class="p">{</span>
+  <span class="k">margin-bottom</span><span class="o">:</span> <span class="m">20px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Bad */</span>
+<span class="nc">.header</span><span class="p">{</span>
+  <span class="k">margin-bottom</span><span class="o">:</span><span class="m">20px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>Include a semi-colon at the end of the last declaration in a declaration block.</p>
+
+<div class="highlight highlight-css"><pre><span class="c">/* Good */</span>
+<span class="nc">.header</span> <span class="p">{</span>
+  <span class="k">margin-bottom</span><span class="o">:</span> <span class="m">20px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Bad */</span>
+<span class="nc">.header</span><span class="p">{</span>
+  <span class="k">margin-bottom</span><span class="o">:</span><span class="m">20px</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>Keep one declaration per line.</p>
+
+<div class="highlight highlight-css"><pre><span class="c">/* Good */</span>
+<span class="nc">.selector-1</span><span class="o">,</span>
+<span class="nc">.selector-2</span><span class="o">,</span>
+<span class="nc">.selector-3</span> <span class="p">{</span>
+  <span class="o">...</span>
+<span class="p">}</span>
+
+<span class="c">/* Bad */</span>
+<span class="nc">.selector-1</span><span class="o">,</span> <span class="nc">.selector-2</span><span class="o">,</span> <span class="nc">.selector-3</span> <span class="p">{</span>
+  <span class="o">...</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>Single declarations should remain in one line.</p>
+
+<div class="highlight highlight-css"><pre><span class="c">/* Good */</span>
+<span class="nc">.selector-1</span> <span class="p">{</span> <span class="k">width</span><span class="o">:</span> <span class="m">50</span><span class="o">%</span><span class="p">;</span> <span class="p">}</span>
+
+<span class="c">/* Bad */</span>
+<span class="nc">.selector-1</span> <span class="p">{</span>
+  <span class="k">width</span><span class="o">:</span> <span class="m">50</span><span class="o">%</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>Separate each ruleset by a blank line.</p>
+
+<div class="highlight highlight-css"><pre><span class="c">/* Good */</span>
+<span class="nc">.selector-1</span> <span class="p">{</span>
+  <span class="o">...</span>
+<span class="p">}</span>
+
+<span class="nc">.selector-2</span> <span class="p">{</span>
+  <span class="o">...</span>
+<span class="p">}</span>
+
+<span class="c">/* Bad */</span>
+
+<span class="nc">.selector-1</span> <span class="p">{</span>
+  <span class="o">...</span>
+<span class="p">}</span>
+<span class="nc">.selector-2</span> <span class="p">{</span>
+  <span class="o">...</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>Use lowercase and shorthand hex values and avoid specifying units is zero-values.</p>
+
+<div class="highlight highlight-css"><pre><span class="c">/* Good */</span>
+<span class="nc">.selector-1</span> <span class="p">{</span>
+  <span class="k">color</span><span class="o">:</span> <span class="m">#aaa</span><span class="p">;</span>
+  <span class="k">margin</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Bad */</span>
+<span class="nc">.selector-1</span> <span class="p">{</span>
+  <span class="k">color</span><span class="o">:</span> <span class="m">#AAAAAA</span><span class="p">;</span>
+  <span class="k">margin</span><span class="o">:</span> <span class="m">0px</span><span class="p">;</span>
+<span class="p">}</span> 
+</pre></div>
+
+<p><a name="css-order"></a></p>
+
+<h3>
+<a name="32-declaration-order" class="anchor" href="#32-declaration-order"><span class="octicon octicon-link"></span></a>3.2. Declaration order</h3>
+
+<p>The declarations should be added in alphabetical order.</p>
+
+<div class="highlight highlight-css"><pre><span class="c">/* Good */</span>
+<span class="nc">.selector-1</span> <span class="p">{</span>
+  <span class="k">background</span><span class="o">:</span> <span class="m">#fff</span><span class="p">;</span>
+  <span class="k">border</span><span class="o">:</span> <span class="m">#333</span> <span class="k">solid</span> <span class="m">1px</span><span class="p">;</span>
+  <span class="k">color</span><span class="o">:</span> <span class="m">#333</span><span class="p">;</span>
+  <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+  <span class="k">height</span><span class="o">:</span> <span class="m">200px</span><span class="p">;</span>
+  <span class="k">margin</span><span class="o">:</span> <span class="m">5px</span><span class="p">;</span>
+  <span class="k">padding</span><span class="o">:</span> <span class="m">5px</span><span class="p">;</span> 
+  <span class="k">width</span><span class="o">:</span> <span class="m">200px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Bad */</span>
+<span class="nc">.selector-1</span> <span class="p">{</span>
+  <span class="k">padding</span><span class="o">:</span> <span class="m">5px</span><span class="p">;</span> 
+  <span class="k">height</span><span class="o">:</span> <span class="m">200px</span><span class="p">;</span>
+  <span class="k">background</span><span class="o">:</span> <span class="m">#fff</span><span class="p">;</span>
+  <span class="k">margin</span><span class="o">:</span> <span class="m">5px</span><span class="p">;</span>
+  <span class="k">width</span><span class="o">:</span> <span class="m">200px</span><span class="p">;</span>
+  <span class="k">color</span><span class="o">:</span> <span class="m">#333</span><span class="p">;</span>
+  <span class="k">border</span><span class="o">:</span> <span class="m">#333</span> <span class="k">solid</span> <span class="m">1px</span><span class="p">;</span>
+  <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+<span class="p">}</span> 
+</pre></div>
+
+<p><a name="js"></a></p>
+
+<h2>
+<a name="4-javascript" class="anchor" href="#4-javascript"><span class="octicon octicon-link"></span></a>4. Javascript</h2>
+
+<p><a name="references"></a></p>
+
+<h2>
+<a name="5-references" class="anchor" href="#5-references"><span class="octicon octicon-link"></span></a>5. References</h2>
+
+<ul>
+<li><a href="https://github.com/mdo/code-guide">Code Guide by @mdo</a></li>
+<li><a href="https://github.com/necolas/idiomatic-css/">idiomatic CSS</a></li>
+<li><a href="https://github.com/rwldrn/idiomatic.js/">idiomatic.js</a></li>
+<li>
+<a href="https://github.com/zenorocha/my-coding-style/">Zeno Rocha Coding Style</a> </li>
+</ul><p><a name="license"></a></p>
+
+<h2>
+<a name="6-license" class="anchor" href="#6-license"><span class="octicon octicon-link"></span></a>6. License</h2>
+
+<p><a href="http://felipefialho.mit-license.org/">MIT License</a> © Luiz Felipe Tartarotti Fialho</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/LFeh">LFeh</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
