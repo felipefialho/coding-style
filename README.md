@@ -43,8 +43,8 @@ The main influence for the HTML rules is the [Code Guide by @mdo](https://github
 ### HTML Summary
 
 1. [HTML Syntax] (#html-syntax) 
-1. [Character encoding] (#html-encoding)
-1. [Attribute order] (#html-attribute-order)
+1. [Character Encoding] (#html-encoding)
+1. [Attribute Order] (#html-attribute-order)
 1. [HTML Performance] (#html-performance) 
 1. [HTML Base Code] (#html-base)
 
@@ -95,7 +95,7 @@ Follow this rule to add comments in HTML.
 ```
 
 <a name="html-encoding"></a>
-### 2.2. Character encoding
+### 2.2. Character Encoding
 
 Always use UTF-8 for character encoding.
 
@@ -106,7 +106,7 @@ Always use UTF-8 for character encoding.
 ```
 
 <a name="html-attribute-order"></a>
-### 2.3. Attribute order
+### 2.3. HTML Attribute Order
 
 HTML attributes should be in this order for facilitate the reading.
 
@@ -227,9 +227,10 @@ The main influences for the CSS rules are [Code Guide by @mdo](https://github.co
 ### CSS Summary
 
 1. [CSS Syntax] (#css-syntax) 
-1. [Declaration order] (#css-order)
+1. [CSS Declaration Order] (#css-order)
+1. [CSS Class Name] (#css-class-name) 
 1. [CSS Performance] (#css-performance)
-1. [Media query] (#css-media-querie)
+1. [Media Query] (#css-media-querie)
 1. [Pre-processors] (#css-pre-processors)
 1. [Comments] (#css-comments)
 1. [Code Example] (#css-code-example)
@@ -382,7 +383,7 @@ Use lowercase and shorthand hex values and avoid specifying units is zero-values
 ```
 
 <a name="css-order"></a>
-### 3.2. Declaration order
+### 3.2. CSS Declaration Order
 
 The declarations should be added in alphabetical order.
 
@@ -412,8 +413,11 @@ The declarations should be added in alphabetical order.
 } 
 ```
 
+<a name="css-class-name"></a>
+### 3.2. CSS Class Name
+
 <a name="css-performance"></a>
-## 3.3. CSS Performance
+## 3.4. CSS Performance
  
 
 
