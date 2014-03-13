@@ -40,15 +40,14 @@ The main influence for the HTML rules is the [Code Guide by @mdo](https://github
 
 ### HTML Summary
 
-1. [Syntax] (#syntax) 
-1. [Character encoding] (#encoding)
-1. [Attribute order] (#attribute)
-1. [Performance] (#html-performance)
-1. [Old Browsers] (#old-browsers)
+1. [HTML Syntax] (#html-syntax) 
+1. [Character encoding] (#html-encoding)
+1. [Attribute order] (#html-attribute-order)
+1. [Performance] (#html-performance) 
 1. [Base Code] (#html-base)
 
-<a name="syntax"></a>
-### 2.1. Syntax
+<a name="html-syntax"></a>
+### 2.1. HTML Syntax
 
 Use soft tabs with two spaces. You can configure your editor for this. 
 
@@ -93,7 +92,7 @@ Follow this rule to add comments in HTML
 <!-- /Closing a good example -->
 ```
 
-<a name="encoding"></a>
+<a name="html-encoding"></a>
 ### 2.2. Character encoding
 
 Always use UTF-8 for character encoding
@@ -104,7 +103,7 @@ Always use UTF-8 for character encoding
 </head>
 ```
 
-<a name="attribute"></a>
+<a name="html-attribute-order"></a>
 ### 2.3. Attribute order
 
 HTML attributes should be in this order for facilitate the reading
@@ -225,12 +224,12 @@ The main influences for the CSS rules are [Code Guide by @mdo](https://github.co
 
 ### CSS Summary
 
-1. [Syntax] (#syntax) 
-1. [Character encoding] (#encoding)
-1. [Attribute order] (#attribute)
-1. [Performance] (#html-performance)
-1. [Old Browsers] (#old-browsers)
-1. [Base Code] (#html-base)
+1. [CSS Syntax] (#css-syntax) 
+1. [Declaration order] (#css-order)
+1. [Media query] (#css-media-querie)
+1. [Performance] (#css-performance)
+1. [Pre-processors] (#css-pre-processors)
+1. [Code Example] (#css-code-example)
 
 <a name="js"></a>
 ## 4. Javascript
