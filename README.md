@@ -43,8 +43,8 @@ The main influence for the HTML rules is the [Code Guide by @mdo](https://github
 1. [HTML Syntax] (#html-syntax) 
 1. [Character encoding] (#html-encoding)
 1. [Attribute order] (#html-attribute-order)
-1. [Performance] (#html-performance) 
-1. [Base Code] (#html-base)
+1. [HTML Performance] (#html-performance) 
+1. [HTML Base Code] (#html-base)
 
 <a name="html-syntax"></a>
 ### 2.1. HTML Syntax
@@ -124,7 +124,7 @@ HTML attributes should be in this order for facilitate the reading.
 ```
 
 <a name="html-performance"></a>
-### 2.4. Performance
+### 2.4. HTML Performance
 
 No need to specify a type when including CSS and JavaScript files as `text/css` and `text/javascript`.
 
@@ -172,7 +172,7 @@ Always minify the code in projects only in HTML. Task builders like [Grunt](http
 ```
 
 <a name="html-base"></a>
-### 2.5. Base Code
+### 2.5. HTML Base Code
 
 The following code is a HTML base for faster start the projects.
 
@@ -226,7 +226,7 @@ The main influences for the CSS rules are [Code Guide by @mdo](https://github.co
 
 1. [CSS Syntax] (#css-syntax) 
 1. [Declaration order] (#css-order)
-1. [Performance] (#css-performance)
+1. [CSS Performance] (#css-performance)
 1. [Media query] (#css-media-querie)
 1. [Pre-processors] (#css-pre-processors)
 1. [Comments] (#css-comments)
@@ -409,6 +409,10 @@ The declarations should be added in alphabetical order.
   display: block;
 } 
 ```
+
+<a name="css-performance"></a>
+## 3.3. CSS Performance
+ 
 
 <a name="js"></a>
 ## 4. Javascript
