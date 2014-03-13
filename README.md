@@ -36,7 +36,7 @@ git commit -m "Add placeholder in input"
 <a name="html"></a>
 ## 2. HTML
 
-The main influence for the HTML rules is the [Code Guide by @mdo](https://github.com/mdo/code-guide)
+The main influence for the HTML rules is the [Code Guide by @mdo](https://github.com/mdo/code-guide).
 
 ### HTML Summary
 
@@ -65,7 +65,7 @@ Use soft tabs with two spaces. You can configure your editor for this.
                   <a class="nav-link">
 ```
 
-Always use double quotes
+Always use double quotes.
 
 ```html
 <!-- Good -->
@@ -75,7 +75,7 @@ Always use double quotes
 <div class='main'>
 ```
   
-Don't include a `/` in self-closing elements
+Don't include a `/` in self-closing elements.
 
 ```html
 <!-- Good -->
@@ -85,7 +85,7 @@ Don't include a `/` in self-closing elements
 <hr />
 ```
 
-Follow this rule to add comments in HTML
+Follow this rule to add comments in HTML.
 
 ```html
 <!-- This is a good example -->
@@ -95,7 +95,7 @@ Follow this rule to add comments in HTML
 <a name="html-encoding"></a>
 ### 2.2. Character encoding
 
-Always use UTF-8 for character encoding
+Always use UTF-8 for character encoding.
 
 ```html
 <head>
@@ -106,7 +106,7 @@ Always use UTF-8 for character encoding
 <a name="html-attribute-order"></a>
 ### 2.3. Attribute order
 
-HTML attributes should be in this order for facilitate the reading
+HTML attributes should be in this order for facilitate the reading.
 
 1. `class`
 1. `id`, `name`
@@ -126,7 +126,7 @@ HTML attributes should be in this order for facilitate the reading
 <a name="html-performance"></a>
 ### 2.4. Performance
 
-No need to specify a type when including CSS and JavaScript files as `text/css` and `text/javascript`
+No need to specify a type when including CSS and JavaScript files as `text/css` and `text/javascript`.
 
 ```html
 <!-- Good -->
@@ -139,7 +139,7 @@ No need to specify a type when including CSS and JavaScript files as `text/css` 
 <body>
 ```
 
-For a better performance, all javascripts files must be at the end of the code. Before closing the `<body>`
+For a better performance, all javascripts files must be at the end of the code. Before closing the `<body>`.
 
 ```html
 <!-- Good -->
@@ -174,7 +174,7 @@ Always minify the code in projects only in HTML. Task builders like [Grunt](http
 <a name="html-base"></a>
 ### 2.5. Base Code
 
-The following code is a HTML base for faster start the projects
+The following code is a HTML base for faster start the projects.
 
 ```html
 <!DOCTYPE html>
