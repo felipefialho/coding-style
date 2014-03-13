@@ -143,7 +143,7 @@ For a better performance, all javascripts files must be at the end of the code. 
 
 ```html
 <!-- Good -->
-<script src="scripts.min.js"></script>
+<script src="scripts.min.js"></script>t
 </body>
 
 <!-- Bad -->
@@ -228,8 +228,30 @@ The main influences for the CSS rules are [Code Guide by @mdo](https://github.co
 1. [Declaration order] (#css-order)
 1. [Media query] (#css-media-querie)
 1. [Performance] (#css-performance)
+1. [Comments] (#css-comments)
 1. [Pre-processors] (#css-pre-processors)
 1. [Code Example] (#css-code-example)
+
+<a name="css-syntax"></a>
+### 3.1 CSS Syntax
+
+Use soft tabs with two spaces. You can configure your editor for this. 
+
+```css
+/* Good */
+.nav-item {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+/* Bad */
+.nav-item {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+```
+
 
 <a name="js"></a>
 ## 4. Javascript
