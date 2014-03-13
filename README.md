@@ -9,6 +9,8 @@ The idea of this repository is to have a place for myself and other developers w
 
 Like this is a new document, some rules may not have been applied in old projects.
 
+This is a living document and changes can occur at any time.
+
 ## Summary
  
 1. [Commits] (#commits) 
@@ -413,6 +415,7 @@ The declarations should be added in alphabetical order.
 <a name="css-performance"></a>
 ## 3.3. CSS Performance
  
+
 
 <a name="js"></a>
 ## 4. Javascript
