@@ -379,6 +379,37 @@ Use lowercase and shorthand hex values and avoid specifying units is zero-values
 } 
 ```
 
+<a name="css-order"></a>
+### 3.2. Declaration order
+
+The declarations should be added in alphabetical order.
+
+```css
+/* Good */
+.selector-1 {
+  background: #fff;
+  border: #333 solid 1px;
+  color: #333;
+  display: block;
+  height: 200px;
+  margin: 5px;
+  padding: 5px; 
+  width: 200px;
+}
+ 
+/* Bad */
+.selector-1 {
+  padding: 5px; 
+  height: 200px;
+  background: #fff;
+  margin: 5px;
+  width: 200px;
+  color: #333;
+  border: #333 solid 1px;
+  display: block;
+} 
+```
+
 <a name="js"></a>
 ## 4. Javascript
  
