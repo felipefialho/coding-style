@@ -233,7 +233,7 @@ The main influences for the CSS rules are [Code Guide by @mdo](https://github.co
 1. [Code Example] (#css-code-example)
 
 <a name="css-syntax"></a>
-### 3.1 CSS Syntax
+### 3.1. CSS Syntax
 
 Use soft tabs with two spaces. You can configure your editor for this. 
 
