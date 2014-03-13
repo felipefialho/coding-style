@@ -417,7 +417,7 @@ The declarations should be added in alphabetical order.
 ### 3.2. CSS Class Name
 
 <a name="css-performance"></a>
-## 3.4. CSS Performance
+### 3.4. CSS Performance
  
 
 
