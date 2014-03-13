@@ -249,9 +249,135 @@ Use soft tabs with two spaces. You can configure your editor for this.
     display: inline-block;
     margin: 0 5px;
 }
-
 ```
 
+Always use double quotes.
+
+```css
+/* Good */
+[type="text"]
+[class^="..."]
+
+.nav-item:after {
+  content: "";
+}
+
+/* Bad */
+[type='text']
+[class^='...']
+
+.nav-item:after {
+  content: '';
+}
+```
+
+Include a single space before the opening brace of a ruleset.
+
+```css
+/* Good */
+.header {
+  ...
+}
+
+/* Bad */
+.header{
+  ...
+}
+```
+
+Include a single space after the colon of a declaration.
+
+```css
+/* Good */
+.header {
+  margin-bottom: 20px;
+}
+
+/* Bad */
+.header{
+  margin-bottom:20px;
+}
+```
+
+Include a semi-colon at the end of the last declaration in a declaration block.
+
+```css
+/* Good */
+.header {
+  margin-bottom: 20px;
+}
+
+/* Bad */
+.header{
+  margin-bottom:20px
+}
+```
+
+Keep one declaration per line.
+
+```css
+/* Good */
+.selector-1,
+.selector-2,
+.selector-3 {
+  ...
+}
+
+/* Bad */
+.selector-1, .selector-2, .selector-3 {
+  ...
+}
+```
+
+Single declarations should remain in one line.
+
+```css
+/* Good */
+.selector-1 { width: 50%; }
+
+/* Bad */
+.selector-1 {
+  width: 50%;
+}
+```
+
+Separate each ruleset by a blank line.
+
+```css
+/* Good */
+.selector-1 {
+  ...
+}
+
+.selector-2 {
+  ...
+}
+
+/* Bad */
+
+.selector-1 {
+  ...
+}
+.selector-2 {
+  ...
+}
+```
+
+Use lowercase and shorthand hex values and avoid specifying units is zero-values.
+
+```css
+/* Good */
+.selector-1 {
+  color: #aaa;
+  margin: 0;
+}
+ 
+/* Bad */
+.selector-1 {
+  color: #AAAAAA;
+  margin: 0px;
+} 
+```
 
 <a name="js"></a>
 ## 4. Javascript
