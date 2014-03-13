@@ -220,6 +220,17 @@ For give support a olds Internet Explorer...
 
 <a name="css"></a>
 ## 3. CSS
+ 
+The main influences for the CSS rules are [Code Guide by @mdo](https://github.com/mdo/code-guide) and [idiomatic CSS](https://github.com/necolas/idiomatic-css/).
+
+### CSS Summary
+
+1. [Syntax] (#syntax) 
+1. [Character encoding] (#encoding)
+1. [Attribute order] (#attribute)
+1. [Performance] (#html-performance)
+1. [Old Browsers] (#old-browsers)
+1. [Base Code] (#html-base)
 
 <a name="js"></a>
 ## 4. Javascript
@@ -228,7 +239,7 @@ For give support a olds Internet Explorer...
 ## 5. References
 
 * [Code Guide by @mdo](https://github.com/mdo/code-guide)
-* [idiomatic.css](https://github.com/necolas/idiomatic-css/)
+* [idiomatic CSS](https://github.com/necolas/idiomatic-css/)
 * [idiomatic.js](https://github.com/rwldrn/idiomatic.js/)
 * [Zeno Rocha Coding Style](https://github.com/zenorocha/my-coding-style/) 
 
