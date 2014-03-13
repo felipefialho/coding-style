@@ -226,10 +226,10 @@ The main influences for the CSS rules are [Code Guide by @mdo](https://github.co
 
 1. [CSS Syntax] (#css-syntax) 
 1. [Declaration order] (#css-order)
-1. [Media query] (#css-media-querie)
 1. [Performance] (#css-performance)
-1. [Comments] (#css-comments)
+1. [Media query] (#css-media-querie)
 1. [Pre-processors] (#css-pre-processors)
+1. [Comments] (#css-comments)
 1. [Code Example] (#css-code-example)
 
 <a name="css-syntax"></a>
