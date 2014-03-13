@@ -1,44 +1,51 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Felipe Fialho Coding Style by LFeh</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/main.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=640" />
 
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen"/>
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)"/>
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>Felipe Fialho Coding Style by LFeh</title>
   </head>
+
   <body>
+    <a id="forkme_banner" href="https://github.com/LFeh/coding-style">View on GitHub</a>
+    <div class="shell">
 
       <header>
-        <h1>Felipe Fialho Coding Style</h1>
-        <p>My rules coding for HTML, CSS and JavaScript development .</p>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Felipe Fialho Coding Style</h1>
+            <h2>My rules coding for HTML, CSS and JavaScript development .</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
       </header>
 
-      <div id="banner">
-        <span id="logo"></span>
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/LFeh/coding-style/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/LFeh/coding-style/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
 
-        <a href="https://github.com/LFeh/coding-style" class="button fork"><strong>View On GitHub</strong></a>
-        <div class="downloads">
-          <span>Downloads:</span>
-          <ul>
-            <li><a href="https://github.com/LFeh/coding-style/zipball/master" class="button">ZIP</a></li>
-            <li><a href="https://github.com/LFeh/coding-style/tarball/master" class="button">TAR</a></li>
-          </ul>
-        </div>
-      </div><!-- end banner -->
 
-    <div class="wrapper">
-      <nav>
-        <ul></ul>
-      </nav>
-      <section>
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
         <h1>
 <a name="my-coding-style" class="anchor" href="#my-coding-style"><span class="octicon octicon-link"></span></a>My Coding Style</h1>
 
@@ -492,12 +499,21 @@
 
 <p><a href="http://felipefialho.mit-license.org/">MIT License</a> © Luiz Felipe Tartarotti Fialho</p>
       </section>
+
       <footer>
-        <p>Project maintained by <a href="https://github.com/LFeh">LFeh</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/LFeh">LFeh</a> can be found on <a href="https://github.com/LFeh/coding-style">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
       </footer>
+
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+
     
   </body>
 </html>
