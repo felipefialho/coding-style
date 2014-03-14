@@ -43,6 +43,7 @@ The main influence for the HTML rules is the [Code Guide by @mdo](https://github
 ### HTML Summary
 
 1. [HTML Syntax] (#html-syntax) 
+1. [HTML Comments] (#html-comments)
 1. [Character Encoding] (#html-encoding)
 1. [Attribute Order] (#html-attribute-order)
 1. [HTML Performance] (#html-performance) 
@@ -87,6 +88,9 @@ Don't include a `/` in self-closing elements.
 <hr />
 ```
 
+<a name="html-comments"></a>
+### 2.2. HTML Comments
+
 Follow this rule to add comments in HTML.
 
 ```html
@@ -95,7 +99,7 @@ Follow this rule to add comments in HTML.
 ```
 
 <a name="html-encoding"></a>
-### 2.2. Character Encoding
+### 2.3. Character Encoding
 
 Always use UTF-8 for character encoding.
 
@@ -106,7 +110,7 @@ Always use UTF-8 for character encoding.
 ```
 
 <a name="html-attribute-order"></a>
-### 2.3. HTML Attribute Order
+### 2.4. HTML Attribute Order
 
 HTML attributes should be in this order for facilitate the reading.
 
@@ -126,7 +130,7 @@ HTML attributes should be in this order for facilitate the reading.
 ```
 
 <a name="html-performance"></a>
-### 2.4. HTML Performance
+### 2.5. HTML Performance
 
 No need to specify a type when including CSS and JavaScript files as `text/css` and `text/javascript`.
 
@@ -174,7 +178,7 @@ Always minify the code in projects only in HTML. Task builders like [Grunt](http
 ```
 
 <a name="html-base"></a>
-### 2.5. HTML Base Code
+### 2.6. HTML Base Code
 
 The following code is a HTML base for faster start the projects.
 
@@ -232,7 +236,7 @@ The main influences for the CSS rules are [Code Guide by @mdo](https://github.co
 1. [CSS Performance] (#css-performance)
 1. [Mobile First and Media Queries] (#css-media-querie)
 1. [Pre-processors] (#css-pre-processors)
-1. [Comments] (#css-comments)
+1. [CSS Comments] (#css-comments)
 1. [Code Example] (#css-code-example)
 
 <a name="css-syntax"></a>
@@ -571,6 +575,9 @@ Keep the media queries as close to their relevant rule sets whenever possible. D
 }
 ```
  
+<a name="css-comments"></a>
+### 3.6 CSS Comments
+
 <a name="js"></a>
 ## 4. Javascript
  
