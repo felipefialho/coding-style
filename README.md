@@ -267,7 +267,7 @@ The main influences for the CSS rules are [Code Guide by @mdo](https://github.co
 1. [CSS Class Name] (#css-class-name) 
 1. [CSS Performance] (#css-performance)
 1. [Mobile First and Media Queries] (#mobile-first-and-media-queries)
-1. [Pre-processors] (#css-pre-processors)
+1. [Pre-Processors] (#css-pre-processors)
 1. [CSS Comments] (#css-comments) 
 
 <a name="css-syntax"></a>
@@ -607,7 +607,7 @@ Keep the media queries as close to their relevant rule sets whenever possible. D
 ```
  
 <a name="css-pre-processors"></a>
-### 3.6. Pre-processors
+### 3.6. Pre-Processors
 
 I use pre-processors in all projects. Today I use `LESS`.
 
