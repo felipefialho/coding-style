@@ -236,8 +236,7 @@ The main influences for the CSS rules are [Code Guide by @mdo](https://github.co
 1. [CSS Performance] (#css-performance)
 1. [Mobile First and Media Queries] (#css-media-querie)
 1. [Pre-processors] (#css-pre-processors)
-1. [CSS Comments] (#css-comments)
-1. [Code Example] (#css-code-example)
+1. [CSS Comments] (#css-comments) 
 
 <a name="css-syntax"></a>
 ### 3.1. CSS Syntax
@@ -575,8 +574,57 @@ Keep the media queries as close to their relevant rule sets whenever possible. D
 }
 ```
  
+<a name="css-pre-processors"></a>
+### 3.6. Pre-processors
+
+I use pre-processors in all projects. Today I use `LESS`.
+
+Warning with nesting rules of pre-processors. Continue keep without nesting.
+
+```css
+/* Good */
+.nav-item { ... }
+
+/* Bad */
+.navbar { 
+  .nav { 
+    .nav-item { 
+      ... 
+    }
+  }
+} 
+```
+
+Provide generic names with variables.
+
+```css
+/* Good */
+@brand-primary: #049cdb;
+
+/* Bad */
+@color-blue: #049cdb;
+```
+
 <a name="css-comments"></a>
-### 3.6 CSS Comments
+### 3.7. CSS Comments
+
+All comments must be made using the syntax of the preprocessor in use.
+
+```js
+//
+// Section
+// --------------------------------------------------
+
+// Sub-section
+// --------------------------------------------------
+
+//
+// Commentary block
+// 
+//
+
+// Commentary
+```
 
 <a name="js"></a>
 ## 4. Javascript
