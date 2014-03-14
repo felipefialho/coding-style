@@ -230,7 +230,7 @@ The main influences for the CSS rules are [Code Guide by @mdo](https://github.co
 1. [CSS Declaration Order] (#css-order)
 1. [CSS Class Name] (#css-class-name) 
 1. [CSS Performance] (#css-performance)
-1. [Media Query] (#css-media-querie)
+1. [Mobile First and Media Queries] (#css-media-querie)
 1. [Pre-processors] (#css-pre-processors)
 1. [Comments] (#css-comments)
 1. [Code Example] (#css-code-example)
@@ -413,7 +413,7 @@ The declarations should be added in alphabetical order.
 ```
 
 <a name="css-class-name"></a>
-### 3.2. CSS Class Name
+### 3.3. CSS Class Name
 
 Keep classes lowercase and use dashes.
 
@@ -455,7 +455,7 @@ Avoid giving too short names for class and always choose meaningful names that p
 ```
 
 <a name="css-performance"></a>
-### 3.3. CSS Performance
+### 3.4. CSS Performance
 
 Never use IDs.
 
@@ -509,7 +509,68 @@ Nest only when need change the class comportament with interference for other cl
 .modal-btn { ... }
 .progress.active .progress-bar .progress-item span { ... }
 ```
-  
+
+<a name="css-media-queries"></a>
+### 3.5 Mobile First and Media Queries
+
+Start the development with generic rules with and add media queries with mobile first.
+
+```css
+/* Good */
+.navbar {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 480px) {
+  .navbar {
+    padding: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    position: fixed; 
+  }
+}
+
+/* Bad */
+.navbar {
+  position: fixed;
+  top: 0; 
+  left: 0;
+}
+
+@media (max-width: 767px) {
+  .navbar {
+    position: static; 
+    padding: 10px;
+  }
+}
+
+```
+
+Keep the media queries as close to their relevant rule sets whenever possible. Don't bundle them all in a separate stylesheet or at the end of the document. 
+
+```css
+.navbar { ... }
+.nav { ... }
+.nav-item { ... }
+
+@media (min-width: 480px) {
+  .navbar { ... }
+  .nav { ... }
+  .nav-item { ... }
+}
+```
+ 
 <a name="js"></a>
 ## 4. Javascript
  
