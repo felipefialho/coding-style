@@ -145,7 +145,7 @@ For a better performance, all javascripts files must be at the end of the code. 
 
 ```html
 <!-- Good -->
-<script src="scripts.min.js"></script>t
+<script src="scripts.min.js"></script>
 </body>
 
 <!-- Bad -->
@@ -426,7 +426,7 @@ Keep classes lowercase and use dashes.
 .nav_item { ... }
 ```
 
-Dashes serve as natural breaks in related class.
+Dashes serve as natural breaks in related class. Prefix classes based on the closest parent or base class.
 
 ```css
 /* Good */
@@ -440,6 +440,19 @@ Dashes serve as natural breaks in related class.
 .link-nav { ... }
 ```
 
+Avoid giving too short names for classes and always choose meaningful names that provide the class function.
+
+```css
+/* Good */
+.btn { ... }
+.page-header { ... }
+.progress-bar { ... }
+ 
+/* Bad */  
+.s { ... }
+.ph { ... }
+.block { ... }
+```
 
 <a name="css-performance"></a>
 ### 3.3. CSS Performance
