@@ -357,7 +357,6 @@ Separate each ruleset by a blank line.
 }
 
 /* Bad */
-
 .selector-1 {
   ...
 }
@@ -416,8 +415,34 @@ The declarations should be added in alphabetical order.
 <a name="css-class-name"></a>
 ### 3.2. CSS Class Name
 
+Keep classes lowercase and use dashes.
+
+```css
+/* Good */
+.nav-item { ... }
+ 
+/* Bad */
+.NavItem { ... }
+.nav_item { ... }
+```
+
+Dashes serve as natural breaks in related class.
+
+```css
+/* Good */
+.navbar { ... }
+.nav { ... }
+.nav-item { ... }
+.nav-link { ... }
+ 
+/* Bad */  
+.item-nav { ... }
+.link-nav { ... }
+```
+
+
 <a name="css-performance"></a>
-### 3.4. CSS Performance
+### 3.3. CSS Performance
  
 
 
