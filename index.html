@@ -32,7 +32,7 @@
 <a name="my-coding-style" class="anchor" href="#my-coding-style"><span class="octicon octicon-link"></span></a>My Coding Style</h1>
 
 <blockquote>
-<p>Every line of code should appear to be written by a single person, no matter the number of contributors.</p>
+<p>"Every line of code should appear to be written by a single person, no matter the number of contributors." - Chinese Proverb</p>
 </blockquote>
 
 <p>The following document describes the rules of writing in development languages that I use: HTML, CSS and Javascript.</p>
@@ -40,6 +40,8 @@
 <p>The idea of this repository is to have a place for myself and other developers who participate in my projects able to inform the coding standards used.</p>
 
 <p>Like this is a new document, some rules may not have been applied in old projects.</p>
+
+<p>This is a living document and changes can occur at any time.</p>
 
 <h2>
 <a name="summary" class="anchor" href="#summary"><span class="octicon octicon-link"></span></a>Summary</h2>
@@ -84,11 +86,12 @@
 <ol>
 <li>
 <a href="#html-syntax">HTML Syntax</a> </li>
-<li><a href="#html-encoding">Character encoding</a></li>
-<li><a href="#html-attribute-order">Attribute order</a></li>
+<li><a href="#html-comments">HTML Comments</a></li>
+<li><a href="#html-encoding">Character Encoding</a></li>
+<li><a href="#html-attribute-order">Attribute Order</a></li>
 <li>
-<a href="#html-performance">Performance</a> </li>
-<li><a href="#html-base">Base Code</a></li>
+<a href="#html-performance">HTML Performance</a> </li>
+<li><a href="#html-base">HTML Base Code</a></li>
 </ol><p><a name="html-syntax"></a></p>
 
 <h3>
@@ -127,6 +130,11 @@
 <span class="nt">&lt;hr</span> <span class="nt">/&gt;</span>
 </pre></div>
 
+<p><a name="html-comments"></a></p>
+
+<h3>
+<a name="22-html-comments" class="anchor" href="#22-html-comments"><span class="octicon octicon-link"></span></a>2.2. HTML Comments</h3>
+
 <p>Follow this rule to add comments in HTML.</p>
 
 <div class="highlight highlight-html"><pre><span class="c">&lt;!-- This is a good example --&gt;</span>
@@ -136,7 +144,7 @@
 <p><a name="html-encoding"></a></p>
 
 <h3>
-<a name="22-character-encoding" class="anchor" href="#22-character-encoding"><span class="octicon octicon-link"></span></a>2.2. Character encoding</h3>
+<a name="23-character-encoding" class="anchor" href="#23-character-encoding"><span class="octicon octicon-link"></span></a>2.3. Character Encoding</h3>
 
 <p>Always use UTF-8 for character encoding.</p>
 
@@ -148,7 +156,7 @@
 <p><a name="html-attribute-order"></a></p>
 
 <h3>
-<a name="23-attribute-order" class="anchor" href="#23-attribute-order"><span class="octicon octicon-link"></span></a>2.3. Attribute order</h3>
+<a name="24-html-attribute-order" class="anchor" href="#24-html-attribute-order"><span class="octicon octicon-link"></span></a>2.4. HTML Attribute Order</h3>
 
 <p>HTML attributes should be in this order for facilitate the reading.</p>
 
@@ -177,7 +185,7 @@
 <p><a name="html-performance"></a></p>
 
 <h3>
-<a name="24-performance" class="anchor" href="#24-performance"><span class="octicon octicon-link"></span></a>2.4. Performance</h3>
+<a name="25-html-performance" class="anchor" href="#25-html-performance"><span class="octicon octicon-link"></span></a>2.5. HTML Performance</h3>
 
 <p>No need to specify a type when including CSS and JavaScript files as <code>text/css</code> and <code>text/javascript</code>.</p>
 
@@ -194,7 +202,7 @@
 <p>For a better performance, all javascripts files must be at the end of the code. Before closing the <code>&lt;body&gt;</code>.</p>
 
 <div class="highlight highlight-html"><pre><span class="c">&lt;!-- Good --&gt;</span>
-<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"scripts.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>t
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"scripts.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
 <span class="nt">&lt;/body&gt;</span>
 
 <span class="c">&lt;!-- Bad --&gt;</span>
@@ -224,7 +232,7 @@
 <p><a name="html-base"></a></p>
 
 <h3>
-<a name="25-base-code" class="anchor" href="#25-base-code"><span class="octicon octicon-link"></span></a>2.5. Base Code</h3>
+<a name="26-html-base-code" class="anchor" href="#26-html-base-code"><span class="octicon octicon-link"></span></a>2.6. HTML Base Code</h3>
 
 <p>The following code is a HTML base for faster start the projects.</p>
 
@@ -280,12 +288,14 @@
 <ol>
 <li>
 <a href="#css-syntax">CSS Syntax</a> </li>
-<li><a href="#css-order">Declaration order</a></li>
-<li><a href="#css-performance">Performance</a></li>
-<li><a href="#css-media-querie">Media query</a></li>
+<li><a href="#css-order">CSS Declaration Order</a></li>
+<li>
+<a href="#css-class-name">CSS Class Name</a> </li>
+<li><a href="#css-performance">CSS Performance</a></li>
+<li><a href="#css-media-querie">Mobile First and Media Queries</a></li>
 <li><a href="#css-pre-processors">Pre-processors</a></li>
-<li><a href="#css-comments">Comments</a></li>
-<li><a href="#css-code-example">Code Example</a></li>
+<li>
+<a href="#css-comments">CSS Comments</a> </li>
 </ol><p><a name="css-syntax"></a></p>
 
 <h3>
@@ -402,7 +412,6 @@
 <span class="p">}</span>
 
 <span class="c">/* Bad */</span>
-
 <span class="nc">.selector-1</span> <span class="p">{</span>
   <span class="o">...</span>
 <span class="p">}</span>
@@ -429,7 +438,7 @@
 <p><a name="css-order"></a></p>
 
 <h3>
-<a name="32-declaration-order" class="anchor" href="#32-declaration-order"><span class="octicon octicon-link"></span></a>3.2. Declaration order</h3>
+<a name="32-css-declaration-order" class="anchor" href="#32-css-declaration-order"><span class="octicon octicon-link"></span></a>3.2. CSS Declaration Order</h3>
 
 <p>The declarations should be added in alphabetical order.</p>
 
@@ -456,6 +465,215 @@
   <span class="k">border</span><span class="o">:</span> <span class="m">#333</span> <span class="k">solid</span> <span class="m">1px</span><span class="p">;</span>
   <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
 <span class="p">}</span> 
+</pre></div>
+
+<p><a name="css-class-name"></a></p>
+
+<h3>
+<a name="33-css-class-name" class="anchor" href="#33-css-class-name"><span class="octicon octicon-link"></span></a>3.3. CSS Class Name</h3>
+
+<p>Keep classes lowercase and use dashes.</p>
+
+<div class="highlight highlight-css"><pre><span class="c">/* Good */</span>
+<span class="nc">.nav-item</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+
+<span class="c">/* Bad */</span>
+<span class="nc">.NavItem</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<span class="nc">.nav_item</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+</pre></div>
+
+<p>Dashes serve as natural breaks in related class. Prefix classes based on the closest parent or base class.</p>
+
+<div class="highlight highlight-css"><pre><span class="c">/* Good */</span>
+<span class="nc">.navbar</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<span class="nc">.nav</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<span class="nc">.nav-item</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<span class="nc">.nav-link</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+
+<span class="c">/* Bad */</span>  
+<span class="nc">.item-nav</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<span class="nc">.link-nav</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+</pre></div>
+
+<p>Avoid giving too short names for class and always choose meaningful names that provide the class function.</p>
+
+<div class="highlight highlight-css"><pre><span class="c">/* Good */</span>
+<span class="nc">.btn</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<span class="nc">.page-header</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<span class="nc">.progress-bar</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+
+<span class="c">/* Bad */</span>  
+<span class="nc">.s</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<span class="nc">.ph</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<span class="nc">.block</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+</pre></div>
+
+<p><a name="css-performance"></a></p>
+
+<h3>
+<a name="34-css-performance" class="anchor" href="#34-css-performance"><span class="octicon octicon-link"></span></a>3.4. CSS Performance</h3>
+
+<p>Never use IDs.</p>
+
+<div class="highlight highlight-css"><pre><span class="c">/* Good */</span>
+<span class="nc">.header</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<span class="nc">.section</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+
+<span class="c">/* Bad */</span>  
+<span class="nf">#header</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<span class="nf">#section</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+</pre></div>
+
+<p>Do not use selectors standards for not generic rules, always preferably for class.</p>
+
+<div class="highlight highlight-css"><pre><span class="c">/* Good */</span>
+<span class="nc">.form-control</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<span class="nc">.header</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<span class="nc">.section</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+
+<span class="c">/* Bad */</span>  
+<span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="s2">"text"</span><span class="o">]</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<span class="nt">header</span>
+<span class="nt">section</span>
+</pre></div>
+
+<p>Avoid nesting elements, the preference is always to use classes.</p>
+
+<div class="highlight highlight-css"><pre><span class="c">/* Good */</span>
+<span class="nc">.navbar</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<span class="nc">.nav</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<span class="nc">.nav-item</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<span class="nc">.nav-link</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+
+<span class="c">/* Bad */</span>
+<span class="nc">.navbar</span> <span class="nt">ul</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<span class="nc">.navbar</span> <span class="nt">ul</span> <span class="nt">li</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<span class="nc">.navbar</span> <span class="nt">ul</span> <span class="nt">li</span> <span class="nt">a</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+</pre></div>
+
+<p>Nest only when need change the class comportament with interference for other class. Keep the nested on max of three elements.</p>
+
+<div class="highlight highlight-css"><pre><span class="c">/* Good */</span>
+<span class="nc">.modal-footer</span> <span class="nc">.btn</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<span class="nc">.progress.active</span> <span class="nc">.progress-bar</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+
+<span class="c">/* Bad */</span>
+<span class="nc">.modal-btn</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<span class="nc">.progress.active</span> <span class="nc">.progress-bar</span> <span class="nc">.progress-item</span> <span class="nt">span</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+</pre></div>
+
+<p><a name="css-media-queries"></a></p>
+
+<h3>
+<a name="35-mobile-first-and-media-queries" class="anchor" href="#35-mobile-first-and-media-queries"><span class="octicon octicon-link"></span></a>3.5 Mobile First and Media Queries</h3>
+
+<p>Start the development with generic rules with and add media queries with mobile first.</p>
+
+<div class="highlight highlight-css"><pre><span class="c">/* Good */</span>
+<span class="nc">.navbar</span> <span class="p">{</span>
+  <span class="k">margin-bottom</span><span class="o">:</span> <span class="m">20px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">@media</span> <span class="o">(</span><span class="nt">min-width</span><span class="o">:</span> <span class="nt">480px</span><span class="o">)</span> <span class="p">{</span>
+  <span class="nc">.navbar</span> <span class="p">{</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">@media</span> <span class="o">(</span><span class="nt">min-width</span><span class="o">:</span> <span class="nt">768px</span><span class="o">)</span> <span class="p">{</span>
+  <span class="nc">.navbar</span> <span class="p">{</span>
+    <span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span> 
+    <span class="k">top</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> 
+    <span class="k">left</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> 
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">@media</span> <span class="o">(</span><span class="nt">min-width</span><span class="o">:</span> <span class="nt">992px</span><span class="o">)</span> <span class="p">{</span>
+  <span class="nc">.navbar</span> <span class="p">{</span>
+    <span class="k">position</span><span class="o">:</span> <span class="k">fixed</span><span class="p">;</span> 
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c">/* Bad */</span>
+<span class="nc">.navbar</span> <span class="p">{</span>
+  <span class="k">position</span><span class="o">:</span> <span class="k">fixed</span><span class="p">;</span>
+  <span class="k">top</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> 
+  <span class="k">left</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">@media</span> <span class="o">(</span><span class="nt">max-width</span><span class="o">:</span> <span class="nt">767px</span><span class="o">)</span> <span class="p">{</span>
+  <span class="nc">.navbar</span> <span class="p">{</span>
+    <span class="k">position</span><span class="o">:</span> <span class="k">static</span><span class="p">;</span> 
+    <span class="k">padding</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+</pre></div>
+
+<p>Keep the media queries as close to their relevant rule sets whenever possible. Don't bundle them all in a separate stylesheet or at the end of the document. </p>
+
+<div class="highlight highlight-css"><pre><span class="nc">.navbar</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<span class="nc">.nav</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<span class="nc">.nav-item</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+
+<span class="k">@media</span> <span class="o">(</span><span class="nt">min-width</span><span class="o">:</span> <span class="nt">480px</span><span class="o">)</span> <span class="p">{</span>
+  <span class="nc">.navbar</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+  <span class="nc">.nav</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+  <span class="nc">.nav-item</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+<p><a name="css-pre-processors"></a></p>
+
+<h3>
+<a name="36-pre-processors" class="anchor" href="#36-pre-processors"><span class="octicon octicon-link"></span></a>3.6. Pre-processors</h3>
+
+<p>I use pre-processors in all projects. Today I use <code>LESS</code>.</p>
+
+<p>Warning with nesting rules of pre-processors. Continue keep without nesting.</p>
+
+<div class="highlight highlight-css"><pre><span class="c">/* Good */</span>
+<span class="nc">.nav-item</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+
+<span class="c">/* Bad */</span>
+<span class="nc">.navbar</span> <span class="p">{</span> 
+  <span class="o">.</span><span class="n">nav</span> <span class="err">{</span> 
+    <span class="o">.</span><span class="n">nav</span><span class="o">-</span><span class="n">item</span> <span class="err">{</span> 
+      <span class="o">...</span> 
+    <span class="p">}</span>
+  <span class="err">}</span>
+<span class="err">}</span> 
+</pre></div>
+
+<p>Provide generic names with variables.</p>
+
+<div class="highlight highlight-css"><pre><span class="c">/* Good */</span>
+<span class="k">@brand-primary</span><span class="o">:</span> <span class="nf">#049cdb</span><span class="p">;</span>
+
+<span class="c">/* Bad */</span>
+<span class="k">@color-blue</span><span class="o">:</span> <span class="nf">#049cdb</span><span class="p">;</span>
+</pre></div>
+
+<p><a name="css-comments"></a></p>
+
+<h3>
+<a name="37-css-comments" class="anchor" href="#37-css-comments"><span class="octicon octicon-link"></span></a>3.7. CSS Comments</h3>
+
+<p>All comments must be made using the syntax of the preprocessor in use.</p>
+
+<div class="highlight highlight-js"><pre><span class="c1">//</span>
+<span class="c1">// Section</span>
+<span class="c1">// --------------------------------------------------</span>
+
+<span class="c1">// Sub-section</span>
+<span class="c1">// --------------------------------------------------</span>
+
+<span class="c1">//</span>
+<span class="c1">// Commentary block</span>
+<span class="c1">// </span>
+<span class="c1">//</span>
+
+<span class="c1">// Commentary</span>
 </pre></div>
 
 <p><a name="js"></a></p>
