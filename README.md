@@ -88,6 +88,38 @@ Don't include a `/` in self-closing elements.
 <hr />
 ```
 
+Separate block element by a blank line and agroup the inners block elements.
+
+```html
+<!-- Good -->
+<ul class="nav-tabs">
+  <li>...</li>
+  <li>...</li>
+  <li>...</li>
+  <li>...</li>
+</ul> 
+
+<div class="tab-content">
+  ...
+</div>  
+
+<!-- Bad-->
+<ul class="nav-tabs">
+
+  <li>...</li>
+  
+  <li>...</li>
+  
+  <li>...</li>
+  
+  <li>...</li>
+  
+</ul> 
+<div class="tab-content">
+  ...
+</div>  
+```
+  
 <a name="html-comments"></a>
 ### 2.2. HTML Comments
 
