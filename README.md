@@ -7,9 +7,9 @@ The following document describes the rules of writing in development languages t
 
 The idea of this repository is to have a place for myself and other developers who participate in my projects able to inform the coding standards used.
 
-Like this is a new document, some rules may not have been applied in old projects.
+As this is a new document, some rules may not have been applied in old projects.
 
-This is a living document and changes can occur at any time.
+This is a live document and changes can occur at any time.
 
 ## Summary
  
@@ -23,9 +23,9 @@ This is a living document and changes can occur at any time.
 <a name="commits"></a>
 ## 1. Commits
 
-For facilitate the contribution of any people in projects, all commit message, pull request title or issue discussion must be in **English**.
+For facilitate the contribution of any people in projects, all commit messages, pull request title or issues discussion must be in **English**.
 
-Before commit adjusts in project, check if exists one open issue and make references for this issue using '#' in your commit message.
+Before commit adjusts in project, check if exists an open issue and make references for this issue using '#' in your commit message.
 
 ```javascript
 // Good
@@ -266,7 +266,7 @@ The main influences for the CSS rules are [Code Guide by @mdo](https://github.co
 1. [CSS Declaration Order] (#css-order)
 1. [CSS Class Name] (#css-class-name) 
 1. [CSS Performance] (#css-performance)
-1. [Mobile First and Media Queries] (#css-media-querie)
+1. [Mobile First and Media Queries] (#mobile-first-and-media-queries)
 1. [Pre-processors] (#css-pre-processors)
 1. [CSS Comments] (#css-comments) 
 
@@ -545,7 +545,7 @@ Nest only when need change the class comportament with interference for other cl
 .progress.active .progress-bar .progress-item span { ... }
 ```
 
-<a name="css-media-queries"></a>
+<a name="mobile-first-and-media-queries"></a>
 ### 3.5 Mobile First and Media Queries
 
 Start the development with generic rules with and add media queries with mobile first.
