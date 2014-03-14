@@ -545,7 +545,7 @@ Nest only when need change the class comportament with interference for other cl
 .progress.active .progress-bar .progress-item span { ... }
 ```
 
-<a name="css-media-queries"></a>
+<a name="mobile-first-and-media-queries"></a>
 ### 3.5 Mobile First and Media Queries
 
 Start the development with generic rules with and add media queries with mobile first.
