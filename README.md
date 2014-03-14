@@ -670,7 +670,6 @@ All comments must be made using the syntax of the preprocessor in use.
 * [Zeno Rocha Coding Style](https://github.com/zenorocha/my-coding-style/) 
 
 <a name="license"></a>
-
 ## 6. License
  
 [MIT License](http://felipefialho.mit-license.org/) © Luiz Felipe Tartarotti Fialho
