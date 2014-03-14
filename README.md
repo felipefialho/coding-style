@@ -1,7 +1,7 @@
 My Coding Style
 ============
 
-> Every line of code should appear to be written by a single person, no matter the number of contributors.
+> "Every line of code should appear to be written by a single person, no matter the number of contributors." - Chinese Proverb
 
 The following document describes the rules of writing in development languages that I use: HTML, CSS and Javascript.
 
@@ -440,7 +440,7 @@ Dashes serve as natural breaks in related class. Prefix classes based on the clo
 .link-nav { ... }
 ```
 
-Avoid giving too short names for classes and always choose meaningful names that provide the class function.
+Avoid giving too short names for class and always choose meaningful names that provide the class function.
 
 ```css
 /* Good */
@@ -456,9 +456,60 @@ Avoid giving too short names for classes and always choose meaningful names that
 
 <a name="css-performance"></a>
 ### 3.3. CSS Performance
+
+Never use IDs.
+
+```css
+/* Good */
+.header { ... }
+.section { ... }
  
+/* Bad */  
+#header { ... }
+#section { ... }
+```
 
+Do not use selectors standards for not generic rules, always preferably for class.
 
+```css
+/* Good */
+.form-control { ... }
+.header { ... }
+.section { ... }
+ 
+/* Bad */  
+input[type="text"] { ... }
+header
+section
+```
+
+Avoid nesting elements, the preference is always to use classes.
+
+```css
+/* Good */
+.navbar { ... }
+.nav { ... }
+.nav-item { ... }
+.nav-link { ... }
+
+/* Bad */
+.navbar ul { ... }
+.navbar ul li { ... }
+.navbar ul li a { ... }
+```
+
+Nest only when need change the class comportament with interference for other class. Keep the nested on max of three elements.
+
+```css
+/* Good */
+.modal-footer .btn { ... }
+.progress.active .progress-bar { ... }
+
+/* Bad */
+.modal-btn { ... }
+.progress.active .progress-bar .progress-item span { ... }
+```
+  
 <a name="js"></a>
 ## 4. Javascript
  
