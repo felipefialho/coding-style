@@ -39,9 +39,9 @@
 
 <p>The idea of this repository is to have a place for myself and other developers who participate in my projects able to inform the coding standards used.</p>
 
-<p>Like this is a new document, some rules may not have been applied in old projects.</p>
+<p>As this is a new document, some rules may not have been applied in old projects.</p>
 
-<p>This is a living document and changes can occur at any time.</p>
+<p>This is a live document and changes can occur at any time.</p>
 
 <h2>
 <a name="summary" class="anchor" href="#summary"><span class="octicon octicon-link"></span></a>Summary</h2>
@@ -62,9 +62,9 @@
 <h2>
 <a name="1-commits" class="anchor" href="#1-commits"><span class="octicon octicon-link"></span></a>1. Commits</h2>
 
-<p>For facilitate the contribution of any people in projects, all commit message, pull request title or issue discussion must be in <strong>English</strong>.</p>
+<p>For facilitate the contribution of any people in projects, all commit messages, pull request title or issues discussion must be in <strong>English</strong>.</p>
 
-<p>Before commit adjusts in project, check if exists one open issue and make references for this issue using '#' in your commit message.</p>
+<p>Before commit adjusts in project, check if exists an open issue and make references for this issue using '#' in your commit message.</p>
 
 <div class="highlight highlight-javascript"><pre><span class="c1">// Good</span>
 <span class="nx">git</span> <span class="nx">commit</span> <span class="o">-</span><span class="nx">m</span> <span class="s2">"Add placeholder in input #10"</span>
@@ -128,6 +128,37 @@
 
 <span class="c">&lt;!-- Bad--&gt;</span>
 <span class="nt">&lt;hr</span> <span class="nt">/&gt;</span>
+</pre></div>
+
+<p>Separate block element by a blank line and agroup the inners block elements.</p>
+
+<div class="highlight highlight-html"><pre><span class="c">&lt;!-- Good --&gt;</span>
+<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav-tabs"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span> 
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tab-content"</span><span class="nt">&gt;</span>
+  ...
+<span class="nt">&lt;/div&gt;</span>  
+
+<span class="c">&lt;!-- Bad--&gt;</span>
+<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav-tabs"</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
+
+  <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
+
+  <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
+
+  <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
+
+<span class="nt">&lt;/ul&gt;</span> 
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tab-content"</span><span class="nt">&gt;</span>
+  ...
+<span class="nt">&lt;/div&gt;</span>  
 </pre></div>
 
 <p><a name="html-comments"></a></p>
@@ -292,8 +323,8 @@
 <li>
 <a href="#css-class-name">CSS Class Name</a> </li>
 <li><a href="#css-performance">CSS Performance</a></li>
-<li><a href="#css-media-querie">Mobile First and Media Queries</a></li>
-<li><a href="#css-pre-processors">Pre-processors</a></li>
+<li><a href="#mobile-first-and-media-queries">Mobile First and Media Queries</a></li>
+<li><a href="#css-pre-processors">Pre-Processors</a></li>
 <li>
 <a href="#css-comments">CSS Comments</a> </li>
 </ol><p><a name="css-syntax"></a></p>
@@ -562,7 +593,7 @@
 <span class="nc">.progress.active</span> <span class="nc">.progress-bar</span> <span class="nc">.progress-item</span> <span class="nt">span</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
 </pre></div>
 
-<p><a name="css-media-queries"></a></p>
+<p><a name="mobile-first-and-media-queries"></a></p>
 
 <h3>
 <a name="35-mobile-first-and-media-queries" class="anchor" href="#35-mobile-first-and-media-queries"><span class="octicon octicon-link"></span></a>3.5 Mobile First and Media Queries</h3>
@@ -626,7 +657,7 @@
 <p><a name="css-pre-processors"></a></p>
 
 <h3>
-<a name="36-pre-processors" class="anchor" href="#36-pre-processors"><span class="octicon octicon-link"></span></a>3.6. Pre-processors</h3>
+<a name="36-pre-processors" class="anchor" href="#36-pre-processors"><span class="octicon octicon-link"></span></a>3.6. Pre-Processors</h3>
 
 <p>I use pre-processors in all projects. Today I use <code>LESS</code>.</p>
 
