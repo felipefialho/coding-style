@@ -673,7 +673,7 @@ All comments must be made using the syntax of the preprocessor in use.
 <a name="translations"></a>
 ## 6. Translations
 
-* [Português (Brasil)]()
+* [Português (Brasil)](/translations/pt-BR/)
 
 <a name="license"></a>
 ## 7. License
