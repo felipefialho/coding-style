@@ -56,13 +56,13 @@ A principal influencia das regras de HTML é o [Code Guide by @mdo](https://gith
 Use soft-tabs com dois espaços. Você pode configurar o seu editor dessa forma.
 
 ```html
-<!-- Good -->
+<!-- Bom -->
 <nav class="nav">
   <ul class="nav-menu">
     <li class="nav-item">
       <a class="nav-link">
 
-<!-- Bad-->
+<!-- Ruim -->
 <nav class="nav">
       <ul class="nav-menu">
             <li class="nav-item">
@@ -72,27 +72,27 @@ Use soft-tabs com dois espaços. Você pode configurar o seu editor dessa forma.
 Sempre use aspas duplas.
 
 ```html
-<!-- Good -->
+<!-- Bom -->
 <div class="main">
 
-<!-- Bad-->
+<!-- Ruim -->
 <div class='main'>
 ```
 
 Não inclua `/` em elementos viúvos.
 
 ```html
-<!-- Good -->
+<!-- Bom -->
 <hr>
 
-<!-- Bad-->
+<!-- Ruim -->
 <hr />
 ```
 
 Separe os blocos usando uma linha em branco e agrupe os elementos internos do bloco.
 
 ```html
-<!-- Good -->
+<!-- Bom -->
 <ul class="nav-tabs">
   <li>...</li>
   <li>...</li>
@@ -104,7 +104,7 @@ Separe os blocos usando uma linha em branco e agrupe os elementos internos do bl
   ...
 </div>
 
-<!-- Bad-->
+<!-- Ruim -->
 <ul class="nav-tabs">
 
   <li>...</li>
@@ -168,7 +168,7 @@ Os atributos do HTML devem estar na seguinte ordem para facilitar a leitura.
 Nos includes dos arquivos CSS e Javascript não é necessário especificar o tipo de arquivo como `text/css` e `text/javascript.
 
 ```html
-<!-- Good -->
+<!-- Bom -->
 <link rel="stylesheet" href="assets/css/style.css" />
 <script src="scripts.min.js"></script>
 
@@ -181,7 +181,7 @@ Nos includes dos arquivos CSS e Javascript não é necessário especificar o tip
 Para uma melhor performance, todos os arquivos javascripts devem estar antes de fechar o `<body>`, no fim do documento.
 
 ```html
-<!-- Good -->
+<!-- Bom -->
 <script src="scripts.min.js"></script>
 </body>
 
@@ -194,7 +194,7 @@ Para uma melhor performance, todos os arquivos javascripts devem estar antes de 
 Quando o projeto usar apenas HTML, sempre minifique o código. Automatizadores de tarefas como o [Grunt](http://gruntjs.com/) tornam isso muito mais fácil.
 
 ```html
-<!-- Good -->
+<!-- Bom -->
 <html><head>...</head><body><div class="container">...</div></body></html>
 
 <!-- Bad -->
@@ -211,9 +211,9 @@ Quando o projeto usar apenas HTML, sempre minifique o código. Automatizadores d
 ```
 
 <a name="html-base"></a>
-### 2.6. HTML Base Code
+### 2.6. HTML Código Base
 
-The following code is a HTML base for faster start the projects.
+O código a seguir é uma base em HTML para iniciar rápidamente os projetos.
 
 ```html
 <!DOCTYPE html>
@@ -225,13 +225,10 @@ The following code is a HTML base for faster start the projects.
 <meta name="viewport" content="width=device-width">
 
 <link rel="shortcut icon" href="assets/img/ico/favicon.ico" />
-
-<!-- SVG Logo -->
 <link rel="logo" type="image/svg" href="../assets/img/logo/logo.svg" />
+<link rel="stylesheet" href="assets/css/style.css" />
 
 <title></title>
-
-<link rel="stylesheet" href="assets/css/style.css" />
 
 </head>
 <body>
@@ -549,7 +546,7 @@ Nest only when need change the class comportament with interference for other cl
 Always minify the CSS code. Task builders like [Grunt](http://gruntjs.com/) leaves this easier.
 
 ```css
-<!-- Good -->
+<!-- Bom -->
 .navbar { ... }.nav { ... }.nav-item { ... }.nav-link { ... }
 
 <!-- Bad -->
