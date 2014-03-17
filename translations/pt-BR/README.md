@@ -11,15 +11,15 @@ Como este é um novo documento, algumas regras podem não ter sido aplicadas em 
 
 Este é um documento vivo e mudanças podem acontecer a qualquer momento.
 
-## Summary
+## Sumário
 
 1. [Commits] (#commits)
 1. [HTML] (#html)
 1. [CSS] (#css)
 1. [Javascript] (#js)
-1. [References](#references)
-1. [Translations](#translations)
-1. [License](#license)
+1. [Referências](#references)
+1. [Traduções](#translations)
+1. [Licença](#license)
 
 <a name="commits"></a>
 ## 1. Commits
@@ -41,7 +41,7 @@ git commit -m "Add placeholder in input"
 
 The main influence for the HTML rules is the [Code Guide by @mdo](https://github.com/mdo/code-guide).
 
-### HTML Summary
+### HTML Sumário
 
 1. [HTML Syntax] (#html-syntax)
 1. [HTML Comments] (#html-comments)
@@ -261,7 +261,7 @@ For give support a olds Internet Explorer...
 
 The main influences for the CSS rules are [Code Guide by @mdo](https://github.com/mdo/code-guide) and [idiomatic CSS](https://github.com/necolas/idiomatic-css/).
 
-### CSS Summary
+### CSS Sumário
 
 1. [CSS Syntax] (#css-syntax)
 1. [CSS Declaration Order] (#css-order)
@@ -663,7 +663,7 @@ All comments must be made using the syntax of the preprocessor in use.
 ## 4. Javascript
 
 <a name="references"></a>
-## 5. References
+## 5. Referências
 
 * [Code Guide by @mdo](https://github.com/mdo/code-guide)
 * [idiomatic CSS](https://github.com/necolas/idiomatic-css/)
@@ -671,11 +671,11 @@ All comments must be made using the syntax of the preprocessor in use.
 * [Zeno Rocha Coding Style](https://github.com/zenorocha/my-coding-style/)
 
 <a name="translations"></a>
-## 6. Translations
+## 6. Traduções
 
-* [Português (Brasil)](translations/pt-BR/)
+* [English](/)
 
 <a name="license"></a>
-## 7. License
+## 7. Licença
 
 [MIT License](http://felipefialho.mit-license.org/) © Luiz Felipe Tartarotti Fialho
