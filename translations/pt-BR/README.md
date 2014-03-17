@@ -165,7 +165,7 @@ Os atributos do HTML devem estar na seguinte ordem para facilitar a leitura.
 <a name="html-performance"></a>
 ### 2.5. HTML Performance
 
-No need to specify a type when including CSS and JavaScript files as `text/css` and `text/javascript`.
+Não é necessário especificar o tipo de arquivo como `text/css` e `text/javascript`, nos includes dos arquivos CSS e Javascript.
 
 ```html
 <!-- Good -->
@@ -178,7 +178,7 @@ No need to specify a type when including CSS and JavaScript files as `text/css` 
 <body>
 ```
 
-For a better performance, all javascripts files must be at the end of the code. Before closing the `<body>`.
+Para uma melhor performance, todos os arquivos javascripts devem estar no fim do documento, antes de fechar o `<body>`.
 
 ```html
 <!-- Good -->
@@ -191,7 +191,7 @@ For a better performance, all javascripts files must be at the end of the code. 
 <body>
 ```
 
-Always minify the code in projects only in HTML. Task builders like [Grunt](http://gruntjs.com/) leaves this easier.
+Quando o projeto usar apenas HTML, sempre minifique o código. Automatizadores de tarefas como o [Grunt](http://gruntjs.com/) tornam isso muito mais fácil.
 
 ```html
 <!-- Good -->
