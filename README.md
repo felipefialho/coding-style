@@ -12,14 +12,15 @@ As this is a new document, some rules may not have been applied in old projects.
 This is a live document and changes can occur at any time.
 
 ## Summary
- 
-1. [Commits] (#commits) 
-1. [HTML] (#html) 
-1. [CSS] (#css) 
-1. [Javascript] (#js) 
-1. [License](#license)
+
+1. [Commits] (#commits)
+1. [HTML] (#html)
+1. [CSS] (#css)
+1. [Javascript] (#js)
 1. [References](#references)
- 
+1. [Translations](#translations)
+1. [License](#license)
+
 <a name="commits"></a>
 ## 1. Commits
 
@@ -42,17 +43,17 @@ The main influence for the HTML rules is the [Code Guide by @mdo](https://github
 
 ### HTML Summary
 
-1. [HTML Syntax] (#html-syntax) 
+1. [HTML Syntax] (#html-syntax)
 1. [HTML Comments] (#html-comments)
 1. [Character Encoding] (#html-encoding)
 1. [Attribute Order] (#html-attribute-order)
-1. [HTML Performance] (#html-performance) 
+1. [HTML Performance] (#html-performance)
 1. [HTML Base Code] (#html-base)
 
 <a name="html-syntax"></a>
 ### 2.1. HTML Syntax
 
-Use soft tabs with two spaces. You can configure your editor for this. 
+Use soft tabs with two spaces. You can configure your editor for this.
 
 ```html
 <!-- Good -->
@@ -77,7 +78,7 @@ Always use double quotes.
 <!-- Bad-->
 <div class='main'>
 ```
-  
+
 Don't include a `/` in self-closing elements.
 
 ```html
@@ -97,29 +98,29 @@ Separate block element by a blank line and agroup the inners block elements.
   <li>...</li>
   <li>...</li>
   <li>...</li>
-</ul> 
+</ul>
 
 <div class="tab-content">
   ...
-</div>  
+</div>
 
 <!-- Bad-->
 <ul class="nav-tabs">
 
   <li>...</li>
-  
+
   <li>...</li>
-  
+
   <li>...</li>
-  
+
   <li>...</li>
-  
-</ul> 
+
+</ul>
 <div class="tab-content">
   ...
-</div>  
+</div>
 ```
-  
+
 <a name="html-comments"></a>
 ### 2.2. HTML Comments
 
@@ -154,7 +155,7 @@ HTML attributes should be in this order for facilitate the reading.
 1. `aria-*`, `role`
 
 ```html
-<a class="..." id="..." data-modal="toggle" href="#"> 
+<a class="..." id="..." data-modal="toggle" href="#">
 
 <input class="form-control" type="text">
 
@@ -169,7 +170,7 @@ No need to specify a type when including CSS and JavaScript files as `text/css` 
 ```html
 <!-- Good -->
 <link rel="stylesheet" href="assets/css/style.css" />
-<script src="scripts.min.js"></script> 
+<script src="scripts.min.js"></script>
 
 <!-- Bad -->
 <script src="scripts.min.js"></script>
@@ -222,16 +223,16 @@ The following code is a HTML base for faster start the projects.
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="format-detection" content="telephone=no">
 <meta name="viewport" content="width=device-width">
- 
+
 <link rel="shortcut icon" href="assets/img/ico/favicon.ico" />
 
-<!-- SVG Logo --> 
+<!-- SVG Logo -->
 <link rel="logo" type="image/svg" href="../assets/img/logo/logo.svg" />
- 
+
 <title></title>
 
 <link rel="stylesheet" href="assets/css/style.css" />
- 
+
 </head>
 <body>
 
@@ -242,7 +243,7 @@ The following code is a HTML base for faster start the projects.
 </html>
 ```
 
-For give support a olds Internet Explorer... 
+For give support a olds Internet Explorer...
 
 ```html
 <!DOCTYPE html>
@@ -257,23 +258,23 @@ For give support a olds Internet Explorer...
 
 <a name="css"></a>
 ## 3. CSS
- 
+
 The main influences for the CSS rules are [Code Guide by @mdo](https://github.com/mdo/code-guide) and [idiomatic CSS](https://github.com/necolas/idiomatic-css/).
 
 ### CSS Summary
 
-1. [CSS Syntax] (#css-syntax) 
+1. [CSS Syntax] (#css-syntax)
 1. [CSS Declaration Order] (#css-order)
-1. [CSS Class Name] (#css-class-name) 
+1. [CSS Class Name] (#css-class-name)
 1. [CSS Performance] (#css-performance)
 1. [Mobile First and Media Queries] (#mobile-first-and-media-queries)
 1. [Pre-Processors] (#css-pre-processors)
-1. [CSS Comments] (#css-comments) 
+1. [CSS Comments] (#css-comments)
 
 <a name="css-syntax"></a>
 ### 3.1. CSS Syntax
 
-Use soft tabs with two spaces. You can configure your editor for this. 
+Use soft tabs with two spaces. You can configure your editor for this.
 
 ```css
 /* Good */
@@ -408,12 +409,12 @@ Use lowercase and shorthand hex values and avoid specifying units is zero-values
   color: #aaa;
   margin: 0;
 }
- 
+
 /* Bad */
 .selector-1 {
   color: #AAAAAA;
   margin: 0px;
-} 
+}
 ```
 
 <a name="css-order"></a>
@@ -430,13 +431,13 @@ The declarations should be added in alphabetical order.
   display: block;
   height: 200px;
   margin: 5px;
-  padding: 5px; 
+  padding: 5px;
   width: 200px;
 }
- 
+
 /* Bad */
 .selector-1 {
-  padding: 5px; 
+  padding: 5px;
   height: 200px;
   background: #fff;
   margin: 5px;
@@ -444,7 +445,7 @@ The declarations should be added in alphabetical order.
   color: #333;
   border: #333 solid 1px;
   display: block;
-} 
+}
 ```
 
 <a name="css-class-name"></a>
@@ -455,7 +456,7 @@ Keep classes lowercase and use dashes.
 ```css
 /* Good */
 .nav-item { ... }
- 
+
 /* Bad */
 .NavItem { ... }
 .nav_item { ... }
@@ -469,8 +470,8 @@ Dashes serve as natural breaks in related class. Prefix classes based on the clo
 .nav { ... }
 .nav-item { ... }
 .nav-link { ... }
- 
-/* Bad */  
+
+/* Bad */
 .item-nav { ... }
 .link-nav { ... }
 ```
@@ -482,8 +483,8 @@ Avoid giving too short names for class and always choose meaningful names that p
 .btn { ... }
 .page-header { ... }
 .progress-bar { ... }
- 
-/* Bad */  
+
+/* Bad */
 .s { ... }
 .ph { ... }
 .block { ... }
@@ -498,8 +499,8 @@ Never use IDs.
 /* Good */
 .header { ... }
 .section { ... }
- 
-/* Bad */  
+
+/* Bad */
 #header { ... }
 #section { ... }
 ```
@@ -511,8 +512,8 @@ Do not use selectors standards for not generic rules, always preferably for clas
 .form-control { ... }
 .header { ... }
 .section { ... }
- 
-/* Bad */  
+
+/* Bad */
 input[type="text"] { ... }
 header
 section
@@ -564,35 +565,35 @@ Start the development with generic rules with and add media queries with mobile 
 
 @media (min-width: 768px) {
   .navbar {
-    position: absolute; 
-    top: 0; 
-    left: 0; 
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 }
 
 @media (min-width: 992px) {
   .navbar {
-    position: fixed; 
+    position: fixed;
   }
 }
 
 /* Bad */
 .navbar {
   position: fixed;
-  top: 0; 
+  top: 0;
   left: 0;
 }
 
 @media (max-width: 767px) {
   .navbar {
-    position: static; 
+    position: static;
     padding: 10px;
   }
 }
 
 ```
 
-Keep the media queries as close to their relevant rule sets whenever possible. Don't bundle them all in a separate stylesheet or at the end of the document. 
+Keep the media queries as close to their relevant rule sets whenever possible. Don't bundle them all in a separate stylesheet or at the end of the document.
 
 ```css
 .navbar { ... }
@@ -605,7 +606,7 @@ Keep the media queries as close to their relevant rule sets whenever possible. D
   .nav-item { ... }
 }
 ```
- 
+
 <a name="css-pre-processors"></a>
 ### 3.6. Pre-Processors
 
@@ -618,13 +619,13 @@ Warning with nesting rules of pre-processors. Continue keep without nesting.
 .nav-item { ... }
 
 /* Bad */
-.navbar { 
-  .nav { 
-    .nav-item { 
-      ... 
+.navbar {
+  .nav {
+    .nav-item {
+      ...
     }
   }
-} 
+}
 ```
 
 Provide generic names with variables.
@@ -652,7 +653,7 @@ All comments must be made using the syntax of the preprocessor in use.
 
 //
 // Commentary block
-// 
+//
 //
 
 // Commentary
@@ -660,16 +661,21 @@ All comments must be made using the syntax of the preprocessor in use.
 
 <a name="js"></a>
 ## 4. Javascript
- 
+
 <a name="references"></a>
 ## 5. References
 
 * [Code Guide by @mdo](https://github.com/mdo/code-guide)
 * [idiomatic CSS](https://github.com/necolas/idiomatic-css/)
 * [idiomatic.js](https://github.com/rwldrn/idiomatic.js/)
-* [Zeno Rocha Coding Style](https://github.com/zenorocha/my-coding-style/) 
+* [Zeno Rocha Coding Style](https://github.com/zenorocha/my-coding-style/)
+
+<a name="translations"></a>
+## 6. Translations
+
+* [Português (Brasil)](translations/pt-BR/)
 
 <a name="license"></a>
-## 6. License
- 
+## 7. License
+
 [MIT License](http://felipefialho.mit-license.org/) © Luiz Felipe Tartarotti Fialho
