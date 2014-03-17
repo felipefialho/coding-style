@@ -178,7 +178,7 @@ Não é necessário especificar o tipo de arquivo como `text/css` e `text/javasc
 <body>
 ```
 
-Para uma melhor performance, todos os arquivos javascripts devem estar no fim do documento, antes de fechar o `<body>`.
+Para uma melhor performance, todos os arquivos javascripts devem estar antes de fechar o `<body>`, no fim do documento.
 
 ```html
 <!-- Good -->
