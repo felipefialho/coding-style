@@ -45,8 +45,8 @@ A principal influencia das regras de HTML é o [Code Guide by @mdo](https://gith
 
 1. [HTML Sintaxe] (#html-syntax)
 1. [HTML Comentários] (#html-comments)
-1. [Encoding de Caractéres] (#html-encoding)
-1. [Ordem dos Atributos] (#html-attribute-order)
+1. [HTML Encoding de Caractéres] (#html-encoding)
+1. [HTML Ordem dos Atributos] (#html-attribute-order)
 1. [HTML Performance] (#html-performance)
 1. [HTML Código Base] (#html-base)
 
@@ -132,7 +132,7 @@ Siga esta regra para adicionar comentários no HTML
 ```
 
 <a name="html-encoding"></a>
-### 2.3. Encoding de Caractéres
+### 2.3. HTML Encoding de Caractéres
 
 Sempre use UTF-8 para encoding de caractéres.
 
@@ -143,9 +143,9 @@ Sempre use UTF-8 para encoding de caractéres.
 ```
 
 <a name="html-attribute-order"></a>
-### 2.4. HTML Attribute Order
+### 2.4. HTML Ordem dos Atributos
 
-HTML attributes should be in this order for facilitate the reading.
+Os atributos do HTML devem estar na seguinte ordem para facilitar a leitura.
 
 1. `class`
 1. `id`, `name`

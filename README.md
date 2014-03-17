@@ -45,8 +45,8 @@ The main influence for the HTML rules is the [Code Guide by @mdo](https://github
 
 1. [HTML Syntax] (#html-syntax)
 1. [HTML Comments] (#html-comments)
-1. [Character Encoding] (#html-encoding)
-1. [Attribute Order] (#html-attribute-order)
+1. [HTML Character Encoding] (#html-encoding)
+1. [HTML Attribute Order] (#html-attribute-order)
 1. [HTML Performance] (#html-performance)
 1. [HTML Base Code] (#html-base)
 
@@ -132,7 +132,7 @@ Follow this rule to add comments in HTML.
 ```
 
 <a name="html-encoding"></a>
-### 2.3. Character Encoding
+### 2.3. HTML Character Encoding
 
 Always use UTF-8 for character encoding.
 
