@@ -132,9 +132,9 @@ Siga esta regra para adicionar comentários no HTML
 ```
 
 <a name="html-encoding"></a>
-### 2.3. Character Encoding
+### 2.3. Encoding de Caractéres
 
-Always use UTF-8 for character encoding.
+Sempre use UTF-8 para encoding de caractéres.
 
 ```html
 <head>
