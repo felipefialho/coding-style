@@ -546,6 +546,21 @@ Nest only when need change the class comportament with interference for other cl
 .progress.active .progress-bar .progress-item span { ... }
 ```
 
+Always minify the CSS code. Task builders like [Grunt](http://gruntjs.com/) leaves this easier.
+
+```css
+<!-- Good -->
+.navbar { ... }.nav { ... }.nav-item { ... }.nav-link { ... }
+
+<!-- Bad -->
+.nav-item {
+  ...
+}
+.nav-link {
+  ...
+}
+```
+
 <a name="mobile-first-and-media-queries"></a>
 ### 3.5 Mobile First and Media Queries
 
