@@ -39,19 +39,19 @@ git commit -m "Add placeholder in input"
 <a name="html"></a>
 ## 2. HTML
 
-The main influence for the HTML rules is the [Code Guide by @mdo](https://github.com/mdo/code-guide).
+A principal influencia das regras de HTML é o [Code Guide by @mdo](https://github.com/mdo/code-guide).
 
 ### HTML Sumário
 
-1. [HTML Syntax] (#html-syntax)
-1. [HTML Comments] (#html-comments)
-1. [Character Encoding] (#html-encoding)
-1. [Attribute Order] (#html-attribute-order)
+1. [HTML Sintaxe] (#html-syntax)
+1. [HTML Comentários] (#html-comments)
+1. [Encoding de Caractéres] (#html-encoding)
+1. [Ordem dos Atributos] (#html-attribute-order)
 1. [HTML Performance] (#html-performance)
-1. [HTML Base Code] (#html-base)
+1. [HTML Código Base] (#html-base)
 
 <a name="html-syntax"></a>
-### 2.1. HTML Syntax
+### 2.1. HTML Sintaxe
 
 Use soft tabs with two spaces. You can configure your editor for this.
 
