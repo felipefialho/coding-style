@@ -1,4 +1,4 @@
-My Coding Style
+Meu Estilo de Código
 ============
 
 > "Toda linha de código deve parecer que foi escrita por uma única pessoa, não importa a quantidade de contribuidores." - Provérbio Chinês
