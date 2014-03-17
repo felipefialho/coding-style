@@ -53,7 +53,7 @@ A principal influencia das regras de HTML é o [Code Guide by @mdo](https://gith
 <a name="html-syntax"></a>
 ### 2.1. HTML Sintaxe
 
-Use soft tabs with two spaces. You can configure your editor for this.
+Use soft-tabs com dois espaços. Você pode configurar o seu editor dessa forma.
 
 ```html
 <!-- Good -->
@@ -69,7 +69,7 @@ Use soft tabs with two spaces. You can configure your editor for this.
                   <a class="nav-link">
 ```
 
-Always use double quotes.
+Sempre use aspas duplas.
 
 ```html
 <!-- Good -->
@@ -79,7 +79,7 @@ Always use double quotes.
 <div class='main'>
 ```
 
-Don't include a `/` in self-closing elements.
+Não inclua `/` em elementos viúvos.
 
 ```html
 <!-- Good -->
@@ -89,7 +89,7 @@ Don't include a `/` in self-closing elements.
 <hr />
 ```
 
-Separate block element by a blank line and agroup the inners block elements.
+Separe os blocos usando uma linha em branco e agrupe os elementos internos do bloco.
 
 ```html
 <!-- Good -->
