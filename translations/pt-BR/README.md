@@ -122,13 +122,13 @@ Separe os blocos usando uma linha em branco e agrupe os elementos internos do bl
 ```
 
 <a name="html-comments"></a>
-### 2.2. HTML Comments
+### 2.2. HTML Comentários
 
-Follow this rule to add comments in HTML.
+Siga esta regra para adicionar comentários no HTML
 
 ```html
-<!-- This is a good example -->
-<!-- /Closing a good example -->
+<!-- Este é um bom exemplo -->
+<!-- /Fechando um bom exemplo -->
 ```
 
 <a name="html-encoding"></a>
