@@ -24,15 +24,15 @@ Este é um documento vivo e mudanças podem acontecer a qualquer momento.
 <a name="commits"></a>
 ## 1. Commits
 
-For facilitate the contribution of any people in projects, all commit messages, pull request title or issues discussion must be in **English**.
+Para facilitar a contribuição de qualquer pessoa nos projetos, todas as mensagens de commit, pull requests ou discussões devem ser em **Inglês**.
 
-Before commit adjusts in project, check if exists an open issue and make references for this issue using '#' in your commit message.
+Antes de commitar ajustes no projeto, verifique se existe uma issue aberta e faça referência a ela usando '#' na sua mensagem de commit.
 
 ```javascript
-// Good
+// Bom
 git commit -m "Add placeholder in input #10"
 
-// Bad
+// Ruim
 git commit -m "Add placeholder in input"
 ```
 
