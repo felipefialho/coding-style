@@ -1,15 +1,15 @@
 My Coding Style
 ============
 
-> "Every line of code should appear to be written by a single person, no matter the number of contributors." - Chinese Proverb
+> "Toda linha de código deve parecer que foi escrita por uma única pessoa, não importa a quantidade de contribuidores." - Provérbio Chinês
 
-The following document describes the rules of writing in development languages that I use: HTML, CSS and Javascript.
+O documento a seguir descreve as regras de escrita nas linguagens de desenvolvimento que utilizo: HTML, CSS e Javascript.
 
-The idea of this repository is to have a place for myself and other developers who participate in my projects able to inform the coding standards used.
+A ideia desse repositório é ter um local para que eu e outros desenvolvedores que participem dos meus projetos conseguirem se informar dos padrões de códigos usados.
 
-As this is a new document, some rules may not have been applied in old projects.
+Como este é um novo documento, algumas regras podem não ter sido aplicadas em projetos antigos.
 
-This is a live document and changes can occur at any time.
+Este é um documento vivo e mudanças podem acontecer a qualquer momento.
 
 ## Summary
 
