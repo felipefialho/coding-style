@@ -256,20 +256,20 @@ Para fornecer suporte para versões antigas do Internet Explorer...
 <a name="css"></a>
 ## 3. CSS
 
-The main influences for the CSS rules are [Code Guide by @mdo](https://github.com/mdo/code-guide) and [idiomatic CSS](https://github.com/necolas/idiomatic-css/).
+A principal influencia para as regras de CSS são o [Code Guide by @mdo](https://github.com/mdo/code-guide) e o [idiomatic CSS](https://github.com/necolas/idiomatic-css/).
 
 ### CSS Sumário
 
-1. [CSS Syntax] (#css-syntax)
-1. [CSS Declaration Order] (#css-order)
-1. [CSS Class Name] (#css-class-name)
+1. [CSS Sintaxe] (#css-syntax)
+1. [CSS Ordem de Declaração] (#css-order)
+1. [CSS Nome das Classes] (#css-class-name)
 1. [CSS Performance] (#css-performance)
-1. [Mobile First and Media Queries] (#mobile-first-and-media-queries)
-1. [Pre-Processors] (#css-pre-processors)
-1. [CSS Comments] (#css-comments)
+1. [Mobile First e Media Queries] (#mobile-first-and-media-queries)
+1. [Pre-Processores] (#css-pre-processors)
+1. [CSS Comentários] (#css-comments)
 
 <a name="css-syntax"></a>
-### 3.1. CSS Syntax
+### 3.1. CSS Sintaxe
 
 Use soft tabs with two spaces. You can configure your editor for this.
 
