@@ -274,13 +274,13 @@ A principal influencia para as regras de CSS são o [Code Guide by @mdo](https:/
 Use soft tabs with two spaces. You can configure your editor for this.
 
 ```css
-/* Good */
+/* Bom */
 .nav-item {
   display: inline-block;
   margin: 0 5px;
 }
 
-/* Bad */
+/* Ruim */
 .nav-item {
     display: inline-block;
     margin: 0 5px;
@@ -290,7 +290,7 @@ Use soft tabs with two spaces. You can configure your editor for this.
 Always use double quotes.
 
 ```css
-/* Good */
+/* Bom */
 [type="text"]
 [class^="..."]
 
@@ -298,7 +298,7 @@ Always use double quotes.
   content: "";
 }
 
-/* Bad */
+/* Ruim */
 [type='text']
 [class^='...']
 
@@ -310,12 +310,12 @@ Always use double quotes.
 Include a single space before the opening brace of a ruleset.
 
 ```css
-/* Good */
+/* Bom */
 .header {
   ...
 }
 
-/* Bad */
+/* Ruim */
 .header{
   ...
 }
@@ -324,12 +324,12 @@ Include a single space before the opening brace of a ruleset.
 Include a single space after the colon of a declaration.
 
 ```css
-/* Good */
+/* Bom */
 .header {
   margin-bottom: 20px;
 }
 
-/* Bad */
+/* Ruim */
 .header{
   margin-bottom:20px;
 }
@@ -338,12 +338,12 @@ Include a single space after the colon of a declaration.
 Include a semi-colon at the end of the last declaration in a declaration block.
 
 ```css
-/* Good */
+/* Bom */
 .header {
   margin-bottom: 20px;
 }
 
-/* Bad */
+/* Ruim */
 .header{
   margin-bottom:20px
 }
@@ -352,14 +352,14 @@ Include a semi-colon at the end of the last declaration in a declaration block.
 Keep one declaration per line.
 
 ```css
-/* Good */
+/* Bom */
 .selector-1,
 .selector-2,
 .selector-3 {
   ...
 }
 
-/* Bad */
+/* Ruim */
 .selector-1, .selector-2, .selector-3 {
   ...
 }
@@ -368,10 +368,10 @@ Keep one declaration per line.
 Single declarations should remain in one line.
 
 ```css
-/* Good */
+/* Bom */
 .selector-1 { width: 50%; }
 
-/* Bad */
+/* Ruim */
 .selector-1 {
   width: 50%;
 }
@@ -380,7 +380,7 @@ Single declarations should remain in one line.
 Separate each ruleset by a blank line.
 
 ```css
-/* Good */
+/* Bom */
 .selector-1 {
   ...
 }
@@ -389,7 +389,7 @@ Separate each ruleset by a blank line.
   ...
 }
 
-/* Bad */
+/* Ruim */
 .selector-1 {
   ...
 }
@@ -401,13 +401,13 @@ Separate each ruleset by a blank line.
 Use lowercase and shorthand hex values and avoid specifying units is zero-values.
 
 ```css
-/* Good */
+/* Bom */
 .selector-1 {
   color: #aaa;
   margin: 0;
 }
 
-/* Bad */
+/* Ruim */
 .selector-1 {
   color: #AAAAAA;
   margin: 0px;
@@ -420,7 +420,7 @@ Use lowercase and shorthand hex values and avoid specifying units is zero-values
 The declarations should be added in alphabetical order.
 
 ```css
-/* Good */
+/* Bom */
 .selector-1 {
   background: #fff;
   border: #333 solid 1px;
@@ -432,7 +432,7 @@ The declarations should be added in alphabetical order.
   width: 200px;
 }
 
-/* Bad */
+/* Ruim */
 .selector-1 {
   padding: 5px;
   height: 200px;
@@ -451,10 +451,10 @@ The declarations should be added in alphabetical order.
 Keep classes lowercase and use dashes.
 
 ```css
-/* Good */
+/* Bom */
 .nav-item { ... }
 
-/* Bad */
+/* Ruim */
 .NavItem { ... }
 .nav_item { ... }
 ```
@@ -462,13 +462,13 @@ Keep classes lowercase and use dashes.
 Dashes serve as natural breaks in related class. Prefix classes based on the closest parent or base class.
 
 ```css
-/* Good */
+/* Bom */
 .navbar { ... }
 .nav { ... }
 .nav-item { ... }
 .nav-link { ... }
 
-/* Bad */
+/* Ruim */
 .item-nav { ... }
 .link-nav { ... }
 ```
@@ -476,12 +476,12 @@ Dashes serve as natural breaks in related class. Prefix classes based on the clo
 Avoid giving too short names for class and always choose meaningful names that provide the class function.
 
 ```css
-/* Good */
+/* Bom */
 .btn { ... }
 .page-header { ... }
 .progress-bar { ... }
 
-/* Bad */
+/* Ruim */
 .s { ... }
 .ph { ... }
 .block { ... }
@@ -493,11 +493,11 @@ Avoid giving too short names for class and always choose meaningful names that p
 Never use IDs.
 
 ```css
-/* Good */
+/* Bom */
 .header { ... }
 .section { ... }
 
-/* Bad */
+/* Ruim */
 #header { ... }
 #section { ... }
 ```
@@ -505,12 +505,12 @@ Never use IDs.
 Do not use selectors standards for not generic rules, always preferably for class.
 
 ```css
-/* Good */
+/* Bom */
 .form-control { ... }
 .header { ... }
 .section { ... }
 
-/* Bad */
+/* Ruim */
 input[type="text"] { ... }
 header
 section
@@ -519,13 +519,13 @@ section
 Avoid nesting elements, the preference is always to use classes.
 
 ```css
-/* Good */
+/* Bom */
 .navbar { ... }
 .nav { ... }
 .nav-item { ... }
 .nav-link { ... }
 
-/* Bad */
+/* Ruim */
 .navbar ul { ... }
 .navbar ul li { ... }
 .navbar ul li a { ... }
@@ -534,11 +534,11 @@ Avoid nesting elements, the preference is always to use classes.
 Nest only when need change the class comportament with interference for other class. Keep the nested on max of three elements.
 
 ```css
-/* Good */
+/* Bom */
 .modal-footer .btn { ... }
 .progress.active .progress-bar { ... }
 
-/* Bad */
+/* Ruim */
 .modal-btn { ... }
 .progress.active .progress-bar .progress-item span { ... }
 ```
@@ -564,7 +564,7 @@ Always minify the CSS code. Task builders like [Grunt](http://gruntjs.com/) leav
 Start the development with generic rules with and add media queries with mobile first.
 
 ```css
-/* Good */
+/* Bom */
 .navbar {
   margin-bottom: 20px;
 }
@@ -589,7 +589,7 @@ Start the development with generic rules with and add media queries with mobile 
   }
 }
 
-/* Bad */
+/* Ruim */
 .navbar {
   position: fixed;
   top: 0;
@@ -627,10 +627,10 @@ I use pre-processors in all projects. Today I use `LESS`.
 Warning with nesting rules of pre-processors. Continue keep without nesting.
 
 ```css
-/* Good */
+/* Bom */
 .nav-item { ... }
 
-/* Bad */
+/* Ruim */
 .navbar {
   .nav {
     .nav-item {
@@ -643,10 +643,10 @@ Warning with nesting rules of pre-processors. Continue keep without nesting.
 Provide generic names with variables.
 
 ```css
-/* Good */
+/* Bom */
 @brand-primary: #049cdb;
 
-/* Bad */
+/* Ruim */
 @color-blue: #049cdb;
 ```
 
