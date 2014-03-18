@@ -45,7 +45,7 @@ A principal influencia das regras de HTML é o [Code Guide by @mdo](https://gith
 
 1. [HTML Sintaxe] (#html-syntax)
 1. [HTML Comentários] (#html-comments)
-1. [HTML Encoding de Caractéres] (#html-encoding)
+1. [HTML Encoding de Caracteres] (#html-encoding)
 1. [HTML Ordem dos Atributos] (#html-attribute-order)
 1. [HTML Performance] (#html-performance)
 1. [HTML Código Base] (#html-base)
@@ -132,9 +132,9 @@ Siga esta regra para adicionar comentários no HTML
 ```
 
 <a name="html-encoding"></a>
-### 2.3. HTML Encoding de Caractéres
+### 2.3. HTML Encoding de Caracteres
 
-Sempre use UTF-8 para encoding de caractéres.
+Sempre use UTF-8 para encoding de caracteres.
 
 ```html
 <head>
@@ -459,7 +459,7 @@ Mantenha as classes em caixa-baixa e use hífen para separar os nomes.
 .nav_item { ... }
 ```
 
-Hifens servem como uma transação natural entre classes relacionadas. O primeiro nome deve ser baseado no parente imediato da classe que deseja criar.
+Hífens servem como uma transação natural entre classes relacionadas. O primeiro nome deve ser baseado no parente imediato da classe que deseja criar.
 
 ```css
 /* Bom */
