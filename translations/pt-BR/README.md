@@ -490,7 +490,7 @@ Evite usar nomes muito curtos e sempre use nomes relacionados com a função da 
 <a name="css-performance"></a>
 ### 3.4. CSS Performance
 
-Never use IDs.
+Nunca use IDs.
 
 ```css
 /* Bom */
@@ -502,7 +502,7 @@ Never use IDs.
 #section { ... }
 ```
 
-Do not use selectors standards for not generic rules, always preferably for class.
+Não use seletores padrões para regras genéricas. Sempre use classes.
 
 ```css
 /* Bom */
@@ -516,7 +516,7 @@ header
 section
 ```
 
-Avoid nesting elements, the preference is always to use classes.
+Evite elementos aninhados. A preferência é sempre para o uso de classes.
 
 ```css
 /* Bom */
@@ -531,7 +531,7 @@ Avoid nesting elements, the preference is always to use classes.
 .navbar ul li a { ... }
 ```
 
-Nest only when need change the class comportament with interference for other class. Keep the nested on max of three elements.
+Aninhe somente quando precisar alterar o comportamento de uma classe por interferência de outra. Mantenha um limite de três elementos aninhados.
 
 ```css
 /* Bom */
@@ -543,7 +543,8 @@ Nest only when need change the class comportament with interference for other cl
 .progress.active .progress-bar .progress-item span { ... }
 ```
 
-Always minify the CSS code. Task builders like [Grunt](http://gruntjs.com/) leaves this easier.
+Sempre minifique o código CSS.
+Always minify the CSS code. Automatizadores de tarefas como o [Grunt](http://gruntjs.com/) tornam isso muito mais fácil.
 
 ```css
 <!-- Bom -->
