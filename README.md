@@ -448,7 +448,7 @@ The declarations should be added in alphabetical order.
 <a name="css-class-name"></a>
 ### 3.3. CSS Class Name
 
-Keep classes lowercase and use dashes.
+Keep class lowercase and use dashes.
 
 ```css
 /* Good */
@@ -459,7 +459,7 @@ Keep classes lowercase and use dashes.
 .nav_item { ... }
 ```
 
-Dashes serve as natural breaks in related class. Prefix classes based on the closest parent or base class.
+Dashes serve as natural breaks in related class. Prefix class based on the closest parent or base class.
 
 ```css
 /* Good */
@@ -516,7 +516,7 @@ header
 section
 ```
 
-Avoid nesting elements, the preference is always to use classes.
+Avoid nesting elements, the preference is always to use class.
 
 ```css
 /* Good */

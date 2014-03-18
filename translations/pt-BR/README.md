@@ -446,9 +446,9 @@ As declarações devem ser adicionadas em ordem alfabética.
 ```
 
 <a name="css-class-name"></a>
-### 3.3. CSS Class Name
+### 3.3. CSS Nome das Classes
 
-Keep classes lowercase and use dashes.
+Mantenha as classes em caixa-baixa e use hífen para separar os nomes.
 
 ```css
 /* Bom */
@@ -459,7 +459,7 @@ Keep classes lowercase and use dashes.
 .nav_item { ... }
 ```
 
-Dashes serve as natural breaks in related class. Prefix classes based on the closest parent or base class.
+Hífens servem como uma transação natural entre classes relacionadas. O primeiro nome deve ser baseado no parente imediato da classe que deseja criar.
 
 ```css
 /* Bom */
@@ -473,7 +473,7 @@ Dashes serve as natural breaks in related class. Prefix classes based on the clo
 .link-nav { ... }
 ```
 
-Avoid giving too short names for class and always choose meaningful names that provide the class function.
+Evite usar nomes muito curtos e sempre use nomes relacionados com a função da classe.
 
 ```css
 /* Bom */
