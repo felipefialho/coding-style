@@ -733,7 +733,7 @@ if ( true ) {
   ...
 }
 
-// Good
+// Bad
 if ( true ) {
   ...
 }
