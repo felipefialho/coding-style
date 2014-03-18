@@ -47,16 +47,13 @@
 <a name="summary" class="anchor" href="#summary"><span class="octicon octicon-link"></span></a>Summary</h2>
 
 <ol>
-<li>
-<a href="#commits">Commits</a> </li>
-<li>
-<a href="#html">HTML</a> </li>
-<li>
-<a href="#css">CSS</a> </li>
-<li>
-<a href="#js">Javascript</a> </li>
-<li><a href="#license">License</a></li>
+<li><a href="#commits">Commits</a></li>
+<li><a href="#html">HTML</a></li>
+<li><a href="#css">CSS</a></li>
+<li><a href="#js">Javascript</a></li>
 <li><a href="#references">References</a></li>
+<li><a href="#translations">Translations</a></li>
+<li><a href="#license">License</a></li>
 </ol><p><a name="commits"></a></p>
 
 <h2>
@@ -84,20 +81,18 @@
 <a name="html-summary" class="anchor" href="#html-summary"><span class="octicon octicon-link"></span></a>HTML Summary</h3>
 
 <ol>
-<li>
-<a href="#html-syntax">HTML Syntax</a> </li>
+<li><a href="#html-syntax">HTML Syntax</a></li>
 <li><a href="#html-comments">HTML Comments</a></li>
-<li><a href="#html-encoding">Character Encoding</a></li>
-<li><a href="#html-attribute-order">Attribute Order</a></li>
-<li>
-<a href="#html-performance">HTML Performance</a> </li>
+<li><a href="#html-encoding">HTML Character Encoding</a></li>
+<li><a href="#html-attribute-order">HTML Attribute Order</a></li>
+<li><a href="#html-performance">HTML Performance</a></li>
 <li><a href="#html-base">HTML Base Code</a></li>
 </ol><p><a name="html-syntax"></a></p>
 
 <h3>
 <a name="21-html-syntax" class="anchor" href="#21-html-syntax"><span class="octicon octicon-link"></span></a>2.1. HTML Syntax</h3>
 
-<p>Use soft tabs with two spaces. You can configure your editor for this. </p>
+<p>Use soft tabs with two spaces. You can configure your editor for this.</p>
 
 <div class="highlight highlight-html"><pre><span class="c">&lt;!-- Good --&gt;</span>
 <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"nav"</span><span class="nt">&gt;</span>
@@ -138,11 +133,11 @@
   <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
   <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
   <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
-<span class="nt">&lt;/ul&gt;</span> 
+<span class="nt">&lt;/ul&gt;</span>
 
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tab-content"</span><span class="nt">&gt;</span>
   ...
-<span class="nt">&lt;/div&gt;</span>  
+<span class="nt">&lt;/div&gt;</span>
 
 <span class="c">&lt;!-- Bad--&gt;</span>
 <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav-tabs"</span><span class="nt">&gt;</span>
@@ -155,10 +150,10 @@
 
   <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
 
-<span class="nt">&lt;/ul&gt;</span> 
+<span class="nt">&lt;/ul&gt;</span>
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tab-content"</span><span class="nt">&gt;</span>
   ...
-<span class="nt">&lt;/div&gt;</span>  
+<span class="nt">&lt;/div&gt;</span>
 </pre></div>
 
 <p><a name="html-comments"></a></p>
@@ -175,7 +170,7 @@
 <p><a name="html-encoding"></a></p>
 
 <h3>
-<a name="23-character-encoding" class="anchor" href="#23-character-encoding"><span class="octicon octicon-link"></span></a>2.3. Character Encoding</h3>
+<a name="23-html-character-encoding" class="anchor" href="#23-html-character-encoding"><span class="octicon octicon-link"></span></a>2.3. HTML Character Encoding</h3>
 
 <p>Always use UTF-8 for character encoding.</p>
 
@@ -206,7 +201,7 @@
 <li>
 <code>aria-*</code>, <code>role</code>
 </li>
-</ol><div class="highlight highlight-html"><pre><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"..."</span> <span class="na">id=</span><span class="s">"..."</span> <span class="na">data-modal=</span><span class="s">"toggle"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span> 
+</ol><div class="highlight highlight-html"><pre><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"..."</span> <span class="na">id=</span><span class="s">"..."</span> <span class="na">data-modal=</span><span class="s">"toggle"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
 
 <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
 
@@ -222,7 +217,7 @@
 
 <div class="highlight highlight-html"><pre><span class="c">&lt;!-- Good --&gt;</span>
 <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"assets/css/style.css"</span> <span class="nt">/&gt;</span>
-<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"scripts.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span> 
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"scripts.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
 
 <span class="c">&lt;!-- Bad --&gt;</span>
 <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"scripts.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
@@ -276,13 +271,10 @@
 <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width"</span><span class="nt">&gt;</span>
 
 <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"shortcut icon"</span> <span class="na">href=</span><span class="s">"assets/img/ico/favicon.ico"</span> <span class="nt">/&gt;</span>
-
-<span class="c">&lt;!-- SVG Logo --&gt;</span> 
 <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"logo"</span> <span class="na">type=</span><span class="s">"image/svg"</span> <span class="na">href=</span><span class="s">"../assets/img/logo/logo.svg"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"assets/css/style.css"</span> <span class="nt">/&gt;</span>
 
 <span class="nt">&lt;title&gt;&lt;/title&gt;</span>
-
-<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"assets/css/style.css"</span> <span class="nt">/&gt;</span>
 
 <span class="nt">&lt;/head&gt;</span>
 <span class="nt">&lt;body&gt;</span>
@@ -294,7 +286,7 @@
 <span class="nt">&lt;/html&gt;</span>
 </pre></div>
 
-<p>For give support a olds Internet Explorer... </p>
+<p>For give support a olds Internet Explorer...</p>
 
 <div class="highlight highlight-html"><pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="c">&lt;!--[if IE]&gt;&lt;![endif]--&gt;</span>
@@ -317,22 +309,19 @@
 <a name="css-summary" class="anchor" href="#css-summary"><span class="octicon octicon-link"></span></a>CSS Summary</h3>
 
 <ol>
-<li>
-<a href="#css-syntax">CSS Syntax</a> </li>
+<li><a href="#css-syntax">CSS Syntax</a></li>
 <li><a href="#css-order">CSS Declaration Order</a></li>
-<li>
-<a href="#css-class-name">CSS Class Name</a> </li>
+<li><a href="#css-class-name">CSS Class Name</a></li>
 <li><a href="#css-performance">CSS Performance</a></li>
 <li><a href="#mobile-first-and-media-queries">Mobile First and Media Queries</a></li>
 <li><a href="#css-pre-processors">Pre-Processors</a></li>
-<li>
-<a href="#css-comments">CSS Comments</a> </li>
+<li><a href="#css-comments">CSS Comments</a></li>
 </ol><p><a name="css-syntax"></a></p>
 
 <h3>
 <a name="31-css-syntax" class="anchor" href="#31-css-syntax"><span class="octicon octicon-link"></span></a>3.1. CSS Syntax</h3>
 
-<p>Use soft tabs with two spaces. You can configure your editor for this. </p>
+<p>Use soft tabs with two spaces. You can configure your editor for this.</p>
 
 <div class="highlight highlight-css"><pre><span class="c">/* Good */</span>
 <span class="nc">.nav-item</span> <span class="p">{</span>
@@ -451,7 +440,7 @@
 <span class="p">}</span>
 </pre></div>
 
-<p>Use lowercase and shorthand hex values and avoid specifying units is zero-values.</p>
+<p>Use lowercase, shorthand hex values and avoid specifying units is zero-values.</p>
 
 <div class="highlight highlight-css"><pre><span class="c">/* Good */</span>
 <span class="nc">.selector-1</span> <span class="p">{</span>
@@ -463,7 +452,7 @@
 <span class="nc">.selector-1</span> <span class="p">{</span>
   <span class="k">color</span><span class="o">:</span> <span class="m">#AAAAAA</span><span class="p">;</span>
   <span class="k">margin</span><span class="o">:</span> <span class="m">0px</span><span class="p">;</span>
-<span class="p">}</span> 
+<span class="p">}</span>
 </pre></div>
 
 <p><a name="css-order"></a></p>
@@ -481,13 +470,13 @@
   <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
   <span class="k">height</span><span class="o">:</span> <span class="m">200px</span><span class="p">;</span>
   <span class="k">margin</span><span class="o">:</span> <span class="m">5px</span><span class="p">;</span>
-  <span class="k">padding</span><span class="o">:</span> <span class="m">5px</span><span class="p">;</span> 
+  <span class="k">padding</span><span class="o">:</span> <span class="m">5px</span><span class="p">;</span>
   <span class="k">width</span><span class="o">:</span> <span class="m">200px</span><span class="p">;</span>
 <span class="p">}</span>
 
 <span class="c">/* Bad */</span>
 <span class="nc">.selector-1</span> <span class="p">{</span>
-  <span class="k">padding</span><span class="o">:</span> <span class="m">5px</span><span class="p">;</span> 
+  <span class="k">padding</span><span class="o">:</span> <span class="m">5px</span><span class="p">;</span>
   <span class="k">height</span><span class="o">:</span> <span class="m">200px</span><span class="p">;</span>
   <span class="k">background</span><span class="o">:</span> <span class="m">#fff</span><span class="p">;</span>
   <span class="k">margin</span><span class="o">:</span> <span class="m">5px</span><span class="p">;</span>
@@ -495,7 +484,7 @@
   <span class="k">color</span><span class="o">:</span> <span class="m">#333</span><span class="p">;</span>
   <span class="k">border</span><span class="o">:</span> <span class="m">#333</span> <span class="k">solid</span> <span class="m">1px</span><span class="p">;</span>
   <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
-<span class="p">}</span> 
+<span class="p">}</span>
 </pre></div>
 
 <p><a name="css-class-name"></a></p>
@@ -503,7 +492,7 @@
 <h3>
 <a name="33-css-class-name" class="anchor" href="#33-css-class-name"><span class="octicon octicon-link"></span></a>3.3. CSS Class Name</h3>
 
-<p>Keep classes lowercase and use dashes.</p>
+<p>Keep class lowercase and use dashes.</p>
 
 <div class="highlight highlight-css"><pre><span class="c">/* Good */</span>
 <span class="nc">.nav-item</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
@@ -513,7 +502,7 @@
 <span class="nc">.nav_item</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
 </pre></div>
 
-<p>Dashes serve as natural breaks in related class. Prefix classes based on the closest parent or base class.</p>
+<p>Dashes serve as natural breaks in related class. Prefix class based on the closest parent or base class.</p>
 
 <div class="highlight highlight-css"><pre><span class="c">/* Good */</span>
 <span class="nc">.navbar</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
@@ -521,7 +510,7 @@
 <span class="nc">.nav-item</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
 <span class="nc">.nav-link</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
 
-<span class="c">/* Bad */</span>  
+<span class="c">/* Bad */</span>
 <span class="nc">.item-nav</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
 <span class="nc">.link-nav</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
 </pre></div>
@@ -533,7 +522,7 @@
 <span class="nc">.page-header</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
 <span class="nc">.progress-bar</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
 
-<span class="c">/* Bad */</span>  
+<span class="c">/* Bad */</span>
 <span class="nc">.s</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
 <span class="nc">.ph</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
 <span class="nc">.block</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
@@ -550,7 +539,7 @@
 <span class="nc">.header</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
 <span class="nc">.section</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
 
-<span class="c">/* Bad */</span>  
+<span class="c">/* Bad */</span>
 <span class="nf">#header</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
 <span class="nf">#section</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
 </pre></div>
@@ -562,13 +551,13 @@
 <span class="nc">.header</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
 <span class="nc">.section</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
 
-<span class="c">/* Bad */</span>  
+<span class="c">/* Bad */</span>
 <span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="s2">"text"</span><span class="o">]</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
 <span class="nt">header</span>
 <span class="nt">section</span>
 </pre></div>
 
-<p>Avoid nesting elements, the preference is always to use classes.</p>
+<p>Avoid nesting elements, the preference is always to use class.</p>
 
 <div class="highlight highlight-css"><pre><span class="c">/* Good */</span>
 <span class="nc">.navbar</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
@@ -593,6 +582,20 @@
 <span class="nc">.progress.active</span> <span class="nc">.progress-bar</span> <span class="nc">.progress-item</span> <span class="nt">span</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
 </pre></div>
 
+<p>Always minify the CSS code. Task builders like <a href="http://gruntjs.com/">Grunt</a> leaves this easier.</p>
+
+<div class="highlight highlight-css"><pre><span class="o">&lt;!</span><span class="nt">--</span> <span class="nt">Good</span> <span class="nt">--</span><span class="o">&gt;</span>
+<span class="nc">.navbar</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span><span class="nc">.nav</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span><span class="nc">.nav-item</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span><span class="nc">.nav-link</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+
+<span class="o">&lt;!</span><span class="nt">--</span> <span class="nt">Bad</span> <span class="nt">--</span><span class="o">&gt;</span>
+<span class="nc">.nav-item</span> <span class="p">{</span>
+  <span class="o">...</span>
+<span class="p">}</span>
+<span class="nc">.nav-link</span> <span class="p">{</span>
+  <span class="o">...</span>
+<span class="p">}</span>
+</pre></div>
+
 <p><a name="mobile-first-and-media-queries"></a></p>
 
 <h3>
@@ -613,35 +616,35 @@
 
 <span class="k">@media</span> <span class="o">(</span><span class="nt">min-width</span><span class="o">:</span> <span class="nt">768px</span><span class="o">)</span> <span class="p">{</span>
   <span class="nc">.navbar</span> <span class="p">{</span>
-    <span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span> 
-    <span class="k">top</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> 
-    <span class="k">left</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> 
+    <span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span>
+    <span class="k">top</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="k">left</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
   <span class="p">}</span>
 <span class="p">}</span>
 
 <span class="k">@media</span> <span class="o">(</span><span class="nt">min-width</span><span class="o">:</span> <span class="nt">992px</span><span class="o">)</span> <span class="p">{</span>
   <span class="nc">.navbar</span> <span class="p">{</span>
-    <span class="k">position</span><span class="o">:</span> <span class="k">fixed</span><span class="p">;</span> 
+    <span class="k">position</span><span class="o">:</span> <span class="k">fixed</span><span class="p">;</span>
   <span class="p">}</span>
 <span class="p">}</span>
 
 <span class="c">/* Bad */</span>
 <span class="nc">.navbar</span> <span class="p">{</span>
   <span class="k">position</span><span class="o">:</span> <span class="k">fixed</span><span class="p">;</span>
-  <span class="k">top</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> 
+  <span class="k">top</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
   <span class="k">left</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
 <span class="p">}</span>
 
 <span class="k">@media</span> <span class="o">(</span><span class="nt">max-width</span><span class="o">:</span> <span class="nt">767px</span><span class="o">)</span> <span class="p">{</span>
   <span class="nc">.navbar</span> <span class="p">{</span>
-    <span class="k">position</span><span class="o">:</span> <span class="k">static</span><span class="p">;</span> 
+    <span class="k">position</span><span class="o">:</span> <span class="k">static</span><span class="p">;</span>
     <span class="k">padding</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
   <span class="p">}</span>
 <span class="p">}</span>
 
 </pre></div>
 
-<p>Keep the media queries as close to their relevant rule sets whenever possible. Don't bundle them all in a separate stylesheet or at the end of the document. </p>
+<p>Keep the media queries as close to their relevant rule sets whenever possible. Don't bundle them all in a separate stylesheet or at the end of the document.</p>
 
 <div class="highlight highlight-css"><pre><span class="nc">.navbar</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
 <span class="nc">.nav</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
@@ -667,16 +670,16 @@
 <span class="nc">.nav-item</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
 
 <span class="c">/* Bad */</span>
-<span class="nc">.navbar</span> <span class="p">{</span> 
-  <span class="o">.</span><span class="n">nav</span> <span class="err">{</span> 
-    <span class="o">.</span><span class="n">nav</span><span class="o">-</span><span class="n">item</span> <span class="err">{</span> 
-      <span class="o">...</span> 
+<span class="nc">.navbar</span> <span class="p">{</span>
+  <span class="o">.</span><span class="n">nav</span> <span class="err">{</span>
+    <span class="o">.</span><span class="n">nav</span><span class="o">-</span><span class="n">item</span> <span class="err">{</span>
+      <span class="o">...</span>
     <span class="p">}</span>
   <span class="err">}</span>
-<span class="err">}</span> 
+<span class="err">}</span>
 </pre></div>
 
-<p>Provide generic names with variables.</p>
+<p>Provide generic names for variables.</p>
 
 <div class="highlight highlight-css"><pre><span class="c">/* Good */</span>
 <span class="k">@brand-primary</span><span class="o">:</span> <span class="nf">#049cdb</span><span class="p">;</span>
@@ -701,10 +704,10 @@
 
 <span class="c1">//</span>
 <span class="c1">// Commentary block</span>
-<span class="c1">// </span>
+<span class="c1">//</span>
 <span class="c1">//</span>
 
-<span class="c1">// Commentary</span>
+<span class="c1">// Simple commentary</span>
 </pre></div>
 
 <p><a name="js"></a></p>
@@ -721,12 +724,18 @@
 <li><a href="https://github.com/mdo/code-guide">Code Guide by @mdo</a></li>
 <li><a href="https://github.com/necolas/idiomatic-css/">idiomatic CSS</a></li>
 <li><a href="https://github.com/rwldrn/idiomatic.js/">idiomatic.js</a></li>
-<li>
-<a href="https://github.com/zenorocha/my-coding-style/">Zeno Rocha Coding Style</a> </li>
+<li><a href="https://github.com/zenorocha/my-coding-style/">Zeno Rocha Coding Style</a></li>
+</ul><p><a name="translations"></a></p>
+
+<h2>
+<a name="6-translations" class="anchor" href="#6-translations"><span class="octicon octicon-link"></span></a>6. Translations</h2>
+
+<ul>
+<li><a href="/translations/pt-BR/">Português (Brasil)</a></li>
 </ul><p><a name="license"></a></p>
 
 <h2>
-<a name="6-license" class="anchor" href="#6-license"><span class="octicon octicon-link"></span></a>6. License</h2>
+<a name="7-license" class="anchor" href="#7-license"><span class="octicon octicon-link"></span></a>7. License</h2>
 
 <p><a href="http://felipefialho.mit-license.org/">MIT License</a> © Luiz Felipe Tartarotti Fialho</p>
         </section>
