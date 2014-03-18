@@ -682,6 +682,7 @@ Todos os comentários devem ser feitos usando a sintaxe do pré-processador em u
 * [idiomatic CSS](https://github.com/necolas/idiomatic-css/)
 * [idiomatic.js](https://github.com/rwldrn/idiomatic.js/)
 * [Zeno Rocha Coding Style](https://github.com/zenorocha/my-coding-style/)
+* [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
 
 <a name="translations"></a>
 ## 6. Traduções
