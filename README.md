@@ -674,11 +674,68 @@ All comments must be made using the syntax of the preprocessor in use.
 <a name="js"></a>
 ## 4. Javascript
 
+The main influences for the javascript rules are [idiomatic.js](https://github.com/rwldrn/idiomatic.js/) and [Zeno Rocha Coding Style](https://github.com/zenorocha/my-coding-style/).
+
 ### Javascript Summary
 
 1. [Javascript Syntax] (#js-syntax)
 1. [Javascript Performance] (#js-performance)
 1. [Javascript Comments] (#js-comments)
+
+<a name="js-syntax"></a>
+### 4.1. Javascript Syntax
+
+Use soft tabs with two spaces. You can configure your editor for this.
+
+```js
+// Good
+while (condition) {
+  statements
+}
+
+// Bad
+while (condition) {
+    statements
+}
+```
+
+Always use semicolons.
+
+```js
+// Good
+var me = $(this);
+test();
+
+// Bad
+var me = $(this)
+test()
+```
+
+All variables should be declared before used.
+
+```js
+// Good
+var me = $(this);
+var noteClick = me.attr('data-note');
+notes[noteClick].play();
+
+// Bad
+notes[noteClick].play();
+var me = $(this);
+var noteClick = me.attr('data-note');
+```
+
+Always use single quotes.
+
+```js
+// Good
+var string = '<p class="foo">Lorem Ipsum</p>';
+var noteClick = me.attr('data-note');
+
+// Bad
+var string = "<p class='foo'>Lorem Ipsum</p>";
+var noteClick = me.attr("data-note");
+```
 
 <a name="references"></a>
 ## 5. References
