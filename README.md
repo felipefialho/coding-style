@@ -711,20 +711,6 @@ var me = $(this)
 test()
 ```
 
-All variables should be declared before used.
-
-```js
-// Good
-var me = $(this);
-var noteClick = me.attr('data-note');
-notes[noteClick].play();
-
-// Bad
-notes[noteClick].play();
-var me = $(this);
-var noteClick = me.attr('data-note');
-```
-
 Always use single quotes.
 
 ```js
@@ -769,6 +755,88 @@ for (i=0;i<10;i++) {
   ...
 }
 ```
+
+Never add a space between the keyword function and the function name.
+
+```js
+// Good
+foo(function() {
+  ...
+});
+
+// Bad
+foo ( function () {
+  ...
+});
+```
+
+Add spaces outside parentheses `()` but avoid it inside.
+
+```js
+// Good
+if (condition) {
+  statement
+}
+
+// Bad
+if( condition ){
+  statement
+}
+```
+
+For conditionals always use curly brackets `{}`
+
+```js
+// Good
+if (condition) {
+  statement
+} else if (condition) {
+  statement
+} else {
+  statement
+}
+
+// Bad
+if (condition) statement;
+else if (condition) statement;
+else statement;
+```
+
+For strict equality checks `===` should be used in favor of `==`
+
+```js
+// Good
+if (foo === 'foo') {
+  statement
+}
+
+// Bad
+if (foo == 'foo') {
+  statement
+}
+```
+
+
+<a name="js-performance"></a>
+### 4.2. Javascript Performance
+
+All variables should be declared before used.
+
+```js
+// Good
+var me = $(this);
+var noteClick = me.attr('data-note');
+notes[noteClick].play();
+
+// Bad
+notes[noteClick].play();
+var me = $(this);
+var noteClick = me.attr('data-note');
+```
+
+Use [JSHint](http://www.jshint.com/) to detect errors and potential problems.
+
+Always minify and concat the javascript code. Task builders like [Grunt](http://gruntjs.com/) leaves this easier.
 
 <a name="references"></a>
 ## 5. References
