@@ -674,6 +674,12 @@ All comments must be made using the syntax of the preprocessor in use.
 <a name="js"></a>
 ## 4. Javascript
 
+### Javascript Summary
+
+1. [Javascript Syntax] (#js-syntax)
+1. [Javascript Performance] (#js-performance)
+1. [Javascript Comments] (#js-comments)
+
 <a name="references"></a>
 ## 5. References
 
