@@ -415,9 +415,9 @@ Use caixa-baixa, valores hexadecimais reduzidos e não especifique unidades quan
 ```
 
 <a name="css-order"></a>
-### 3.2. CSS Declaration Order
+### 3.2. CSS Ordem de Declaração
 
-The declarations should be added in alphabetical order.
+As declarações devem ser adicionadas em ordem alfabética.
 
 ```css
 /* Bom */
