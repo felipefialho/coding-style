@@ -737,6 +737,25 @@ var string = "<p class='foo'>Lorem Ipsum</p>";
 var noteClick = me.attr("data-note");
 ```
 
+Keep `else` in the same line of closure of the `if`
+
+```js
+// Good
+if ( true ) {
+  ...
+} else {
+  ...
+}
+
+// Good
+if ( true ) {
+  ...
+}
+else {
+  ...
+}
+```
+
 <a name="references"></a>
 ## 5. References
 
