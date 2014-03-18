@@ -621,11 +621,11 @@ Mantenha os media queries o mais próximo possível da regra que deseja alterar.
 ```
 
 <a name="css-pre-processors"></a>
-### 3.6. Pre-Processors
+### 3.6. Pré-Processores
 
-I use pre-processors in all projects. Today I use `LESS`.
+Eu uso pré-processadores em todos os projetos. Atualmente estou usando `LESS`.
 
-Warning with nesting rules of pre-processors. Continue keep without nesting.
+Cuidado com a facilidade de aninhar elementos com os pré-processadores. Continue evitando aninhamentos.
 
 ```css
 /* Bom */
@@ -641,7 +641,7 @@ Warning with nesting rules of pre-processors. Continue keep without nesting.
 }
 ```
 
-Provide generic names with variables.
+Forneça nomes genéricos para as variaveis.
 
 ```css
 /* Bom */
