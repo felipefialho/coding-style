@@ -459,7 +459,7 @@ Mantenha as classes em caixa-baixa e use hífen para separar os nomes.
 .nav_item { ... }
 ```
 
-Hífens servem como uma transação natural entre classes relacionadas. O primeiro nome deve ser baseado no parente imediato da classe que deseja criar.
+Hífens servem como uma transição natural entre classes relacionadas. O primeiro nome deve ser baseado no parente imediato da classe que deseja criar.
 
 ```css
 /* Bom */
