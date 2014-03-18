@@ -240,7 +240,7 @@ O código a seguir é uma base em HTML para iniciar rápidamente os projetos.
 </html>
 ```
 
-For give support a olds Internet Explorer...
+Para fornecer suporte para versões antigas do Internet Explorer...
 
 ```html
 <!DOCTYPE html>
