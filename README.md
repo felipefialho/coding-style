@@ -756,6 +756,20 @@ else {
 }
 ```
 
+Add spaces between operators
+
+```js
+// Good
+for (i = 0; i < 10; i++) {
+  ...
+}
+
+// Bad
+for (i=0;i<10;i++) {
+  ...
+}
+```
+
 <a name="references"></a>
 ## 5. References
 
