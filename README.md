@@ -679,6 +679,7 @@ The main influences for the javascript rules are [idiomatic.js](https://github.c
 ### Javascript Summary
 
 1. [Javascript Syntax] (#js-syntax)
+1. [Javascript Variables] (#js-variables)
 1. [Javascript Performance] (#js-performance)
 1. [Javascript Comments] (#js-comments)
 
@@ -816,9 +817,8 @@ if (foo == 'foo') {
 }
 ```
 
-
-<a name="js-performance"></a>
-### 4.2. Javascript Performance
+<a name="js-variables"></a>
+### 4.2. Javascript Variables
 
 All variables should be declared before used.
 
@@ -833,6 +833,19 @@ notes[noteClick].play();
 var me = $(this);
 var noteClick = me.attr('data-note');
 ```
+
+Always use var to declare variables.
+
+```js
+// Good
+var me = $(this);
+
+// Bad
+me = $(this);
+```
+
+<a name="js-performance"></a>
+### 4.3. Javascript Performance
 
 Use [JSHint](http://www.jshint.com/) to detect errors and potential problems.
 
