@@ -459,7 +459,7 @@ Mantenha as classes em caixa-baixa e use hífen para separar os nomes.
 .nav_item { ... }
 ```
 
-Hífens servem como uma transação natural entre classes relacionadas. O primeiro nome deve ser baseado no parente imediato da classe que deseja criar.
+Hifens servem como uma transação natural entre classes relacionadas. O primeiro nome deve ser baseado no parente imediato da classe que deseja criar.
 
 ```css
 /* Bom */
@@ -562,7 +562,7 @@ Always minify the CSS code. Automatizadores de tarefas como o [Grunt](http://gru
 <a name="mobile-first-and-media-queries"></a>
 ### 3.5 Mobile First and Media Queries
 
-Start the development with generic rules with and add media queries with mobile first.
+Comece o desenvolvimento usando regras genéricas e adiciona media queries começando com mobile. Compartilho um artigo com mais informações, [CSS Modular com Mobile First](http://www.felipefialho.com/blog/2014/css-modular-com-mobile-first/).
 
 ```css
 /* Bom */
@@ -606,7 +606,7 @@ Start the development with generic rules with and add media queries with mobile 
 
 ```
 
-Keep the media queries as close to their relevant rule sets whenever possible. Don't bundle them all in a separate stylesheet or at the end of the document.
+Mantenha os media queries o mais próximo possível da regra que deseja alterar. Não coloque em documentos separados ou no fim do stylesheet.
 
 ```css
 .navbar { ... }
