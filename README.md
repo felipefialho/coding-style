@@ -668,7 +668,7 @@ All comments must be made using the syntax of the preprocessor in use.
 //
 //
 
-// Commentary
+// Simple commentary
 ```
 
 <a name="js"></a>

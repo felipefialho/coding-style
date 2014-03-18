@@ -652,24 +652,24 @@ Forneça nomes genéricos para as variaveis.
 ```
 
 <a name="css-comments"></a>
-### 3.7. CSS Comments
+### 3.7. CSS Comentários
 
-All comments must be made using the syntax of the preprocessor in use.
+Todos os comentários devem ser feitos usando a sintaxe do pré-processador em uso.
 
 ```js
 //
-// Section
+// Seção
 // --------------------------------------------------
 
-// Sub-section
+// Sub-seção
 // --------------------------------------------------
 
 //
-// Commentary block
+// Bloco de comentário
 //
 //
 
-// Commentary
+// Comentário simples
 ```
 
 <a name="js"></a>
