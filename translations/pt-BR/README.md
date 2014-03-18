@@ -271,7 +271,7 @@ A principal influencia para as regras de CSS são o [Code Guide by @mdo](https:/
 <a name="css-syntax"></a>
 ### 3.1. CSS Sintaxe
 
-Use soft tabs with two spaces. You can configure your editor for this.
+Use soft-tabs com dois espaços. Você pode configurar o seu editor dessa forma.
 
 ```css
 /* Bom */
@@ -287,7 +287,7 @@ Use soft tabs with two spaces. You can configure your editor for this.
 }
 ```
 
-Always use double quotes.
+Sempre use aspas duplas.
 
 ```css
 /* Bom */
@@ -307,7 +307,7 @@ Always use double quotes.
 }
 ```
 
-Include a single space before the opening brace of a ruleset.
+Inclua um espaço antes de abrir o `}` da regra.
 
 ```css
 /* Bom */
@@ -321,7 +321,7 @@ Include a single space before the opening brace of a ruleset.
 }
 ```
 
-Include a single space after the colon of a declaration.
+Inclua um espaço depois do `:` da declaração.
 
 ```css
 /* Bom */
@@ -335,7 +335,7 @@ Include a single space after the colon of a declaration.
 }
 ```
 
-Include a semi-colon at the end of the last declaration in a declaration block.
+Inclua um `;` no fim da declaração.
 
 ```css
 /* Bom */
@@ -349,7 +349,7 @@ Include a semi-colon at the end of the last declaration in a declaration block.
 }
 ```
 
-Keep one declaration per line.
+Mantenha uma declaração por linha.
 
 ```css
 /* Bom */
@@ -365,7 +365,7 @@ Keep one declaration per line.
 }
 ```
 
-Single declarations should remain in one line.
+Declarações únicas devem ficar em uma linha.
 
 ```css
 /* Bom */
@@ -377,7 +377,7 @@ Single declarations should remain in one line.
 }
 ```
 
-Separate each ruleset by a blank line.
+Separe as regras por uma linha em branco.
 
 ```css
 /* Bom */
@@ -398,7 +398,7 @@ Separate each ruleset by a blank line.
 }
 ```
 
-Use lowercase and shorthand hex values and avoid specifying units is zero-values.
+Use caixa-baixa, valores hexadecimais reduzidos e não especifique unidades quando o valor é zero.
 
 ```css
 /* Bom */

@@ -398,7 +398,7 @@ Separate each ruleset by a blank line.
 }
 ```
 
-Use lowercase and shorthand hex values and avoid specifying units is zero-values.
+Use lowercase, shorthand hex values and avoid specifying units is zero-values.
 
 ```css
 /* Good */
