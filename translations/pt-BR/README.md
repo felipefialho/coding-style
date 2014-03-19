@@ -543,8 +543,7 @@ Aninhe somente quando precisar alterar o comportamento de uma classe por interfe
 .progress.active .progress-bar .progress-item span { ... }
 ```
 
-Sempre minifique o código CSS.
-Always minify the CSS code. Automatizadores de tarefas como o [Grunt](http://gruntjs.com/) tornam isso muito mais fácil.
+Sempre minifique o código CSS. Automatizadores de tarefas como o [Grunt](http://gruntjs.com/) tornam isso muito mais fácil.
 
 ```css
 <!-- Bom -->
@@ -819,9 +818,9 @@ if (foo == 'foo') {
 ```
 
 <a name="js-variables"></a>
-### 4.2. Javascript Variables
+### 4.2. Javascript Variáveis
 
-All variables should be declared before used.
+Todas as variáveis devem ser declaradas antes de usar.
 
 ```js
 // Bom
@@ -835,7 +834,7 @@ var me = $(this);
 var noteClick = me.attr('data-note');
 ```
 
-Always use var to declare variables.
+Sempre use `var` para declarar uma variável.
 
 ```js
 // Bom
@@ -848,24 +847,23 @@ me = $(this);
 <a name="js-performance"></a>
 ### 4.3. Javascript Performance
 
-Use [JSHint](http://www.jshint.com/) to detect errors and potential problems.
+Use o [JSHint](http://www.jshint.com/) para detectar erros e potenciais problemas.
 
-Always minify and concat the javascript code. Task builders like [Grunt](http://gruntjs.com/) leaves this easier.
+Sempre concatene e minifique o código javascript. Automatizadores de tarefas como o [Grunt](http://gruntjs.com/) tornam isso muito mais fácil.
 
 <a name="js-comments"></a>
-### 4.4. Javascript Comments
+### 4.4. Javascript Comentários
 
-A single line above the code that is commented.
+Uma única linha acima do código que é comentado.
 
 ```js
 // Bom
-// Bom example of comment
+// Bom exemplo de comentário
 var me = $(this);
 
 // Ruim
-var me = $(this); // Ruim example of comment
+var me = $(this); // Exemplo ruim de comentário
 ```
-
 
 <a name="references"></a>
 ## 5. Referências

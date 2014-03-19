@@ -834,7 +834,7 @@ var me = $(this);
 var noteClick = me.attr('data-note');
 ```
 
-Always use var to declare variables.
+Always use `var` to declare variables.
 
 ```js
 // Good
