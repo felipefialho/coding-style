@@ -851,6 +851,20 @@ Use [JSHint](http://www.jshint.com/) to detect errors and potential problems.
 
 Always minify and concat the javascript code. Task builders like [Grunt](http://gruntjs.com/) leaves this easier.
 
+<a name="js-comments"></a>
+### 4.4. Javascript Comments
+
+A single line above the code that is commented.
+
+```js
+// Good
+// Good example of comment
+var me = $(this);
+
+// Bad
+var me = $(this); // Bad example of comment
+```
+
 <a name="references"></a>
 ## 5. References
 
