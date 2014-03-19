@@ -716,15 +716,15 @@ Always use single quotes.
 
 ```js
 // Good
-var string = '<p class="foo">Lorem Ipsum</p>';
+var string = '<p class='foo'>Lorem Ipsum</p>';
 var noteClick = me.attr('data-note');
 
 // Bad
-var string = "<p class='foo'>Lorem Ipsum</p>";
+var string = "<p class="foo">Lorem Ipsum</p>";
 var noteClick = me.attr("data-note");
 ```
 
-Keep `else` in the same line of closure of the `if`
+Keep `else` in the same line of closure of the `if`.
 
 ```js
 // Good
@@ -743,7 +743,7 @@ else {
 }
 ```
 
-Add spaces between operators
+Add spaces between operators.
 
 ```js
 // Good
@@ -785,7 +785,7 @@ if( condition ){
 }
 ```
 
-For conditionals always use curly brackets `{}`
+For conditionals always use curly brackets `{}`.
 
 ```js
 // Good
@@ -803,7 +803,7 @@ else if (condition) statement;
 else statement;
 ```
 
-For strict equality checks `===` should be used in favor of `==`
+For strict equality checks `===` should be used in favor of `==`.
 
 ```js
 // Good

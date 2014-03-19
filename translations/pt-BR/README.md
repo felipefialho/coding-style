@@ -675,6 +675,198 @@ Todos os comentários devem ser feitos usando a sintaxe do pré-processador em u
 <a name="js"></a>
 ## 4. Javascript
 
+As principais influencias para as regras de escrita em javascript são o [idiomatic.js](https://github.com/rwldrn/idiomatic.js/) e o [Zeno Rocha Coding Style](https://github.com/zenorocha/my-coding-style/).
+
+### Javascript Sumário
+
+1. [Javascript Sintaxe] (#js-syntax)
+1. [Javascript Variáveis] (#js-variables)
+1. [Javascript Performance] (#js-performance)
+1. [Javascript Comentários] (#js-comments)
+
+<a name="js-syntax"></a>
+### 4.1. Javascript Sintaxe
+
+Use soft-tabs com dois espaços. Você pode configurar o seu editor dessa forma.
+
+```js
+// Bom
+while (condition) {
+  statements
+}
+
+// Ruim
+while (condition) {
+    statements
+}
+```
+
+Sempre use `;`.
+
+```js
+// Bom
+var me = $(this);
+test();
+
+// Ruim
+var me = $(this)
+test()
+```
+
+Sempre use aspas simples.
+
+```js
+// Bom
+var string = '<p class='foo'>Lorem Ipsum</p>';
+var noteClick = me.attr('data-note');
+
+// Ruim
+var string = "<p class="foo">Lorem Ipsum</p>";
+var noteClick = me.attr("data-note");
+```
+
+Mantenha o `else` na mesma linha que fechar o `if`.
+
+```js
+// Bom
+if ( true ) {
+  ...
+} else {
+  ...
+}
+
+// Ruim
+if ( true ) {
+  ...
+}
+else {
+  ...
+}
+```
+
+Adicione espaços entre os operadores.
+
+```js
+// Bom
+for (i = 0; i < 10; i++) {
+  ...
+}
+
+// Ruim
+for (i=0;i<10;i++) {
+  ...
+}
+```
+
+Nunca adicione espaço entre a chave de função e o nome da função.
+
+```js
+// Bom
+foo(function() {
+  ...
+});
+
+// Ruim
+foo ( function () {
+  ...
+});
+```
+
+Adicione espaços fora dos `()`, mas nunca dentro deles.
+
+```js
+// Bom
+if (condition) {
+  statement
+}
+
+// Ruim
+if( condition ){
+  statement
+}
+```
+
+Para condicionais, sempre use `{}`.
+
+```js
+// Bom
+if (condition) {
+  statement
+} else if (condition) {
+  statement
+} else {
+  statement
+}
+
+// Ruim
+if (condition) statement;
+else if (condition) statement;
+else statement;
+```
+
+Para checar igualdade, use `===` ao invés de usar `==`.
+
+```js
+// Bom
+if (foo === 'foo') {
+  statement
+}
+
+// Ruim
+if (foo == 'foo') {
+  statement
+}
+```
+
+<a name="js-variables"></a>
+### 4.2. Javascript Variables
+
+All variables should be declared before used.
+
+```js
+// Bom
+var me = $(this);
+var noteClick = me.attr('data-note');
+notes[noteClick].play();
+
+// Ruim
+notes[noteClick].play();
+var me = $(this);
+var noteClick = me.attr('data-note');
+```
+
+Always use var to declare variables.
+
+```js
+// Bom
+var me = $(this);
+
+// Ruim
+me = $(this);
+```
+
+<a name="js-performance"></a>
+### 4.3. Javascript Performance
+
+Use [JSHint](http://www.jshint.com/) to detect errors and potential problems.
+
+Always minify and concat the javascript code. Task builders like [Grunt](http://gruntjs.com/) leaves this easier.
+
+<a name="js-comments"></a>
+### 4.4. Javascript Comments
+
+A single line above the code that is commented.
+
+```js
+// Bom
+// Bom example of comment
+var me = $(this);
+
+// Ruim
+var me = $(this); // Ruim example of comment
+```
+
+
 <a name="references"></a>
 ## 5. Referências
 
