@@ -5,7 +5,7 @@ Meu Estilo de Código
 
 O documento a seguir descreve as regras de escrita nas linguagens de desenvolvimento que utilizo: HTML, CSS e Javascript.
 
-A ideia desse repositório é ter um local para que eu e outros desenvolvedores que participem dos meus projetos conseguirem se informar dos padrões de códigos usados.
+A ideia desse repositório não é ser um guia de código completo. Mas sim ter um local para que eu e outros desenvolvedores que participam dos meus projetos conseguirem se informar dos padrões de códigos usados.
 
 Como este é um novo documento, algumas regras podem não ter sido aplicadas em projetos antigos.
 
