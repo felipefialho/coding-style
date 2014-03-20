@@ -37,7 +37,7 @@
 
 <p>The following document describes the rules of writing in development languages that I use: HTML, CSS and Javascript.</p>
 
-<p>The idea of this repository is to have a place for myself and other developers who participate in my projects able to inform the coding standards used.</p>
+<p>The idea of this repository is not to be a complete code guide. Only to have a place for myself and other developers who participate in my projects able to inform the coding standards used.</p>
 
 <p>As this is a new document, some rules may not have been applied in old projects.</p>
 
@@ -715,6 +715,194 @@
 <h2>
 <a name="4-javascript" class="anchor" href="#4-javascript"><span class="octicon octicon-link"></span></a>4. Javascript</h2>
 
+<p>The main influences for the javascript rules are <a href="https://github.com/rwldrn/idiomatic.js/">idiomatic.js</a> and <a href="https://github.com/zenorocha/my-coding-style/">Zeno Rocha Coding Style</a>.</p>
+
+<h3>
+<a name="javascript-summary" class="anchor" href="#javascript-summary"><span class="octicon octicon-link"></span></a>Javascript Summary</h3>
+
+<ol>
+<li><a href="#js-syntax">Javascript Syntax</a></li>
+<li><a href="#js-variables">Javascript Variables</a></li>
+<li><a href="#js-performance">Javascript Performance</a></li>
+<li><a href="#js-comments">Javascript Comments</a></li>
+</ol><p><a name="js-syntax"></a></p>
+
+<h3>
+<a name="41-javascript-syntax" class="anchor" href="#41-javascript-syntax"><span class="octicon octicon-link"></span></a>4.1. Javascript Syntax</h3>
+
+<p>Use soft tabs with two spaces. You can configure your editor for this.</p>
+
+<div class="highlight highlight-js"><pre><span class="c1">// Good</span>
+<span class="k">while</span> <span class="p">(</span><span class="nx">condition</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">statements</span>
+<span class="p">}</span>
+
+<span class="c1">// Bad</span>
+<span class="k">while</span> <span class="p">(</span><span class="nx">condition</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">statements</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>Always use semicolons.</p>
+
+<div class="highlight highlight-js"><pre><span class="c1">// Good</span>
+<span class="kd">var</span> <span class="nx">me</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+<span class="nx">test</span><span class="p">();</span>
+
+<span class="c1">// Bad</span>
+<span class="kd">var</span> <span class="nx">me</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">)</span>
+<span class="nx">test</span><span class="p">()</span>
+</pre></div>
+
+<p>Always use single quotes.</p>
+
+<div class="highlight highlight-js"><pre><span class="c1">// Good</span>
+<span class="kd">var</span> <span class="nx">string</span> <span class="o">=</span> <span class="s1">'&lt;p class='</span><span class="nx">foo</span><span class="s1">'&gt;Lorem Ipsum&lt;/p&gt;'</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">noteClick</span> <span class="o">=</span> <span class="nx">me</span><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s1">'data-note'</span><span class="p">);</span>
+
+<span class="c1">// Bad</span>
+<span class="kd">var</span> <span class="nx">string</span> <span class="o">=</span> <span class="s2">"&lt;p class="</span><span class="nx">foo</span><span class="s2">"&gt;Lorem Ipsum&lt;/p&gt;"</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">noteClick</span> <span class="o">=</span> <span class="nx">me</span><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">"data-note"</span><span class="p">);</span>
+</pre></div>
+
+<p>Keep <code>else</code> in the same line of closure of the <code>if</code>.</p>
+
+<div class="highlight highlight-js"><pre><span class="c1">// Good</span>
+<span class="k">if</span> <span class="p">(</span> <span class="kc">true</span> <span class="p">)</span> <span class="p">{</span>
+  <span class="p">...</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+  <span class="p">...</span>
+<span class="p">}</span>
+
+<span class="c1">// Bad</span>
+<span class="k">if</span> <span class="p">(</span> <span class="kc">true</span> <span class="p">)</span> <span class="p">{</span>
+  <span class="p">...</span>
+<span class="p">}</span>
+<span class="k">else</span> <span class="p">{</span>
+  <span class="p">...</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>Add spaces between operators.</p>
+
+<div class="highlight highlight-js"><pre><span class="c1">// Good</span>
+<span class="k">for</span> <span class="p">(</span><span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+  <span class="p">...</span>
+<span class="p">}</span>
+
+<span class="c1">// Bad</span>
+<span class="k">for</span> <span class="p">(</span><span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="nx">i</span><span class="o">&lt;</span><span class="mi">10</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+  <span class="p">...</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>Never add a space between the keyword function and the function name.</p>
+
+<div class="highlight highlight-js"><pre><span class="c1">// Good</span>
+<span class="nx">foo</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="p">...</span>
+<span class="p">});</span>
+
+<span class="c1">// Bad</span>
+<span class="nx">foo</span> <span class="p">(</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+  <span class="p">...</span>
+<span class="p">});</span>
+</pre></div>
+
+<p>Add spaces outside parentheses <code>()</code> but avoid it inside.</p>
+
+<div class="highlight highlight-js"><pre><span class="c1">// Good</span>
+<span class="k">if</span> <span class="p">(</span><span class="nx">condition</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">statement</span>
+<span class="p">}</span>
+
+<span class="c1">// Bad</span>
+<span class="k">if</span><span class="p">(</span> <span class="nx">condition</span> <span class="p">){</span>
+  <span class="nx">statement</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>For conditionals always use curly brackets <code>{}</code>.</p>
+
+<div class="highlight highlight-js"><pre><span class="c1">// Good</span>
+<span class="k">if</span> <span class="p">(</span><span class="nx">condition</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">statement</span>
+<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">condition</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">statement</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+  <span class="nx">statement</span>
+<span class="p">}</span>
+
+<span class="c1">// Bad</span>
+<span class="k">if</span> <span class="p">(</span><span class="nx">condition</span><span class="p">)</span> <span class="nx">statement</span><span class="p">;</span>
+<span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">condition</span><span class="p">)</span> <span class="nx">statement</span><span class="p">;</span>
+<span class="k">else</span> <span class="nx">statement</span><span class="p">;</span>
+</pre></div>
+
+<p>For strict equality checks <code>===</code> should be used in favor of <code>==</code>.</p>
+
+<div class="highlight highlight-js"><pre><span class="c1">// Good</span>
+<span class="k">if</span> <span class="p">(</span><span class="nx">foo</span> <span class="o">===</span> <span class="s1">'foo'</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">statement</span>
+<span class="p">}</span>
+
+<span class="c1">// Bad</span>
+<span class="k">if</span> <span class="p">(</span><span class="nx">foo</span> <span class="o">==</span> <span class="s1">'foo'</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">statement</span>
+<span class="p">}</span>
+</pre></div>
+
+<p><a name="js-variables"></a></p>
+
+<h3>
+<a name="42-javascript-variables" class="anchor" href="#42-javascript-variables"><span class="octicon octicon-link"></span></a>4.2. Javascript Variables</h3>
+
+<p>All variables should be declared before used.</p>
+
+<div class="highlight highlight-js"><pre><span class="c1">// Good</span>
+<span class="kd">var</span> <span class="nx">me</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">noteClick</span> <span class="o">=</span> <span class="nx">me</span><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s1">'data-note'</span><span class="p">);</span>
+<span class="nx">notes</span><span class="p">[</span><span class="nx">noteClick</span><span class="p">].</span><span class="nx">play</span><span class="p">();</span>
+
+<span class="c1">// Bad</span>
+<span class="nx">notes</span><span class="p">[</span><span class="nx">noteClick</span><span class="p">].</span><span class="nx">play</span><span class="p">();</span>
+<span class="kd">var</span> <span class="nx">me</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">noteClick</span> <span class="o">=</span> <span class="nx">me</span><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s1">'data-note'</span><span class="p">);</span>
+</pre></div>
+
+<p>Always use <code>var</code> to declare variables.</p>
+
+<div class="highlight highlight-js"><pre><span class="c1">// Good</span>
+<span class="kd">var</span> <span class="nx">me</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+
+<span class="c1">// Bad</span>
+<span class="nx">me</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+</pre></div>
+
+<p><a name="js-performance"></a></p>
+
+<h3>
+<a name="43-javascript-performance" class="anchor" href="#43-javascript-performance"><span class="octicon octicon-link"></span></a>4.3. Javascript Performance</h3>
+
+<p>Use <a href="http://www.jshint.com/">JSHint</a> to detect errors and potential problems.</p>
+
+<p>Always minify and concat the javascript code. Task builders like <a href="http://gruntjs.com/">Grunt</a> leaves this easier.</p>
+
+<p><a name="js-comments"></a></p>
+
+<h3>
+<a name="44-javascript-comments" class="anchor" href="#44-javascript-comments"><span class="octicon octicon-link"></span></a>4.4. Javascript Comments</h3>
+
+<p>A single line above the code that is commented.</p>
+
+<div class="highlight highlight-js"><pre><span class="c1">// Good</span>
+<span class="c1">// Good example of comment</span>
+<span class="kd">var</span> <span class="nx">me</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+
+<span class="c1">// Bad</span>
+<span class="kd">var</span> <span class="nx">me</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">);</span> <span class="c1">// Bad example of comment</span>
+</pre></div>
+
 <p><a name="references"></a></p>
 
 <h2>
@@ -725,6 +913,7 @@
 <li><a href="https://github.com/necolas/idiomatic-css/">idiomatic CSS</a></li>
 <li><a href="https://github.com/rwldrn/idiomatic.js/">idiomatic.js</a></li>
 <li><a href="https://github.com/zenorocha/my-coding-style/">Zeno Rocha Coding Style</a></li>
+<li><a href="https://github.com/airbnb/javascript">Airbnb JavaScript Style Guide</a></li>
 </ul><p><a name="translations"></a></p>
 
 <h2>
