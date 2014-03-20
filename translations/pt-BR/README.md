@@ -716,7 +716,7 @@ Sempre use aspas simples.
 
 ```js
 // Bom
-var string = '<p class='foo'>Lorem Ipsum</p>';
+var string = '<p class="foo">Lorem Ipsum</p>';
 var noteClick = me.attr('data-note');
 
 // Ruim

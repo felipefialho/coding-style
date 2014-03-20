@@ -716,11 +716,11 @@ Always use single quotes.
 
 ```js
 // Good
-var string = '<p class='foo'>Lorem Ipsum</p>';
+var string = '<p class="foo">Lorem Ipsum</p>';
 var noteClick = me.attr('data-note');
 
 // Bad
-var string = "<p class="foo">Lorem Ipsum</p>";
+var string = "<p class='foo'>Lorem Ipsum</p>";
 var noteClick = me.attr("data-note");
 ```
 
