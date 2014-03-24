@@ -172,7 +172,7 @@ Nos includes dos arquivos CSS e Javascript não é necessário especificar o tip
 <link rel="stylesheet" href="assets/css/style.css" />
 <script src="scripts.min.js"></script>
 
-<!-- Bad -->
+<!-- Ruim -->
 <script src="scripts.min.js"></script>
 </head>
 <body>
@@ -185,7 +185,7 @@ Para uma melhor performance, todos os arquivos javascripts devem estar antes de 
 <script src="scripts.min.js"></script>
 </body>
 
-<!-- Bad -->
+<!-- Ruim -->
 <script src="scripts.min.js"></script>
 </head>
 <body>
@@ -197,7 +197,7 @@ Quando o projeto usar apenas HTML, sempre minifique o código. Automatizadores d
 <!-- Bom -->
 <html><head>...</head><body><div class="container">...</div></body></html>
 
-<!-- Bad -->
+<!-- Ruim -->
 <html>
   <head>
     ...
@@ -549,7 +549,7 @@ Sempre minifique o código CSS. Automatizadores de tarefas como o [Grunt](http:/
 <!-- Bom -->
 .navbar { ... }.nav { ... }.nav-item { ... }.nav-link { ... }
 
-<!-- Bad -->
+<!-- Ruim -->
 .nav-item {
   ...
 }
