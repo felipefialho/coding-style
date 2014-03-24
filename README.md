@@ -640,7 +640,7 @@ Warning with nesting rules of pre-processors. Continue keep without nesting.
 }
 ```
 
-Provide generic names for variables.
+Provide semantic names for variables.
 
 ```css
 /* Good */
