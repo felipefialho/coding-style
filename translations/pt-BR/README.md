@@ -640,7 +640,7 @@ Cuidado com a facilidade de aninhar elementos com os pré-processadores. Continu
 }
 ```
 
-Forneça nomes genéricos para as variaveis.
+Forneça nomes semânticos para as variaveis.
 
 ```css
 /* Bom */
