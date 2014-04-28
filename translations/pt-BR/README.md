@@ -878,6 +878,7 @@ var me = $(this); // Exemplo ruim de comentário
 ## 6. Traduções
 
 * [English](/)
+* [Russo (by Vbifonixor)](https://github.com/vbifonixor/coding-style)
 
 <a name="license"></a>
 ## 7. Licença
