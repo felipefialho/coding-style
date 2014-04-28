@@ -878,6 +878,7 @@ var me = $(this); // Bad example of comment
 ## 6. Translations
 
 * [Português (Brasil)](/translations/pt-BR/)
+* [Russian (by Vbifonixor)](https://github.com/vbifonixor/coding-style)
 
 <a name="license"></a>
 ## 7. License
