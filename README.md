@@ -681,6 +681,7 @@ The main influences for the javascript rules are [idiomatic.js](https://github.c
 1. [Javascript Syntax](#js-syntax)
 1. [Javascript Variables](#js-variables)
 1. [Javascript Performance](#js-performance)
+1. [Javascript and HTML5 Data Attributes](#js-data-attributes)
 1. [Javascript Comments](#js-comments)
 
 <a name="js-syntax"></a>
@@ -851,8 +852,25 @@ Use [JSHint](http://www.jshint.com/) to detect errors and potential problems.
 
 Always minify and concat the javascript code. Task builders like [Grunt](http://gruntjs.com/) leaves this easier.
 
+<a name="js-data-attributes"></a>
+### 4.4. Javascript and HTML5 Data Attributes
+
+Avoid using classes to start in a javascript interaction. To do so, use ***HTML5 Data Attributes***.
+
+```js
+// Good
+$('[data-toggle="tab"]');
+
+// Bad
+$('.tab');
+```
+
+This approach makes the classes are only responsible for styling.
+
+Thus elements that share the same style, but do not have the same interaction, may function separately.
+
 <a name="js-comments"></a>
-### 4.4. Javascript Comments
+### 4.5. Javascript Comments
 
 A single line above the code that is commented.
 
@@ -864,20 +882,6 @@ var me = $(this);
 // Bad
 var me = $(this); // Bad example of comment
 ```
-<a name="js-comments"></a>
-### 4.5. Javascript and HTML5 Data Attributes
-
-Avoid using classes to start in a javascript interaction, use for this ***HTML5 Data Attributes***.
-
-```js
-// Good
-$('[data-toggle="tab"]');
-
-// Bad
-$('.tab');
-```
-
-
 
 <a name="references"></a>
 ## 5. References

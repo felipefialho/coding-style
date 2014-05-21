@@ -681,6 +681,7 @@ As principais influencias para as regras de escrita em javascript são o [idioma
 1. [Javascript Sintaxe](#js-syntax)
 1. [Javascript Variáveis](#js-variables)
 1. [Javascript Performance](#js-performance)
+1. [Javascript e HTML5 Data Attributes](#js-data-attributes)
 1. [Javascript Comentários](#js-comments)
 
 <a name="js-syntax"></a>
@@ -851,8 +852,25 @@ Use o [JSHint](http://www.jshint.com/) para detectar erros e potenciais problema
 
 Sempre concatene e minifique o código javascript. Automatizadores de tarefas como o [Grunt](http://gruntjs.com/) tornam isso muito mais fácil.
 
+<a name="js-data-attributes"></a>
+### 4.4. Javascript and HTML5 Data Attributes
+
+Evite usar classes para iniciar interações em Javascript. Prefira usar ***HTML5 Data Attributes***.
+
+```js
+// Bom
+$('[data-toggle="tab"]');
+
+// Ruim
+$('.tab');
+```
+
+Essa abordagem mantém as classes responsáveis apenas pela estilização.
+
+Dessa forma, elementos que compartilhar o mesmo estilo, mas não possuem as mesmas interações, podem funcionar separadamente.
+
 <a name="js-comments"></a>
-### 4.4. Javascript Comentários
+### 4.5. Javascript Comentários
 
 Uma única linha acima do código que é comentado.
 
