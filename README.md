@@ -13,10 +13,10 @@ This is a live document and changes can occur at any time.
 
 ## Summary
 
-1. [Commits] (#commits)
-1. [HTML] (#html)
-1. [CSS] (#css)
-1. [Javascript] (#js)
+1. [Commits](#commits)
+1. [HTML](#html)
+1. [CSS](#css)
+1. [Javascript](#js)
 1. [References](#references)
 1. [Translations](#translations)
 1. [License](#license)
