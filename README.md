@@ -43,12 +43,12 @@ The main influence for the HTML rules is the [Code Guide by @mdo](https://github
 
 ### HTML Summary
 
-1. [HTML Syntax] (#html-syntax)
-1. [HTML Comments] (#html-comments)
-1. [HTML Character Encoding] (#html-encoding)
-1. [HTML Attribute Order] (#html-attribute-order)
-1. [HTML Performance] (#html-performance)
-1. [HTML Base Code] (#html-base)
+1. [HTML Syntax](#html-syntax)
+1. [HTML Comments](#html-comments)
+1. [HTML Character Encoding](#html-encoding)
+1. [HTML Attribute Order](#html-attribute-order)
+1. [HTML Performance](#html-performance)
+1. [HTML Base Code](#html-base)
 
 <a name="html-syntax"></a>
 ### 2.1. HTML Syntax
@@ -260,13 +260,13 @@ The main influences for the CSS rules are [Code Guide by @mdo](https://github.co
 
 ### CSS Summary
 
-1. [CSS Syntax] (#css-syntax)
-1. [CSS Declaration Order] (#css-order)
-1. [CSS Class Name] (#css-class-name)
-1. [CSS Performance] (#css-performance)
-1. [Mobile First and Media Queries] (#mobile-first-and-media-queries)
-1. [Pre-Processors] (#css-pre-processors)
-1. [CSS Comments] (#css-comments)
+1. [CSS Syntax](#css-syntax)
+1. [CSS Declaration Order](#css-order)
+1. [CSS Class Name](#css-class-name)
+1. [CSS Performance](#css-performance)
+1. [Mobile First and Media Queries](#mobile-first-and-media-queries)
+1. [Pre-Processors](#css-pre-processors)
+1. [CSS Comments](#css-comments)
 
 <a name="css-syntax"></a>
 ### 3.1. CSS Syntax
@@ -678,10 +678,10 @@ The main influences for the javascript rules are [idiomatic.js](https://github.c
 
 ### Javascript Summary
 
-1. [Javascript Syntax] (#js-syntax)
-1. [Javascript Variables] (#js-variables)
-1. [Javascript Performance] (#js-performance)
-1. [Javascript Comments] (#js-comments)
+1. [Javascript Syntax](#js-syntax)
+1. [Javascript Variables](#js-variables)
+1. [Javascript Performance](#js-performance)
+1. [Javascript Comments](#js-comments)
 
 <a name="js-syntax"></a>
 ### 4.1. Javascript Syntax
