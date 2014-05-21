@@ -864,6 +864,20 @@ var me = $(this);
 // Bad
 var me = $(this); // Bad example of comment
 ```
+<a name="js-comments"></a>
+### 4.5. Javascript and HTML5 Data Attributes
+
+Avoid using classes to start in a javascript interaction, use for this ***HTML5 Data Attributes***.
+
+```js
+// Good
+$('[data-toggle="tab"]');
+
+// Bad
+$('.tab');
+```
+
+
 
 <a name="references"></a>
 ## 5. References

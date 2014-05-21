@@ -13,10 +13,10 @@ Este é um documento vivo e mudanças podem acontecer a qualquer momento.
 
 ## Sumário
 
-1. [Commits] (#commits)
-1. [HTML] (#html)
-1. [CSS] (#css)
-1. [Javascript] (#js)
+1. [Commits](#commits)
+1. [HTML](#html)
+1. [CSS](#css)
+1. [Javascript](#js)
 1. [Referências](#references)
 1. [Traduções](#translations)
 1. [Licença](#license)
@@ -43,12 +43,12 @@ A principal influencia das regras de HTML é o [Code Guide by @mdo](https://gith
 
 ### HTML Sumário
 
-1. [HTML Sintaxe] (#html-syntax)
-1. [HTML Comentários] (#html-comments)
-1. [HTML Encoding de Caracteres] (#html-encoding)
-1. [HTML Ordem dos Atributos] (#html-attribute-order)
-1. [HTML Performance] (#html-performance)
-1. [HTML Código Base] (#html-base)
+1. [HTML Sintaxe](#html-syntax)
+1. [HTML Comentários](#html-comments)
+1. [HTML Encoding de Caracteres](#html-encoding)
+1. [HTML Ordem dos Atributos](#html-attribute-order)
+1. [HTML Performance](#html-performance)
+1. [HTML Código Base](#html-base)
 
 <a name="html-syntax"></a>
 ### 2.1. HTML Sintaxe
@@ -260,13 +260,13 @@ A principal influencia para as regras de CSS são o [Code Guide by @mdo](https:/
 
 ### CSS Sumário
 
-1. [CSS Sintaxe] (#css-syntax)
-1. [CSS Ordem de Declaração] (#css-order)
-1. [CSS Nome das Classes] (#css-class-name)
-1. [CSS Performance] (#css-performance)
-1. [Mobile First e Media Queries] (#mobile-first-and-media-queries)
-1. [Pre-Processores] (#css-pre-processors)
-1. [CSS Comentários] (#css-comments)
+1. [CSS Sintaxe](#css-syntax)
+1. [CSS Ordem de Declaração](#css-order)
+1. [CSS Nome das Classes](#css-class-name)
+1. [CSS Performance](#css-performance)
+1. [Mobile First e Media Queries](#mobile-first-and-media-queries)
+1. [Pre-Processores](#css-pre-processors)
+1. [CSS Comentários](#css-comments)
 
 <a name="css-syntax"></a>
 ### 3.1. CSS Sintaxe
@@ -678,10 +678,10 @@ As principais influencias para as regras de escrita em javascript são o [idioma
 
 ### Javascript Sumário
 
-1. [Javascript Sintaxe] (#js-syntax)
-1. [Javascript Variáveis] (#js-variables)
-1. [Javascript Performance] (#js-performance)
-1. [Javascript Comentários] (#js-comments)
+1. [Javascript Sintaxe](#js-syntax)
+1. [Javascript Variáveis](#js-variables)
+1. [Javascript Performance](#js-performance)
+1. [Javascript Comentários](#js-comments)
 
 <a name="js-syntax"></a>
 ### 4.1. Javascript Sintaxe
