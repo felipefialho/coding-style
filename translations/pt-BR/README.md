@@ -217,16 +217,16 @@ O código a seguir é uma base em HTML para iniciar rápidamente os projetos.
 
 ```html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
 
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta charset="utf-8">
 <meta name="format-detection" content="telephone=no">
 <meta name="viewport" content="width=device-width">
 
-<link rel="shortcut icon" href="assets/img/ico/favicon.ico" />
-<link rel="logo" type="image/svg" href="../assets/img/logo/logo.svg" />
-<link rel="stylesheet" href="assets/css/style.css" />
+<link rel="shortcut icon" href="assets/img/ico/favicon.ico">
+<link rel="logo" type="image/svg" href="../assets/img/logo/logo.svg">
+<link rel="stylesheet" href="assets/css/style.css">
 
 <title></title>
 
@@ -248,7 +248,7 @@ Para fornecer suporte para versões antigas do Internet Explorer...
 <!--[if IE 7 ]> <html lang="en" class="ie7">    <![endif]-->
 <!--[if IE 8 ]>    <html lang="en" class="ie8">    <![endif]-->
 <!--[if IE 9 ]>    <html lang="en" class="ie9">    <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="pt-br"><!--<![endif]-->
 <head>
 ...
 ```
