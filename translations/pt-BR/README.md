@@ -169,7 +169,7 @@ Nos includes dos arquivos CSS e Javascript não é necessário especificar o tip
 
 ```html
 <!-- Bom -->
-<link rel="stylesheet" href="assets/css/style.css" />
+<link rel="stylesheet" href="assets/css/style.css">
 <script src="scripts.min.js"></script>
 
 <!-- Ruim -->
