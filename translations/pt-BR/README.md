@@ -57,14 +57,14 @@ Use soft-tabs com dois espaços. Você pode configurar o seu editor dessa forma.
 
 ```html
 <!-- Bom -->
-<nav class="nav">
-  <ul class="nav-menu">
+<nav class="navbar">
+  <ul class="nav">
     <li class="nav-item">
       <a class="nav-link">
 
-<!-- Ruim -->
-<nav class="nav">
-      <ul class="nav-menu">
+<!-- Ruim-->
+<nav class="navbar">
+      <ul class="nav">
             <li class="nav-item">
                   <a class="nav-link">
 ```
