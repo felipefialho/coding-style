@@ -225,7 +225,7 @@ O código a seguir é uma base em HTML para iniciar rápidamente os projetos.
 <meta name="viewport" content="width=device-width">
 
 <link rel="shortcut icon" href="assets/img/ico/favicon.ico">
-<link rel="logo" type="image/svg" href="../assets/img/logo/logo.svg">
+<link rel="logo" type="image/svg" href="assets/img/logo/logo.svg">
 <link rel="stylesheet" href="assets/css/style.css">
 
 <title></title>
