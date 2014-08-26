@@ -169,7 +169,7 @@ No need to specify a type when including CSS and JavaScript files as `text/css` 
 
 ```html
 <!-- Good -->
-<link rel="stylesheet" href="assets/css/style.css" />
+<link rel="stylesheet" href="assets/css/style.css">
 <script src="scripts.min.js"></script>
 
 <!-- Bad -->
