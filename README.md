@@ -622,7 +622,7 @@ Keep the media queries as close to their relevant rule sets whenever possible. D
 <a name="css-pre-processors"></a>
 ### 3.6. Pre-Processors
 
-I use pre-processors in all projects. Today I use `LESS`.
+I use pre-processors in all projects. Today I use `Stylus`, but some projects use `LESS`.
 
 Warning with nesting rules of pre-processors. Continue keep without nesting.
 
@@ -644,11 +644,26 @@ Provide semantic names for variables.
 
 ```css
 /* Good */
-@brand-primary: #049cdb;
+$brand-primary = #049cdb;
 
 /* Bad */
-@color-blue: #049cdb;
+$color-blue = #049cdb;
 ```
+
+Do not use any omit braces, semi-colons, etc in `Stylus`
+
+```css
+/* Good */
+.navbar
+  color #fff
+
+/* Bad */
+.navbar {
+  color: #fff;
+}
+```
+
+
 
 <a name="css-comments"></a>
 ### 3.7. CSS Comments
@@ -658,9 +673,13 @@ All comments must be made using the syntax of the preprocessor in use.
 ```js
 //
 // Section
+// ==================================================
+
+//
+// Sub-section
 // --------------------------------------------------
 
-// Sub-section
+// Separators
 // --------------------------------------------------
 
 //
