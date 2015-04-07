@@ -622,7 +622,7 @@ Mantenha os media queries o mais próximo possível da regra que deseja alterar.
 <a name="css-pre-processors"></a>
 ### 3.6. Pré-Processores
 
-Eu uso pré-processadores em todos os projetos. Atualmente estou usando `LESS`.
+Eu uso pré-processadores em todos os projetos. Atualmente estou usando `Stylus`, mas alguns projetos usan `LESS`.
 
 Cuidado com a facilidade de aninhar elementos com os pré-processadores. Continue evitando aninhamentos.
 
@@ -644,10 +644,23 @@ Forneça nomes semânticos para as variaveis.
 
 ```css
 /* Bom */
-@brand-primary: #049cdb;
+$brand-primary = #049cdb;
 
 /* Ruim */
-@color-blue: #049cdb;
+$color-blue = #049cdb;
+```
+
+Não utilizo nenhum tipo de pontuação no `Stylus`
+
+```css
+/* Bom */
+.navbar
+  color #fff
+
+/* Ruim */
+.navbar {
+  color: #fff;
+}
 ```
 
 <a name="css-comments"></a>
@@ -658,9 +671,13 @@ Todos os comentários devem ser feitos usando a sintaxe do pré-processador em u
 ```js
 //
 // Seção
+// ==================================================
+
+//
+// Sub-seção
 // --------------------------------------------------
 
-// Sub-seção
+// Separador 
 // --------------------------------------------------
 
 //
