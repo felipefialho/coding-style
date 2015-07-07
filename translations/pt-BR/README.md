@@ -73,10 +73,10 @@ Sempre use aspas duplas.
 
 ```html
 <!-- Bom -->
-<div class="main">
+<main class="main">
 
 <!-- Ruim -->
-<div class='main'>
+<main class='main'>
 ```
 
 Não inclua `/` em elementos viúvos.

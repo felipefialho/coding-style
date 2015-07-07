@@ -15,7 +15,9 @@ This is a live document and changes can occur at any time.
 
 1. [Commits](#commits)
 1. [HTML](#html)
+1. [Jade](#jade)
 1. [CSS](#css)
+1. [CSS Preprocessor](#css-preprocessor)
 1. [Javascript](#js)
 1. [References](#references)
 1. [Translations](#translations)
@@ -73,7 +75,7 @@ Always use double quotes.
 
 ```html
 <!-- Good -->
-<div class="main">
+<main class="main">
 
 <!-- Bad-->
 <div class='main'>
@@ -224,7 +226,7 @@ The following code is a HTML base for faster start the projects.
 <meta name="format-detection" content="telephone=no">
 <meta name="viewport" content="width=device-width">
 
-<link rel="shortcut icon" href="assets/img/ico/favicon.ico">
+<link rel="shortcut icon" href="assets/ico/favicon.ico">
 <link rel="logo" type="image/svg" href="assets/img/logo/logo.svg">
 <link rel="stylesheet" href="assets/css/style.css">
 
@@ -253,8 +255,121 @@ For give support a olds Internet Explorer...
 ...
 ```
 
+<a name="jade"></a>
+## 3. Jade
+
+Currently using Jade like template engine.
+
+### Jade Summary
+
+1. [Jade Syntax](#jade-syntax)
+1. [Jade Comments](#jade-comments) 
+1. [Jade Base Code](#jade-base)
+
+<a name="jade-syntax"></a>
+### 3.1. Jade Syntax
+
+Use soft tabs with two spaces. You can configure your editor for this.
+
+```javascript
+//- Good
+nav.navbar
+  ul.nav
+    li.nav-item
+      a.nav-link
+
+//- Bad
+nav.navbar
+    ul.nav
+        li.nav-item
+            a.nav-link
+```
+
+Always use single quotes.
+
+```javascript
+//- Good
+button.btn(data-toggle='collapse')
+
+//- Bad
+button.btn(data-toggle="collapse")
+```
+ 
+Insert the title of block, separate block element by a **two** blanks lines and agroup the inners block elements.
+
+```javascript
+//- Good
+ 
+//- Header
+//- ===================================
+header.header(role='banner')
+  a.logo(href='#', role='logo')
+
+
+//- Main
+//- ===================================
+main.main(role='main')
+  section.content
+ 
+//- Bad
+header.header(role='banner')
+  a.logo(href='#', role='logo') 
+main.main(role='main') 
+  section.content
+```
+
+<a name="jade-comments"></a>
+### 3.2. Jade Comments
+
+Follow this rule to add comments in Jade.
+
+```javascript
+//- This is a good example 
+
+// This is a bad example 
+```
+
+The comments using `//-` not is generated on code.
+  
+<a name="jade-base"></a>
+### 3.3. Jade Base Code
+
+The following code is a HTML base for faster start the projects.
+
+```javascript
+doctype html
+html(lang='en')
+  head 
+    meta(charset='utf-8')
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='format-detection', content='telephone=no')
+
+    //- Title
+    title The project title here
+
+    //- Favicon and SVG logo
+    link(rel='shortcut icon', href='ico/favicon.ico')  
+    link(rel='logo', type='image/svg', href='img/logo/logo.svg')
+
+    //- Stylesheet and font
+    link(href='css/style.css', rel='stylesheet')  
+
+  body 
+
+    //- Access Key
+    //- ===================================
+    a.sr-only.go-content(href='#main', tabindex='1', accesskey='1') Go to content 
+
+
+    //- Scripts
+    //- ===================================
+    script(src='js/app.min.js') 
+```
+ 
+
 <a name="css"></a>
-## 3. CSS
+## 4. CSS
 
 The main influences for the CSS rules are [Code Guide by @mdo](https://github.com/mdo/code-guide) and [idiomatic CSS](https://github.com/necolas/idiomatic-css/).
 
@@ -269,7 +384,7 @@ The main influences for the CSS rules are [Code Guide by @mdo](https://github.co
 1. [CSS Comments](#css-comments)
 
 <a name="css-syntax"></a>
-### 3.1. CSS Syntax
+### 4.1. CSS Syntax
 
 Use soft tabs with two spaces. You can configure your editor for this.
 
@@ -415,7 +530,7 @@ Use lowercase, shorthand hex values and avoid specifying units is zero-values.
 ```
 
 <a name="css-order"></a>
-### 3.2. CSS Declaration Order
+### 4.2. CSS Declaration Order
 
 The declarations should be added in alphabetical order.
 
@@ -446,7 +561,7 @@ The declarations should be added in alphabetical order.
 ```
 
 <a name="css-class-name"></a>
-### 3.3. CSS Class Name
+### 4.3. CSS Class Name
 
 Keep class lowercase and use dashes.
 
@@ -488,7 +603,7 @@ Avoid giving too short names for class and always choose meaningful names that p
 ```
 
 <a name="css-performance"></a>
-### 3.4. CSS Performance
+### 4.4. CSS Performance
 
 Never use IDs.
 
@@ -559,7 +674,7 @@ Always minify the CSS code. Task builders like [Grunt](http://gruntjs.com/) leav
 ```
 
 <a name="mobile-first-and-media-queries"></a>
-### 3.5 Mobile First and Media Queries
+### 4.5 Mobile First and Media Queries
 
 Start the development with generic rules with and add media queries with mobile first.
 
@@ -620,7 +735,7 @@ Keep the media queries as close to their relevant rule sets whenever possible. D
 ```
 
 <a name="css-pre-processors"></a>
-### 3.6. Pre-Processors
+### 4.6. Pre-Processors
 
 I use pre-processors in all projects. Today I use `Stylus`, but some projects use `LESS`.
 
@@ -666,7 +781,7 @@ Do not use any omit braces, semi-colons, etc in `Stylus`
 
 
 <a name="css-comments"></a>
-### 3.7. CSS Comments
+### 4.7. CSS Comments
 
 All comments must be made using the syntax of the preprocessor in use.
 
