@@ -420,7 +420,7 @@ Always use double quotes.
 }
 ```
 
-Include a single space before the opening brace of a ruleset.
+Include a single space before the opening bracket of a ruleset.
 
 ```css
 /* Good */
@@ -760,7 +760,7 @@ Use soft tabs with two spaces. You can configure your editor for this.
     display inline-block  
 ```
 
-Do not use semi-colons, commas or braces
+Do not use semi-colons, commas or brackets
 
 ```css
 // Good
@@ -858,7 +858,7 @@ Warning with nesting rules of preprocessors. Continue keep without nesting.
       ... 
 ```
 
-Create mixins and use [@extends](https://learnboost.github.io/stylus/docs/extend.html) in various elements
+Create mixins and use [@extends](https://learnboost.github.io/stylus/docs/extend.html) to add in various elements.
 
 ```css
 $clearfix 
@@ -880,7 +880,7 @@ $clearfix
 <a name="preprocessors-media-queries"></a>
 ### 5.3. CSS Preprocessors Media Queries
 
-Provide the media queries rules inside the element
+Provide the media queries rules inside the element.
 
 ```css 
 .navbar 

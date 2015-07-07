@@ -17,6 +17,7 @@ Este é um documento vivo e mudanças podem acontecer a qualquer momento.
 1. [HTML](#html)
 1. [Jade](#jade)
 1. [CSS](#css)
+1. [CSS Pré-processadores](#css-preprocessors) 
 1. [Javascript](#js)
 1. [Referências](#references)
 1. [Traduções](#translations)
@@ -90,7 +91,7 @@ Não inclua `/` em elementos viúvos.
 <hr />
 ```
 
-Separe os blocos usando uma linha em branco e agrupe os elementos internos do bloco.
+Separe os blocos usando uma linha vazia e agrupe os elementos internos do bloco.
 
 ```html
 <!-- Bom -->
@@ -377,8 +378,7 @@ A principal influencia para as regras de CSS são o [Code Guide by @mdo](https:/
 1. [CSS Ordem de Declaração](#css-order)
 1. [CSS Nome das Classes](#css-class-name)
 1. [CSS Performance](#css-performance)
-1. [Mobile First e Media Queries](#mobile-first-and-media-queries)
-1. [Pre-Processores](#css-pre-processors)
+1. [CSS Media Queries](#css-media-queries) 
 1. [CSS Comentários](#css-comments)
 
 <a name="css-syntax"></a>
@@ -671,7 +671,7 @@ Sempre minifique o código CSS. Automatizadores de tarefas como o [Grunt](http:/
 }
 ```
 
-<a name="mobile-first-and-media-queries"></a>
+<a name="css-media-queries"></a>
 ### 4.5 Mobile First and Media Queries
 
 Comece o desenvolvimento usando regras genéricas e adiciona media queries começando com mobile. Compartilho um artigo com mais informações, [CSS Modular com Mobile First](http://www.felipefialho.com/blog/2014/css-modular-com-mobile-first/).
@@ -731,50 +731,7 @@ Mantenha os media queries o mais próximo possível da regra que deseja alterar.
   .nav-item { ... }
 }
 ```
-
-<a name="css-pre-processors"></a>
-### 4.6. Pré-Processores
-
-Eu uso pré-processadores em todos os projetos. Atualmente estou usando `Stylus`, mas alguns projetos usan `LESS`.
-
-Cuidado com a facilidade de aninhar elementos com os pré-processadores. Continue evitando aninhamentos.
-
-```css
-/* Bom */
-.nav-item { ... }
-
-/* Ruim */
-.navbar {
-  .nav {
-    .nav-item {
-      ...
-    }
-  }
-}
-```
-
-Forneça nomes semânticos para as variaveis.
-
-```css
-/* Bom */
-$brand-primary = #049cdb;
-
-/* Ruim */
-$color-blue = #049cdb;
-```
-
-Não utilizo nenhum tipo de pontuação no `Stylus`
-
-```css
-/* Bom */
-.navbar
-  color #fff
-
-/* Ruim */
-.navbar {
-  color: #fff;
-}
-```
+ 
 
 <a name="css-comments"></a>
 ### 4.7. CSS Comentários
@@ -801,8 +758,229 @@ Todos os comentários devem ser feitos usando a sintaxe do pré-processador em u
 // Comentário simples
 ```
 
+<a name="css-preprocessors"></a>
+## 5. CSS Pré-processadores
+
+Eu uso pré-processadores em todos os projetos. Atualmente estou usando **Stylus**, mas alguns projetos usam LESS.
+
+### CSS Pré-processadores Sumário
+
+1. [CSS Pré-processadores Sintaxe](#preprocessors-syntax)  
+1. [CSS Pré-processadores Performance](#preprocessors-performance) 
+1. [CSS Pré-processadores Media Queries](#preprocessors-media-queries) 
+1. [CSS Pré-processadores Comments](#preprocessors-comments)
+
+
+<a name="preprocessors-syntax"></a>
+### 5.1. CSS Pré-processadores Sintaxe
+
+Use soft-tabs com dois espaços. Você pode configurar o seu editor dessa forma.
+
+```css
+// Bom
+.nav-item 
+  display inline-block  
+
+// Ruim
+.nav-item 
+    display inline-block  
+```
+
+Não use ponto e vírgula, dois pontos ou colchetes.
+
+```css
+// Bom
+.header 
+  position fixed
+  top 0
+  right 0
+  left 0
+
+// Ruim
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+``` 
+
+Mantenha uma declaração por linha.
+
+```css
+// Bom
+.selector-1,
+.selector-2,
+.selector-3 
+  ...
+ 
+
+// Ruim
+.selector-1, .selector-2, .selector-3 
+  ... 
+``` 
+
+Separe as regras dos elementos aninhados por uma linha vazia e outros blocos de regras com duas linhas vazias. 
+
+```css
+// Bom
+.navbar 
+  margin 0 0 20px
+
+  li 
+    display inline-block
+
+
+.nav 
+  display block
+
+  li 
+    float left
+
+
+// Ruim
+.navbar 
+  margin 0 0 20px 
+  li 
+    display inline-block 
+.nav 
+  display block 
+  li 
+    float left
+``` 
+
+Use **$** para as váriaveis e mixins. 
+
+```css
+// Bom
+$gray-darker  = #111
+$gray-dark    = #393C45
+$gray         = #555
+$gray-light   = #aaa
+$gray-lighter = #ECF1F5
+$gray-white   = #fbfbfb
+
+
+$list-unstyled 
+  margin-bottom 0
+  padding-left 0
+  list-style none  
+```
+
+<a name="preprocessors-performance"></a>
+### 5.2. CSS Pré-processadores Performance
+
+Cuidado com a facilidade de aninhar elementos com os pré-processadores. Continue evitando aninhamentos.
+
+```css
+// Bom
+.nav-item 
+  ...
+
+// Ruim
+.navbar 
+  .nav 
+    .nav-item 
+      ... 
+```
+
+Crie mixins e use o [@extends](https://learnboost.github.io/stylus/docs/extend.html) para adicionar em vários elementos. 
+
+```css
+$clearfix 
+  &:before,
+  &:after
+    content " " 
+    display table 
+
+  &:after
+    clear both 
+
+.header
+  @extends $clearfix 
+
+.footer
+  @extends $clearfix 
+```
+ 
+<a name="preprocessors-media-queries"></a>
+### 5.3. CSS Pré-processadores Media Queries
+
+Forneça as regras de media queries dentro do elemento. 
+
+```css 
+.navbar 
+  position absolute
+  top 5px
+  z-index 5
+   
+  @media (min-width $screen-sm) 
+    position fixed
+    margin-right $space-sm
+  
+  @media (min-width $screen-md)  
+    right 0 
+    top 10px 
+```
+ 
+<a name="preprocessors-comments"></a>
+### 5.4. CSS Pré-processadores Comments
+
+Forneça um sumário no cabeçalho dos arquivos. 
+
+```css 
+//  
+// Variables
+//
+// 1. Colors
+// 2. Spaces 
+// 3. Media Queries 
+// 4. Typography
+//
+// ===============================================================
+
+// 
+// 1. Colors
+// --------------------------------------------------
+
+...
+
+// 
+// 2. Spaces
+// --------------------------------------------------
+
+...
+```
+
+Para elementos principais.
+
+```css  
+// 
+// 1. Header
+// -------------------------------------------------- 
+... 
+```
+
+Para os elementos filhos.
+
+```css   
+// 1.1 Header Item
+// -------------------------------------------------- 
+...
+```
+
+Para comentários genéricos.
+
+```css   
+// Comentário simples
+
+// Bloco de
+// Comentário
+...
+``` 
+
 <a name="js"></a>
-## 5. JavaScript
+## 6. JavaScript
 
 As principais influencias para as regras de escrita em JavaScript são o [idiomatic.js](https://github.com/rwldrn/idiomatic.js/) e o [Zeno Rocha Coding Style](https://github.com/zenorocha/my-coding-style/).
 
@@ -815,7 +993,7 @@ As principais influencias para as regras de escrita em JavaScript são o [idioma
 1. [Javascript Comentários](#js-comments)
 
 <a name="js-syntax"></a>
-### 5.1. JavaScript Sintaxe
+### 6.1. JavaScript Sintaxe
 
 Use soft-tabs com dois espaços. Você pode configurar o seu editor dessa forma.
 
@@ -949,7 +1127,7 @@ if (foo == 'foo') {
 ```
 
 <a name="js-variables"></a>
-### 5.2. JavaScript Variáveis
+### 6.2. JavaScript Variáveis
 
 Todas as variáveis devem ser declaradas antes de usar.
 
@@ -976,14 +1154,14 @@ me = $(this);
 ```
 
 <a name="js-performance"></a>
-### 5.3. JavaScript Performance
+### 6.3. JavaScript Performance
 
 Use o [JSHint](http://www.jshint.com/) para detectar erros e potenciais problemas.
 
 Sempre concatene e minifique o código JavaScript. Automatizadores de tarefas como o [Grunt](http://gruntjs.com/) tornam isso muito mais fácil.
 
 <a name="js-data-attributes"></a>
-### 5.4. JavaScript and HTML5 Data Attributes
+### 6.4. JavaScript and HTML5 Data Attributes
 
 Evite usar classes para iniciar interações em JavaScript. Prefira usar ***HTML5 Data Attributes***.
 
@@ -1000,7 +1178,7 @@ Essa abordagem mantém as classes responsáveis apenas pela estilização.
 Dessa forma, elementos que compartilhar o mesmo estilo, mas não possuem as mesmas interações, podem funcionar separadamente.
 
 <a name="js-comments"></a>
-### 5.5. JavaScript Comentários
+### 6.5. JavaScript Comentários
 
 Uma única linha acima do código que é comentado.
 
@@ -1014,7 +1192,7 @@ var me = $(this); // Exemplo ruim de comentário
 ```
 
 <a name="references"></a>
-## 6. Referências
+## 7. Referências
 
 * [Code Guide by @mdo](https://github.com/mdo/code-guide)
 * [idiomatic CSS](https://github.com/necolas/idiomatic-css/)
@@ -1023,12 +1201,12 @@ var me = $(this); // Exemplo ruim de comentário
 * [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
 
 <a name="translations"></a>
-## 7. Traduções
+## 8. Traduções
 
 * [English](/)
 * [Russo (by Vbifonixor)](https://github.com/vbifonixor/coding-style)
 
 <a name="license"></a>
-## 8. Licença
+## 9. Licença
 
 [MIT License](http://felipefialho.mit-license.org/) © Luiz Felipe Tartarotti Fialho
