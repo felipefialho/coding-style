@@ -30,10 +30,10 @@ Before commit adjusts in project, check if exists an open issue and make referen
 
 ```javascript
 // Good
-git commit -m "Add placeholder in input #10"
+git commit -m "Add placeholder on input #10"
 
 // Bad
-git commit -m "Add placeholder in input"
+git commit -m "Add placeholder on input"
 ```
 
 <a name="html"></a>
