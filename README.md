@@ -328,12 +328,12 @@ Follow this rule to add comments in Jade.
 // This is a bad example 
 ```
 
-The comments using `//-` not is generated on code.
+The comments using `//-` not is compiled on final code.
   
 <a name="jade-base"></a>
 ### 3.3. Jade Base Code
 
-The following code is a HTML base for faster start the projects.
+The following code is a Jade for faster start the projects.
 
 ```javascript
 doctype html

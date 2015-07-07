@@ -125,7 +125,7 @@ Separe os blocos usando uma linha em branco e agrupe os elementos internos do bl
 <a name="html-comments"></a>
 ### 2.2. HTML Comentários
 
-Siga esta regra para adicionar comentários no HTML
+Siga esta regra para adicionar comentários no HTML.
 
 ```html
 <!-- Este é um bom exemplo -->
@@ -235,7 +235,7 @@ O código a seguir é uma base em HTML para iniciar rápidamente os projetos.
 <body>
 
 <!-- Scripts -->
-<script src="assets/js/scripts.min.js"></script>
+<script src="js/scripts.min.js"></script>
 
 </body>
 </html>
@@ -254,8 +254,120 @@ Para fornecer suporte para versões antigas do Internet Explorer...
 ...
 ```
 
+<a name="jade"></a>
+## 3. Jade
+
+Atualmente usando Jade como template engine.
+
+### Jade Sumário
+
+1. [Jade Sintaxe](#jade-syntax)
+1. [Jade Comentários](#jade-comments) 
+1. [Jade Código Base](#jade-base)
+
+<a name="jade-syntax"></a>
+### 3.1. Jade Syntax
+
+Use soft-tabs com dois espaços. Você pode configurar o seu editor dessa forma.
+
+```javascript
+//- Bom
+nav.navbar
+  ul.nav
+    li.nav-item
+      a.nav-link
+
+//- Ruim
+nav.navbar
+    ul.nav
+        li.nav-item
+            a.nav-link
+```
+
+Sempre use aspas simples.
+
+```javascript
+//- Bom
+button.btn(data-toggle='collapse')
+
+//- Ruim
+button.btn(data-toggle="collapse")
+```
+
+Insira o título do bloco, separe usando **duas** linhas em branco e agrupe os elementos internos do bloco. 
+
+```javascript
+//- Bom
+ 
+//- Header
+//- ===================================
+header.header(role='banner')
+  a.logo(href='#', role='logo')
+
+
+//- Main
+//- ===================================
+main.main(role='main')
+  section.content
+ 
+//- Ruim
+header.header(role='banner')
+  a.logo(href='#', role='logo') 
+main.main(role='main') 
+  section.content
+```
+
+<a name="jade-comments"></a>
+### 3.2. Jade Comments
+
+Siga esta regra para adicionar comentários no HTML.
+
+```javascript
+//- Esse é um bom exemplo
+
+// Esse é um exemplo ruim
+```
+
+Os comentários usando `//-` não são compilados no código final. 
+  
+<a name="jade-base"></a>
+### 3.3. Jade Base Code
+
+O código a seguir é uma base em Jade para iniciar rápidamente os projetos. 
+
+```javascript
+doctype html
+html(lang='en')
+  head 
+    meta(charset='utf-8')
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='format-detection', content='telephone=no')
+
+    //- Title
+    title The project title here
+
+    //- Favicon and SVG logo
+    link(rel='shortcut icon', href='ico/favicon.ico')  
+    link(rel='logo', type='image/svg', href='img/logo/logo.svg')
+
+    //- Stylesheet and font
+    link(href='css/style.css', rel='stylesheet')  
+
+  body 
+
+    //- Access Key
+    //- ===================================
+    a.sr-only.go-content(href='#main', tabindex='1', accesskey='1') Go to content 
+
+
+    //- Scripts
+    //- ===================================
+    script(src='js/app.min.js') 
+```
+
 <a name="css"></a>
-## 3. CSS
+## 4. CSS
 
 A principal influencia para as regras de CSS são o [Code Guide by @mdo](https://github.com/mdo/code-guide) e o [idiomatic CSS](https://github.com/necolas/idiomatic-css/).
 
@@ -270,7 +382,7 @@ A principal influencia para as regras de CSS são o [Code Guide by @mdo](https:/
 1. [CSS Comentários](#css-comments)
 
 <a name="css-syntax"></a>
-### 3.1. CSS Sintaxe
+### 4.1. CSS Sintaxe
 
 Use soft-tabs com dois espaços. Você pode configurar o seu editor dessa forma.
 
@@ -416,7 +528,7 @@ Use caixa-baixa, valores hexadecimais reduzidos e não especifique unidades quan
 ```
 
 <a name="css-order"></a>
-### 3.2. CSS Ordem de Declaração
+### 4.2. CSS Ordem de Declaração
 
 As declarações devem ser adicionadas em ordem alfabética.
 
@@ -447,7 +559,7 @@ As declarações devem ser adicionadas em ordem alfabética.
 ```
 
 <a name="css-class-name"></a>
-### 3.3. CSS Nome das Classes
+### 4.3. CSS Nome das Classes
 
 Mantenha as classes em caixa-baixa e use hífen para separar os nomes.
 
@@ -489,7 +601,7 @@ Evite usar nomes muito curtos e sempre use nomes relacionados com a função da 
 ```
 
 <a name="css-performance"></a>
-### 3.4. CSS Performance
+### 4.4. CSS Performance
 
 Nunca use IDs.
 
@@ -560,7 +672,7 @@ Sempre minifique o código CSS. Automatizadores de tarefas como o [Grunt](http:/
 ```
 
 <a name="mobile-first-and-media-queries"></a>
-### 3.5 Mobile First and Media Queries
+### 4.5 Mobile First and Media Queries
 
 Comece o desenvolvimento usando regras genéricas e adiciona media queries começando com mobile. Compartilho um artigo com mais informações, [CSS Modular com Mobile First](http://www.felipefialho.com/blog/2014/css-modular-com-mobile-first/).
 
@@ -621,7 +733,7 @@ Mantenha os media queries o mais próximo possível da regra que deseja alterar.
 ```
 
 <a name="css-pre-processors"></a>
-### 3.6. Pré-Processores
+### 4.6. Pré-Processores
 
 Eu uso pré-processadores em todos os projetos. Atualmente estou usando `Stylus`, mas alguns projetos usan `LESS`.
 
@@ -665,7 +777,7 @@ Não utilizo nenhum tipo de pontuação no `Stylus`
 ```
 
 <a name="css-comments"></a>
-### 3.7. CSS Comentários
+### 4.7. CSS Comentários
 
 Todos os comentários devem ser feitos usando a sintaxe do pré-processador em uso.
 
@@ -690,7 +802,7 @@ Todos os comentários devem ser feitos usando a sintaxe do pré-processador em u
 ```
 
 <a name="js"></a>
-## 4. Javascript
+## 5. Javascript
 
 As principais influencias para as regras de escrita em javascript são o [idiomatic.js](https://github.com/rwldrn/idiomatic.js/) e o [Zeno Rocha Coding Style](https://github.com/zenorocha/my-coding-style/).
 
@@ -703,7 +815,7 @@ As principais influencias para as regras de escrita em javascript são o [idioma
 1. [Javascript Comentários](#js-comments)
 
 <a name="js-syntax"></a>
-### 4.1. Javascript Sintaxe
+### 5.1. Javascript Sintaxe
 
 Use soft-tabs com dois espaços. Você pode configurar o seu editor dessa forma.
 
@@ -837,7 +949,7 @@ if (foo == 'foo') {
 ```
 
 <a name="js-variables"></a>
-### 4.2. Javascript Variáveis
+### 5.2. Javascript Variáveis
 
 Todas as variáveis devem ser declaradas antes de usar.
 
@@ -864,14 +976,14 @@ me = $(this);
 ```
 
 <a name="js-performance"></a>
-### 4.3. Javascript Performance
+### 5.3. Javascript Performance
 
 Use o [JSHint](http://www.jshint.com/) para detectar erros e potenciais problemas.
 
 Sempre concatene e minifique o código javascript. Automatizadores de tarefas como o [Grunt](http://gruntjs.com/) tornam isso muito mais fácil.
 
 <a name="js-data-attributes"></a>
-### 4.4. Javascript and HTML5 Data Attributes
+### 5.4. Javascript and HTML5 Data Attributes
 
 Evite usar classes para iniciar interações em Javascript. Prefira usar ***HTML5 Data Attributes***.
 
@@ -888,7 +1000,7 @@ Essa abordagem mantém as classes responsáveis apenas pela estilização.
 Dessa forma, elementos que compartilhar o mesmo estilo, mas não possuem as mesmas interações, podem funcionar separadamente.
 
 <a name="js-comments"></a>
-### 4.5. Javascript Comentários
+### 5.5. Javascript Comentários
 
 Uma única linha acima do código que é comentado.
 
@@ -902,7 +1014,7 @@ var me = $(this); // Exemplo ruim de comentário
 ```
 
 <a name="references"></a>
-## 5. Referências
+## 6. Referências
 
 * [Code Guide by @mdo](https://github.com/mdo/code-guide)
 * [idiomatic CSS](https://github.com/necolas/idiomatic-css/)
@@ -911,12 +1023,12 @@ var me = $(this); // Exemplo ruim de comentário
 * [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
 
 <a name="translations"></a>
-## 6. Traduções
+## 7. Traduções
 
 * [English](/)
 * [Russo (by Vbifonixor)](https://github.com/vbifonixor/coding-style)
 
 <a name="license"></a>
-## 7. Licença
+## 8. Licença
 
 [MIT License](http://felipefialho.mit-license.org/) © Luiz Felipe Tartarotti Fialho
