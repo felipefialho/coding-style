@@ -319,7 +319,7 @@ main.main(role='main')
 ```
 
 <a name="jade-comments"></a>
-### 3.2. Jade Comments
+### 3.2. Jade Comentários
 
 Siga esta regra para adicionar comentários no HTML.
 
@@ -768,7 +768,7 @@ Eu uso pré-processadores em todos os projetos. Atualmente estou usando **Stylus
 1. [CSS Pré-processadores Sintaxe](#preprocessors-syntax)  
 1. [CSS Pré-processadores Performance](#preprocessors-performance) 
 1. [CSS Pré-processadores Media Queries](#preprocessors-media-queries) 
-1. [CSS Pré-processadores Comments](#preprocessors-comments)
+1. [CSS Pré-processadores Comentários](#preprocessors-comments)
 
 
 <a name="preprocessors-syntax"></a>
@@ -924,7 +924,7 @@ Forneça as regras de media queries dentro do elemento.
 ```
  
 <a name="preprocessors-comments"></a>
-### 5.4. CSS Pré-processadores Comments
+### 5.4. CSS Pré-processadores Comentários
 
 Forneça um sumário no cabeçalho dos arquivos. 
 
