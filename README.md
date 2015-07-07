@@ -17,6 +17,7 @@ This is a live document and changes can occur at any time.
 1. [HTML](#html)
 1. [Jade](#jade)
 1. [CSS](#css) 
+1. [CSS Preprocessors](#css-preprocessors) 
 1. [Javascript](#js)
 1. [References](#references)
 1. [Translations](#translations)
@@ -378,9 +379,7 @@ The main influences for the CSS rules are [Code Guide by @mdo](https://github.co
 1. [CSS Declaration Order](#css-order)
 1. [CSS Class Name](#css-class-name)
 1. [CSS Performance](#css-performance)
-1. [Mobile First and Media Queries](#mobile-first-and-media-queries)
-1. [Pre-Processors](#css-pre-processors)
-1. [CSS Comments](#css-comments)
+1. [CSS Media Queries](#css-media-queries) 
 
 <a name="css-syntax"></a>
 ### 4.1. CSS Syntax
@@ -672,8 +671,8 @@ Always minify the CSS code. Task builders like [Grunt](http://gruntjs.com/) leav
 }
 ```
 
-<a name="mobile-first-and-media-queries"></a>
-### 4.5 Mobile First and Media Queries
+<a name="css-media-queries"></a>
+### 4.5 CSS Media Queries
 
 Start the development with generic rules with and add media queries with mobile first.
 
@@ -733,79 +732,229 @@ Keep the media queries as close to their relevant rule sets whenever possible. D
 }
 ```
 
-<a name="css-pre-processors"></a>
-### 4.6. Pre-Processors
+<a name="css-preprocessors"></a>
+## 5. CSS Preprocessors
 
-I use pre-processors in all projects. Today I use `Stylus`, but some projects use `LESS`.
+I use pre-processors in all projects. Today I use **Stylus**, but some projects use `LESS`.
 
-Warning with nesting rules of pre-processors. Continue keep without nesting.
+### CSS Preprocessors Summary
+
+1. [CSS Preprocessors Syntax](#preprocessors-syntax)  
+1. [CSS Preprocessors Performance](#preprocessors-performance) 
+1. [CSS Preprocessors Media Queries](#preprocessors-media-queries) 
+1. [CSS Preprocessors Comments](#preprocessors-comments)
+
+
+<a name="preprocessors-syntax"></a>
+### 5.1. CSS Preprocessors Syntax
+
+Use soft tabs with two spaces. You can configure your editor for this.
 
 ```css
-/* Good */
-.nav-item { ... }
+// Good
+.nav-item 
+  display inline-block  
 
-/* Bad */
-.navbar {
-  .nav {
-    .nav-item {
-      ...
-    }
-  }
+// Bad
+.nav-item 
+    display inline-block  
+```
+
+Do not use semi-colons, commas or braces
+
+```css
+// Good
+.header 
+  position fixed
+  top 0
+  right 0
+  left 0
+
+// Bad
+.header{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
 }
-```
+``` 
 
-Provide semantic names for variables.
-
-```css
-/* Good */
-$brand-primary = #049cdb;
-
-/* Bad */
-$color-blue = #049cdb;
-```
-
-Do not use any omit braces, semi-colons, etc in `Stylus`
+Keep one declaration per line.
 
 ```css
-/* Good */
-.navbar
-  color #fff
+// Good
+.selector-1,
+.selector-2,
+.selector-3 
+  ...
+ 
 
-/* Bad */
-.navbar {
-  color: #fff;
-}
+// Bad
+.selector-1, .selector-2, .selector-3 
+  ... 
+``` 
+
+Separate nested ruleset by a blank line and blocks ruleset by a double blank line.
+
+```css
+// Good
+.navbar 
+  margin 0 0 20px
+
+  li 
+    display inline-block
+
+
+.nav 
+  display block
+
+  li 
+    float left
+
+
+// Bad
+.navbar 
+  margin 0 0 20px 
+  li 
+    display inline-block 
+.nav 
+  display block 
+  li 
+    float left
+``` 
+
+Use **$** for the variables and mixins.
+
+```css
+// Good
+$gray-darker  = #111
+$gray-dark    = #393C45
+$gray         = #555
+$gray-light   = #aaa
+$gray-lighter = #ECF1F5
+$gray-white   = #fbfbfb
+
+
+$list-unstyled 
+  margin-bottom 0
+  padding-left 0
+  list-style none  
 ```
 
+<a name="preprocessors-performance"></a>
+### 5.2. CSS Preprocessors Performance
 
+Warning with nesting rules of preprocessors. Continue keep without nesting.
 
-<a name="css-comments"></a>
-### 4.7. CSS Comments
+```css
+// Good
+.nav-item 
+  ...
 
-All comments must be made using the syntax of the preprocessor in use.
+// Bad
+.navbar 
+  .nav 
+    .nav-item 
+      ... 
+```
 
-```js
+Create mixins and use [@extends](https://learnboost.github.io/stylus/docs/extend.html) in various elements
+
+```css
+$clearfix 
+  &:before,
+  &:after
+    content " " 
+    display table 
+
+  &:after
+    clear both 
+
+.header
+  @extends $clearfix 
+
+.footer
+  @extends $clearfix 
+```
+ 
+<a name="preprocessors-media-queries"></a>
+### 5.3. CSS Preprocessors Media Queries
+
+Provide the media queries rules inside the element
+
+```css 
+.navbar 
+  position absolute
+  top 5px
+  z-index 5
+   
+  @media (min-width $screen-sm) 
+    position fixed
+    margin-right $space-sm
+  
+  @media (min-width $screen-md)  
+    right 0 
+    top 10px 
+```
+ 
+<a name="preprocessors-comments"></a>
+### 5.4. CSS Preprocessors Comments
+
+Provide one summary on header of files.
+
+```css 
+//  
+// Variables
 //
-// Section
-// ==================================================
-
+// 1. Colors
+// 2. Spaces 
+// 3. Media Queries 
+// 4. Typography
 //
-// Sub-section
+// ===============================================================
+
+// 
+// 1. Colors
 // --------------------------------------------------
 
-// Separators
+...
+
+// 
+// 2. Spaces
 // --------------------------------------------------
 
-//
-// Commentary block
-//
-//
-
-// Simple commentary
+...
 ```
+
+For main element. 
+
+```css  
+// 
+// 1. Header
+// -------------------------------------------------- 
+... 
+```
+
+For children elements. 
+
+```css   
+// 1.1 Header Item
+// -------------------------------------------------- 
+...
+```
+
+For generic comments
+
+```css   
+// Simple comment
+
+// Block
+// Comment
+...
+``` 
 
 <a name="js"></a>
-## 5. JavaScript
+## 6. JavaScript
 
 The main influences for the JavaScript rules are [idiomatic.js](https://github.com/rwldrn/idiomatic.js/) and [Zeno Rocha Coding Style](https://github.com/zenorocha/my-coding-style/).
 
@@ -818,7 +967,7 @@ The main influences for the JavaScript rules are [idiomatic.js](https://github.c
 1. [Javascript Comments](#js-comments)
 
 <a name="js-syntax"></a>
-### 5.1. JavaScript Syntax
+### 6.1. JavaScript Syntax
 
 Use soft tabs with two spaces. You can configure your editor for this.
 
@@ -952,7 +1101,7 @@ if (foo == 'foo') {
 ```
 
 <a name="js-variables"></a>
-### 5.2. JavaScript Variables
+### 6.2. JavaScript Variables
 
 All variables should be declared before used.
 
@@ -979,14 +1128,14 @@ me = $(this);
 ```
 
 <a name="js-performance"></a>
-### 5.3. JavaScript Performance
+### 6.3. JavaScript Performance
 
 Use [JSHint](http://www.jshint.com/) to detect errors and potential problems.
 
 Always minify and concat the JavaScript code. Task builders like [Grunt](http://gruntjs.com/) leaves this easier.
 
 <a name="js-data-attributes"></a>
-### 5.4. JavaScript and HTML5 Data Attributes
+### 6.4. JavaScript and HTML5 Data Attributes
 
 Avoid using classes to start in a JavaScript interaction. To do so, use ***HTML5 Data Attributes***.
 
@@ -1003,7 +1152,7 @@ This approach makes the classes are only responsible for styling.
 Thus elements that share the same style, but do not have the same interaction, may function separately.
 
 <a name="js-comments"></a>
-### 5.5. JavaScript Comments
+### 6.5. JavaScript Comments
 
 A single line above the code that is commented.
 
@@ -1017,7 +1166,7 @@ var me = $(this); // Bad example of comment
 ```
 
 <a name="references"></a>
-## 6. References
+## 7. References
 
 * [Code Guide by @mdo](https://github.com/mdo/code-guide)
 * [idiomatic CSS](https://github.com/necolas/idiomatic-css/)
@@ -1026,12 +1175,12 @@ var me = $(this); // Bad example of comment
 * [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
 
 <a name="translations"></a>
-## 7. Translations
+## 8. Translations
 
 * [Português (Brasil)](/translations/pt-BR/)
 * [Russian (by Vbifonixor)](https://github.com/vbifonixor/coding-style)
 
 <a name="license"></a>
-## 8. License
+## 9. License
 
 [MIT License](http://felipefialho.mit-license.org/) © Luiz Felipe Tartarotti Fialho
