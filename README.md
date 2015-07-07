@@ -175,7 +175,8 @@ No need to specify a type when including CSS and JavaScript files as `text/css` 
 <script src="scripts.min.js"></script>
 
 <!-- Bad -->
-<script src="scripts.min.js"></script>
+<link rel="stylesheet" href="assets/css/style.css" type="text/css">
+<script src="scripts.min.js" type="text/javascript"></script>
 </head>
 <body>
 ```
