@@ -771,7 +771,7 @@ Do not use semi-colons, commas or braces
   left 0
 
 // Bad
-.header{
+.header {
   position: fixed;
   top: 0;
   right: 0;
