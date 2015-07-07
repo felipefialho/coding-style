@@ -3,7 +3,7 @@ My Coding Style
 
 > "Every line of code should appear to be written by a single person, no matter the number of contributors." - Chinese Proverb.
 
-The following document describes the rules of writing in development languages that I use: HTML, CSS and Javascript.
+The following document describes the rules of writing in development languages that I use: HTML, CSS and JavaScript.
 
 The idea of this repository is not to be a complete code guide. Only to have a place for myself and other developers who participate in my projects able to inform the coding standards used.
 
@@ -179,7 +179,7 @@ No need to specify a type when including CSS and JavaScript files as `text/css` 
 <body>
 ```
 
-For a better performance, all javascripts files must be at the end of the code. Before closing the `<body>`.
+For a better performance, all JavaScripts files must be at the end of the code. Before closing the `<body>`.
 
 ```html
 <!-- Good -->
@@ -805,11 +805,11 @@ All comments must be made using the syntax of the preprocessor in use.
 ```
 
 <a name="js"></a>
-## 5. Javascript
+## 5. JavaScript
 
-The main influences for the javascript rules are [idiomatic.js](https://github.com/rwldrn/idiomatic.js/) and [Zeno Rocha Coding Style](https://github.com/zenorocha/my-coding-style/).
+The main influences for the JavaScript rules are [idiomatic.js](https://github.com/rwldrn/idiomatic.js/) and [Zeno Rocha Coding Style](https://github.com/zenorocha/my-coding-style/).
 
-### Javascript Summary
+### JavaScript Summary
 
 1. [Javascript Syntax](#js-syntax)
 1. [Javascript Variables](#js-variables)
@@ -818,7 +818,7 @@ The main influences for the javascript rules are [idiomatic.js](https://github.c
 1. [Javascript Comments](#js-comments)
 
 <a name="js-syntax"></a>
-### 5.1. Javascript Syntax
+### 5.1. JavaScript Syntax
 
 Use soft tabs with two spaces. You can configure your editor for this.
 
@@ -952,7 +952,7 @@ if (foo == 'foo') {
 ```
 
 <a name="js-variables"></a>
-### 5.2. Javascript Variables
+### 5.2. JavaScript Variables
 
 All variables should be declared before used.
 
@@ -979,16 +979,16 @@ me = $(this);
 ```
 
 <a name="js-performance"></a>
-### 5.3. Javascript Performance
+### 5.3. JavaScript Performance
 
 Use [JSHint](http://www.jshint.com/) to detect errors and potential problems.
 
-Always minify and concat the javascript code. Task builders like [Grunt](http://gruntjs.com/) leaves this easier.
+Always minify and concat the JavaScript code. Task builders like [Grunt](http://gruntjs.com/) leaves this easier.
 
 <a name="js-data-attributes"></a>
-### 5.4. Javascript and HTML5 Data Attributes
+### 5.4. JavaScript and HTML5 Data Attributes
 
-Avoid using classes to start in a javascript interaction. To do so, use ***HTML5 Data Attributes***.
+Avoid using classes to start in a JavaScript interaction. To do so, use ***HTML5 Data Attributes***.
 
 ```js
 // Good
@@ -1003,7 +1003,7 @@ This approach makes the classes are only responsible for styling.
 Thus elements that share the same style, but do not have the same interaction, may function separately.
 
 <a name="js-comments"></a>
-### 5.5. Javascript Comments
+### 5.5. JavaScript Comments
 
 A single line above the code that is commented.
 

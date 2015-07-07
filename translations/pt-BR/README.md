@@ -3,7 +3,7 @@ Meu Estilo de Código
 
 > "Toda linha de código deve parecer que foi escrita por uma única pessoa, não importa a quantidade de contribuidores." - Provérbio Chinês
 
-O documento a seguir descreve as regras de escrita nas linguagens de desenvolvimento que utilizo: HTML, CSS e Javascript.
+O documento a seguir descreve as regras de escrita nas linguagens de desenvolvimento que utilizo: HTML, CSS e JavaScript.
 
 A ideia desse repositório não é ser um guia de código completo. Mas sim ter um local para que eu e outros desenvolvedores que participam dos meus projetos conseguirem se informar dos padrões de códigos usados.
 
@@ -166,7 +166,7 @@ Os atributos do HTML devem estar na seguinte ordem para facilitar a leitura.
 <a name="html-performance"></a>
 ### 2.5. HTML Performance
 
-Nos includes dos arquivos CSS e Javascript não é necessário especificar o tipo de arquivo como `text/css` e `text/javascript.
+Nos includes dos arquivos CSS e JavaScript não é necessário especificar o tipo de arquivo como `text/css` e `text/javascript.
 
 ```html
 <!-- Bom -->
@@ -179,7 +179,7 @@ Nos includes dos arquivos CSS e Javascript não é necessário especificar o tip
 <body>
 ```
 
-Para uma melhor performance, todos os arquivos javascripts devem estar antes de fechar o `<body>`, no fim do documento.
+Para uma melhor performance, todos os arquivos JavaScripts devem estar antes de fechar o `<body>`, no fim do documento.
 
 ```html
 <!-- Bom -->
@@ -802,11 +802,11 @@ Todos os comentários devem ser feitos usando a sintaxe do pré-processador em u
 ```
 
 <a name="js"></a>
-## 5. Javascript
+## 5. JavaScript
 
-As principais influencias para as regras de escrita em javascript são o [idiomatic.js](https://github.com/rwldrn/idiomatic.js/) e o [Zeno Rocha Coding Style](https://github.com/zenorocha/my-coding-style/).
+As principais influencias para as regras de escrita em JavaScript são o [idiomatic.js](https://github.com/rwldrn/idiomatic.js/) e o [Zeno Rocha Coding Style](https://github.com/zenorocha/my-coding-style/).
 
-### Javascript Sumário
+### JavaScript Sumário
 
 1. [Javascript Sintaxe](#js-syntax)
 1. [Javascript Variáveis](#js-variables)
@@ -815,7 +815,7 @@ As principais influencias para as regras de escrita em javascript são o [idioma
 1. [Javascript Comentários](#js-comments)
 
 <a name="js-syntax"></a>
-### 5.1. Javascript Sintaxe
+### 5.1. JavaScript Sintaxe
 
 Use soft-tabs com dois espaços. Você pode configurar o seu editor dessa forma.
 
@@ -949,7 +949,7 @@ if (foo == 'foo') {
 ```
 
 <a name="js-variables"></a>
-### 5.2. Javascript Variáveis
+### 5.2. JavaScript Variáveis
 
 Todas as variáveis devem ser declaradas antes de usar.
 
@@ -976,16 +976,16 @@ me = $(this);
 ```
 
 <a name="js-performance"></a>
-### 5.3. Javascript Performance
+### 5.3. JavaScript Performance
 
 Use o [JSHint](http://www.jshint.com/) para detectar erros e potenciais problemas.
 
-Sempre concatene e minifique o código javascript. Automatizadores de tarefas como o [Grunt](http://gruntjs.com/) tornam isso muito mais fácil.
+Sempre concatene e minifique o código JavaScript. Automatizadores de tarefas como o [Grunt](http://gruntjs.com/) tornam isso muito mais fácil.
 
 <a name="js-data-attributes"></a>
-### 5.4. Javascript and HTML5 Data Attributes
+### 5.4. JavaScript and HTML5 Data Attributes
 
-Evite usar classes para iniciar interações em Javascript. Prefira usar ***HTML5 Data Attributes***.
+Evite usar classes para iniciar interações em JavaScript. Prefira usar ***HTML5 Data Attributes***.
 
 ```js
 // Bom
@@ -1000,7 +1000,7 @@ Essa abordagem mantém as classes responsáveis apenas pela estilização.
 Dessa forma, elementos que compartilhar o mesmo estilo, mas não possuem as mesmas interações, podem funcionar separadamente.
 
 <a name="js-comments"></a>
-### 5.5. Javascript Comentários
+### 5.5. JavaScript Comentários
 
 Uma única linha acima do código que é comentado.
 
