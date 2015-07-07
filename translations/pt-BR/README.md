@@ -15,6 +15,7 @@ Este é um documento vivo e mudanças podem acontecer a qualquer momento.
 
 1. [Commits](#commits)
 1. [HTML](#html)
+1. [Jade](#jade)
 1. [CSS](#css)
 1. [Javascript](#js)
 1. [Referências](#references)

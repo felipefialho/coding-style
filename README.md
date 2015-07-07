@@ -235,7 +235,7 @@ The following code is a HTML base for faster start the projects.
 <body>
 
 <!-- Scripts -->
-<script src="assets/js/scripts.min.js"></script>
+<script src="js/scripts.min.js"></script>
 
 </body>
 </html>
@@ -805,7 +805,7 @@ All comments must be made using the syntax of the preprocessor in use.
 ```
 
 <a name="js"></a>
-## 4. Javascript
+## 5. Javascript
 
 The main influences for the javascript rules are [idiomatic.js](https://github.com/rwldrn/idiomatic.js/) and [Zeno Rocha Coding Style](https://github.com/zenorocha/my-coding-style/).
 
@@ -818,7 +818,7 @@ The main influences for the javascript rules are [idiomatic.js](https://github.c
 1. [Javascript Comments](#js-comments)
 
 <a name="js-syntax"></a>
-### 4.1. Javascript Syntax
+### 5.1. Javascript Syntax
 
 Use soft tabs with two spaces. You can configure your editor for this.
 
@@ -952,7 +952,7 @@ if (foo == 'foo') {
 ```
 
 <a name="js-variables"></a>
-### 4.2. Javascript Variables
+### 5.2. Javascript Variables
 
 All variables should be declared before used.
 
@@ -979,14 +979,14 @@ me = $(this);
 ```
 
 <a name="js-performance"></a>
-### 4.3. Javascript Performance
+### 5.3. Javascript Performance
 
 Use [JSHint](http://www.jshint.com/) to detect errors and potential problems.
 
 Always minify and concat the javascript code. Task builders like [Grunt](http://gruntjs.com/) leaves this easier.
 
 <a name="js-data-attributes"></a>
-### 4.4. Javascript and HTML5 Data Attributes
+### 5.4. Javascript and HTML5 Data Attributes
 
 Avoid using classes to start in a javascript interaction. To do so, use ***HTML5 Data Attributes***.
 
@@ -1003,7 +1003,7 @@ This approach makes the classes are only responsible for styling.
 Thus elements that share the same style, but do not have the same interaction, may function separately.
 
 <a name="js-comments"></a>
-### 4.5. Javascript Comments
+### 5.5. Javascript Comments
 
 A single line above the code that is commented.
 
@@ -1017,7 +1017,7 @@ var me = $(this); // Bad example of comment
 ```
 
 <a name="references"></a>
-## 5. References
+## 6. References
 
 * [Code Guide by @mdo](https://github.com/mdo/code-guide)
 * [idiomatic CSS](https://github.com/necolas/idiomatic-css/)
@@ -1026,12 +1026,12 @@ var me = $(this); // Bad example of comment
 * [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
 
 <a name="translations"></a>
-## 6. Translations
+## 7. Translations
 
 * [Português (Brasil)](/translations/pt-BR/)
 * [Russian (by Vbifonixor)](https://github.com/vbifonixor/coding-style)
 
 <a name="license"></a>
-## 7. License
+## 8. License
 
 [MIT License](http://felipefialho.mit-license.org/) © Luiz Felipe Tartarotti Fialho
