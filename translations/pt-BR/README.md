@@ -30,10 +30,10 @@ Antes de commitar ajustes no projeto, verifique se existe uma issue aberta e faÃ
 
 ```javascript
 // Bom
-git commit -m "Add placeholder in input #10"
+git commit -m "Add placeholder on input #10"
 
 // Ruim
-git commit -m "Add placeholder in input"
+git commit -m "Add placeholder on input"
 ```
 
 <a name="html"></a>
