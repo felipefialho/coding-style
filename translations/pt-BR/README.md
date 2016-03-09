@@ -850,7 +850,7 @@ Separe as regras dos elementos aninhados por uma linha vazia e outros blocos de 
 Use **$** para as váriaveis e mixins. 
 
 ```css
-// Bom
+// Good
 $gray-darker  = #111
 $gray-dark    = #393C45
 $gray         = #555
@@ -859,10 +859,17 @@ $gray-lighter = #ECF1F5
 $gray-white   = #fbfbfb
 
 
-$list-unstyled 
-  margin-bottom 0
-  padding-left 0
-  list-style none  
+$reset(arg = '')
+  
+  if (arg == list) 
+    margin 0
+    padding-left 0
+    list-style none
+  
+  if (arg == form)  
+    background 0
+    border 0
+    padding 0 
 ```
 
 <a name="preprocessors-performance"></a>
