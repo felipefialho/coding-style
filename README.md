@@ -347,13 +347,16 @@ html(lang='en')
     meta(name='format-detection', content='telephone=no')
 
     //- Title
+    //- ===================================
     title The project title here
 
     //- Favicon and SVG logo
+    //- ===================================
     link(rel='shortcut icon', href='ico/favicon.ico')  
     link(rel='logo', type='image/svg', href='svg/logo/logo.svg')
 
     //- Stylesheet and fonts
+    //- ===================================
     link(href='css/style.css', rel='stylesheet')  
 
   body 
