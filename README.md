@@ -351,21 +351,16 @@ html(lang='en')
 
     //- Favicon and SVG logo
     link(rel='shortcut icon', href='ico/favicon.ico')  
-    link(rel='logo', type='image/svg', href='img/logo/logo.svg')
+    link(rel='logo', type='image/svg', href='svg/logo/logo.svg')
 
-    //- Stylesheet and font
+    //- Stylesheet and fonts
     link(href='css/style.css', rel='stylesheet')  
 
   body 
-
-    //- Access Key
-    //- ===================================
-    a.sr-only.go-content(href='#main', tabindex='1', accesskey='1') Go to content 
-
-
+ 
     //- Scripts
     //- ===================================
-    script(src='js/app.min.js') 
+    script(src='js/scripts.min.js') 
 ```
  
 
