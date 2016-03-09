@@ -834,10 +834,17 @@ $gray-lighter = #ECF1F5
 $gray-white   = #fbfbfb
 
 
-$list-unstyled 
-  margin-bottom 0
-  padding-left 0
-  list-style none  
+$reset(arg = '')
+  
+  if (arg == list) 
+    margin 0
+    padding-left 0
+    list-style none
+  
+  if (arg == form)  
+    background 0
+    border 0
+    padding 0 
 ```
 
 <a name="preprocessors-performance"></a>
