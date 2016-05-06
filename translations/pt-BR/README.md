@@ -167,7 +167,7 @@ Os atributos do HTML devem estar na seguinte ordem para facilitar a leitura.
 <a name="html-performance"></a>
 ### 2.5. HTML Performance
 
-Nos includes dos arquivos CSS e JavaScript não é necessário especificar o tipo de arquivo como `text/css` e `text/javascript.
+Nos includes dos arquivos CSS e JavaScript não é necessário especificar o tipo de arquivo como `text/css` e `text/javascript`.
 
 ```html
 <!-- Bom -->
