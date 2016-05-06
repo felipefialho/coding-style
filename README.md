@@ -823,7 +823,7 @@ Separate nested ruleset by a blank line and blocks ruleset by a double blank lin
     float left
 ``` 
 
-Use **$** for the variables and mixins.
+Use **$** for the variables.
 
 ```css
 // Good
@@ -833,19 +833,6 @@ $gray         = #555
 $gray-light   = #aaa
 $gray-lighter = #ECF1F5
 $gray-white   = #fbfbfb
-
-
-$reset(arg = '')
-  
-  if (arg == list) 
-    margin 0
-    padding-left 0
-    list-style none
-  
-  if (arg == form)  
-    background 0
-    border 0
-    padding 0 
 ```
 
 <a name="preprocessors-performance"></a>
@@ -865,23 +852,26 @@ Warning with nesting rules of preprocessors. Continue keep without nesting.
       ... 
 ```
 
-Create mixins and use [@extends](https://learnboost.github.io/stylus/docs/extend.html) to add in various elements.
+**Do not use @extends**, [always use mixins](http://csswizardry.com/2016/02/mixins-better-for-performance/).
 
 ```css
-$clearfix 
-  &:before,
-  &:after
-    content " " 
-    display table 
+reset(arg = '')
+  
+  if (arg == list) 
+    margin 0
+    padding-left 0
+    list-style none
+    
+  if (arg == form)  
+    background 0
+    border 0
+    padding 0
 
-  &:after
-    clear both 
+.nav
+  reset(list)
 
-.header
-  @extends $clearfix 
-
-.footer
-  @extends $clearfix 
+.btn
+  reset(form)
 ```
  
 <a name="preprocessors-media-queries"></a>
