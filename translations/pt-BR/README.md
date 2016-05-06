@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://cloud.githubusercontent.com/assets/3603793/15085619/b7b0423a-13b1-11e6-8e47-e8ed523f6ff6.png" width="200">
+</p>
+
 Meu Estilo de Código
 ============
 
