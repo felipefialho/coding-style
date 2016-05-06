@@ -19,6 +19,7 @@ Este é um documento vivo e mudanças podem acontecer a qualquer momento.
 1. [CSS](#css)
 1. [CSS Pré-processadores](#css-preprocessors) 
 1. [Javascript](#js)
+1. [Boilerplate](#boilerplate)
 1. [Referências](#references)
 1. [Traduções](#translations)
 1. [Licença](#license)
@@ -1196,8 +1197,15 @@ var me = $(this);
 var me = $(this); // Exemplo ruim de comentário
 ```
 
+<a name="boilerplate"></a>
+## 7. Boilerplate
+
+Eu tenho um boilerplate usando esse coding style.
+
+Ele chama [Kratos Boilerplate](https://github.com/LFeh/kratos-boilerplate).
+
 <a name="references"></a>
-## 7. Referências
+## 8. Referências
 
 * [Code Guide by @mdo](https://github.com/mdo/code-guide)
 * [idiomatic CSS](https://github.com/necolas/idiomatic-css/)
@@ -1206,12 +1214,12 @@ var me = $(this); // Exemplo ruim de comentário
 * [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
 
 <a name="translations"></a>
-## 8. Traduções
+## 9. Traduções
 
 * [English](/)
 * [Russo (by Vbifonixor)](https://github.com/vbifonixor/coding-style)
 
 <a name="license"></a>
-## 9. Licença
+## 10. Licença
 
 [MIT License](http://felipefialho.mit-license.org/) © Luiz Felipe Tartarotti Fialho
