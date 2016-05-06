@@ -848,7 +848,7 @@ Separe as regras dos elementos aninhados por uma linha vazia e outros blocos de 
     float left
 ``` 
 
-Use **$** para as váriaveis e mixins. 
+Use **$** para as váriaveis. 
 
 ```css
 // Good
@@ -857,20 +857,7 @@ $gray-dark    = #393C45
 $gray         = #555
 $gray-light   = #aaa
 $gray-lighter = #ECF1F5
-$gray-white   = #fbfbfb
-
-
-$reset(arg = '')
-  
-  if (arg == list) 
-    margin 0
-    padding-left 0
-    list-style none
-  
-  if (arg == form)  
-    background 0
-    border 0
-    padding 0 
+$gray-white   = #fbfbfb 
 ```
 
 <a name="preprocessors-performance"></a>
@@ -890,23 +877,26 @@ Cuidado com a facilidade de aninhar elementos com os pré-processadores. Continu
       ... 
 ```
 
-Crie mixins e use o [@extends](https://learnboost.github.io/stylus/docs/extend.html) para adicionar em vários elementos. 
+**Não use @extends**, [sempre use mixins](http://csswizardry.com/2016/02/mixins-better-for-performance/).
 
 ```css
-$clearfix 
-  &:before,
-  &:after
-    content " " 
-    display table 
+reset(arg = '')
+  
+  if (arg == list) 
+    margin 0
+    padding-left 0
+    list-style none
+    
+  if (arg == form)  
+    background 0
+    border 0
+    padding 0
 
-  &:after
-    clear both 
+.nav
+  reset(list)
 
-.header
-  @extends $clearfix 
-
-.footer
-  @extends $clearfix 
+.btn
+  reset(form)
 ```
  
 <a name="preprocessors-media-queries"></a>
