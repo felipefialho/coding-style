@@ -175,7 +175,7 @@ Nos includes dos arquivos CSS e JavaScript não é necessário especificar o tip
 <script src="scripts.min.js"></script>
 
 <!-- Ruim -->
-<script src="scripts.min.js"></script>
+<script type="text/javascript" src="scripts.min.js"></script>
 </head>
 <body>
 ```
