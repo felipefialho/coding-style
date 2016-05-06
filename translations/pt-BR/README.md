@@ -1192,6 +1192,10 @@ var me = $(this); // Exemplo ruim de comentário
 
 Eu tenho um boilerplate usando esse coding style.
 
+<p>
+  <img src="https://cloud.githubusercontent.com/assets/3603793/14390922/a999424c-fd8f-11e5-8fbb-ab908a1d4740.png" width="100">
+</p>
+
 Ele chama [Kratos Boilerplate](https://github.com/LFeh/kratos-boilerplate).
 
 <a name="references"></a>
