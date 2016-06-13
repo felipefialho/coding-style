@@ -31,7 +31,7 @@ This is a live document and changes can occur at any time.
 <a name="commits"></a>
 ## 1. Commits
 
-For facilitate the contribution of any people in projects, all commit messages, pull request title or issues discussion must be in **English**.
+In order to facilitate the contribution by anyone in a project, all commit messages, pull request title or issues discussion must be in **English**.
 
 Before commit adjusts in project, check if exists an open issue and make references for this issue using '#' in your commit message.
 
