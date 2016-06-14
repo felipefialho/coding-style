@@ -22,7 +22,7 @@ This is a live document and changes can occur at any time.
 1. [Jade](#jade)
 1. [CSS](#css) 
 1. [CSS Preprocessors](#css-preprocessors) 
-1. [Javascript](#js)
+1. [JavaScript](#js)
 1. [Boilerplate](#boilerplate) 
 1. [References](#references)
 1. [Translations](#translations)
@@ -172,7 +172,7 @@ HTML attributes should be in this order for facilitate the reading.
 <a name="html-performance"></a>
 ### 2.5. HTML Performance
 
-No need to specify a type when including CSS and JavaScript files as `text/css` and `text/javascript`.
+No need to specify a type when including CSS and JavaScript files as `text/css` and `text/JavaScript`.
 
 ```html
 <!-- Good -->
@@ -181,7 +181,7 @@ No need to specify a type when including CSS and JavaScript files as `text/css` 
 
 <!-- Bad -->
 <link rel="stylesheet" href="assets/css/style.css" type="text/css">
-<script src="scripts.min.js" type="text/javascript"></script>
+<script src="scripts.min.js" type="text/JavaScript"></script>
 </head>
 <body>
 ```
@@ -961,11 +961,11 @@ The main influences for the JavaScript rules are [idiomatic.js](https://github.c
 
 ### JavaScript Summary
 
-1. [Javascript Syntax](#js-syntax)
-1. [Javascript Variables](#js-variables)
-1. [Javascript Performance](#js-performance)
-1. [Javascript and HTML5 Data Attributes](#js-data-attributes)
-1. [Javascript Comments](#js-comments)
+1. [JavaScript Syntax](#js-syntax)
+1. [JavaScript Variables](#js-variables)
+1. [JavaScript Performance](#js-performance)
+1. [JavaScript and HTML5 Data Attributes](#js-data-attributes)
+1. [JavaScript Comments](#js-comments)
 
 <a name="js-syntax"></a>
 ### 6.1. JavaScript Syntax
@@ -1184,7 +1184,7 @@ It's call [Kratos Boilerplate](https://github.com/LFeh/kratos-boilerplate).
 * [idiomatic CSS](https://github.com/necolas/idiomatic-css/)
 * [idiomatic.js](https://github.com/rwldrn/idiomatic.js/)
 * [Zeno Rocha Coding Style](https://github.com/zenorocha/my-coding-style/)
-* [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
+* [Airbnb JavaScript Style Guide](https://github.com/airbnb/JavaScript)
 
 <a name="translations"></a>
 ## 9. Translations
