@@ -569,11 +569,23 @@ Keep class lowercase and use dashes.
 
 ```css
 /* Good */
-.nav-item { ... }
+.nav--item { ... }
 
 /* Bad */
 .NavItem { ... }
 .nav_item { ... }
+```
+
+Use single dash to element name and double dash to element modificator.
+
+```css
+/* Good */
+.page-header--action { ... }
+.modal-alert--inner { ... }
+
+/* Bad */
+.page-header-action { ... }
+.modal-alert-inner { ... }
 ```
 
 Dashes serve as natural breaks in related class. Prefix class based on the closest parent or base class.
@@ -582,8 +594,8 @@ Dashes serve as natural breaks in related class. Prefix class based on the close
 /* Good */
 .navbar { ... }
 .nav { ... }
-.nav-item { ... }
-.nav-link { ... }
+.nav--item { ... }
+.nav--link { ... }
 
 /* Bad */
 .item-nav { ... }
@@ -639,8 +651,8 @@ Avoid nesting elements, the preference is always to use class.
 /* Good */
 .navbar { ... }
 .nav { ... }
-.nav-item { ... }
-.nav-link { ... }
+.nav--item { ... }
+.nav--link { ... }
 
 /* Bad */
 .navbar ul { ... }
