@@ -576,7 +576,7 @@ Keep class lowercase and use dashes.
 .nav_item { ... }
 ```
 
-Use single dash to element name and double dash to element modificator.
+Use single dash to element name and double dash to element modification.
 
 ```css
 /* Good */
