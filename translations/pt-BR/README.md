@@ -589,16 +589,16 @@ Hífens servem como uma transição natural entre classes relacionadas. O primei
 .link-nav { ... }
 ```
 
-Use um hífem para separar o nome do elemento e dois hífens para separar o modificador do elemento.
+Use um hífem para separar o nome do elemento, dois underlines para separar o bloco e dois hífens para separar o modificador ou conteúdo do elemento.
 
 ```css
 /* Bom */
-.page-header--action { ... }
-.modal-alert--inner { ... }
+.page-header__action { ... }
+.page-header__action--title { ... }
 
 /* Ruim */
 .page-header-action { ... }
-.modal-alert-inner { ... }
+.page-header-action-title { ... }
 ```
 
 Evite usar nomes muito curtos e sempre use nomes relacionados com a função da classe.
