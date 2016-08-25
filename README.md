@@ -576,16 +576,16 @@ Keep class lowercase and use dashes.
 .nav_item { ... }
 ```
 
-Use single dash to element name and double dash to element modification.
+Use single dash to element name, double underline to element block and double dash to element modification or element content.
 
 ```css
 /* Good */
-.page-header--action { ... }
-.modal-alert--inner { ... }
+.page-header__action { ... }
+.page-header__action--title { ... }
 
 /* Bad */
 .page-header-action { ... }
-.modal-alert-inner { ... }
+.page-header-action-title { ... }
 ```
 
 Dashes serve as natural breaks in related class. Prefix class based on the closest parent or base class.
