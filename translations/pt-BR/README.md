@@ -568,21 +568,21 @@ Mantenha as classes em caixa-baixa e use hífen para separar os nomes.
 
 ```css
 /* Bom */
-.nav-item { ... }
+.page-header { ... }
 
 /* Ruim */
-.NavItem { ... }
-.nav_item { ... }
+.pageHeader { ... }
+.page_header { ... }
 ```
 
-Hífens servem como uma transição natural entre classes relacionadas. O primeiro nome deve ser baseado no parente imediato da classe que deseja criar.
+Hífens e underlines servem como uma transição natural entre classes relacionadas. O primeiro nome deve ser baseado no parente imediato da classe que deseja criar.
 
 ```css
 /* Bom */
 .navbar { ... }
 .nav { ... }
-.nav-item { ... }
-.nav-link { ... }
+.nav__item { ... }
+.nav--link { ... }
 
 /* Ruim */
 .item-nav { ... }

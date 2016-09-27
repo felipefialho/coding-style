@@ -565,15 +565,15 @@ The declarations should be added in alphabetical order.
 <a name="css-class-name"></a>
 ### 4.3. CSS Class Name
 
-Keep class lowercase and use dashes.
+Keep class lowercase and use dashes to separate the classname.
 
 ```css
 /* Good */
-.nav--item { ... }
+.page-header { ... }
 
 /* Bad */
-.NavItem { ... }
-.nav_item { ... }
+.pageHeader { ... }
+.page_header { ... }
 ```
 
 Use single dash to element name, double underline to element block and double dash to element modification or element content.
@@ -588,13 +588,12 @@ Use single dash to element name, double underline to element block and double da
 .page-header-action-title { ... }
 ```
 
-Dashes serve as natural breaks in related class. Prefix class based on the closest parent or base class.
+Dashes and underline serve as natural breaks in related class. Prefix class based on the closest parent or base class.
 
 ```css
-/* Good */
-.navbar { ... }
+/* Good */ 
 .nav { ... }
-.nav--item { ... }
+.nav__item { ... }
 .nav--link { ... }
 
 /* Bad */
@@ -651,7 +650,7 @@ Avoid nesting elements, the preference is always to use class.
 /* Good */
 .navbar { ... }
 .nav { ... }
-.nav--item { ... }
+.nav__item { ... }
 .nav--link { ... }
 
 /* Bad */
@@ -924,7 +923,7 @@ Provide one summary on header of files.
 // 3. Media Queries 
 // 4. Typography
 //
-// ===============================================================
+// ==================================================
 
 // 
 // 1. Colors
