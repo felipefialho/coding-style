@@ -229,7 +229,7 @@ O código a seguir é uma base em HTML para iniciar rápidamente os projetos.
 
 <meta charset="utf-8">
 <meta name="format-detection" content="telephone=no">
-<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
 <link rel="shortcut icon" href="assets/img/ico/favicon.ico">
 <link rel="logo" type="image/svg" href="assets/img/logo/logo.svg">
@@ -347,7 +347,7 @@ html(lang='en')
   head 
     meta(charset='utf-8')
     meta(name='description', content='')
-    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, user-scalable=no')
     meta(name='format-detection', content='telephone=no')
 
     //- Title
