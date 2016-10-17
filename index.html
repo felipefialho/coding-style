@@ -1,35 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
-
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <title>Felipe Fialho Coding Style by LFeh</title>
+    <meta charset="UTF-8">
+    <title>Felipe Fialho - Coding Style by LFeh</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
-
   <body>
-    <header>
-      <div class="inner">
-        <h1>Felipe Fialho Coding Style</h1>
-        <h2>My rules coding for HTML, CSS and JavaScript development </h2>
-        <a href="https://github.com/LFeh/coding-style" class="button"><small>View project on</small>GitHub</a>
-      </div>
-    </header>
+    <section class="page-header">
+      <h1 class="project-name">Felipe Fialho - Coding Style</h1>
+      <h2 class="project-tagline">My rules coding for HTML, CSS and JavaScript development </h2>
+      <a href="https://github.com/LFeh/coding-style" class="btn">View on GitHub</a>
+      <a href="https://github.com/LFeh/coding-style/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/LFeh/coding-style/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          <h1>
-<a name="my-coding-style" class="anchor" href="#my-coding-style"><span class="octicon octicon-link"></span></a>My Coding Style</h1>
+    <section class="main-content">
+      <h1>
+<a id="my-coding-style" class="anchor" href="#my-coding-style" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>My Coding Style</h1>
 
 <blockquote>
 <p>"Every line of code should appear to be written by a single person, no matter the number of contributors." - Chinese Proverb.</p>
@@ -44,7 +35,7 @@
 <p>This is a live document and changes can occur at any time.</p>
 
 <h2>
-<a name="summary" class="anchor" href="#summary"><span class="octicon octicon-link"></span></a>Summary</h2>
+<a id="summary" class="anchor" href="#summary" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Summary</h2>
 
 <ol>
 <li><a href="#commits">Commits</a></li>
@@ -54,31 +45,32 @@
 <li><a href="#references">References</a></li>
 <li><a href="#translations">Translations</a></li>
 <li><a href="#license">License</a></li>
-</ol><p><a name="commits"></a></p>
+</ol>
+
+<p><a name="commits"></a></p>
 
 <h2>
-<a name="1-commits" class="anchor" href="#1-commits"><span class="octicon octicon-link"></span></a>1. Commits</h2>
+<a id="1-commits" class="anchor" href="#1-commits" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1. Commits</h2>
 
 <p>For facilitate the contribution of any people in projects, all commit messages, pull request title or issues discussion must be in <strong>English</strong>.</p>
 
 <p>Before commit adjusts in project, check if exists an open issue and make references for this issue using '#' in your commit message.</p>
 
-<div class="highlight highlight-javascript"><pre><span class="c1">// Good</span>
-<span class="nx">git</span> <span class="nx">commit</span> <span class="o">-</span><span class="nx">m</span> <span class="s2">"Add placeholder in input #10"</span>
+<div class="highlight highlight-source-js"><pre><span class="pl-c">// Good</span>
+git commit <span class="pl-k">-</span>m <span class="pl-s"><span class="pl-pds">"</span>Add placeholder in input #10<span class="pl-pds">"</span></span>
 
-<span class="c1">// Bad</span>
-<span class="nx">git</span> <span class="nx">commit</span> <span class="o">-</span><span class="nx">m</span> <span class="s2">"Add placeholder in input"</span>
-</pre></div>
+<span class="pl-c">// Bad</span>
+git commit <span class="pl-k">-</span>m <span class="pl-s"><span class="pl-pds">"</span>Add placeholder in input<span class="pl-pds">"</span></span></pre></div>
 
 <p><a name="html"></a></p>
 
 <h2>
-<a name="2-html" class="anchor" href="#2-html"><span class="octicon octicon-link"></span></a>2. HTML</h2>
+<a id="2-html" class="anchor" href="#2-html" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2. HTML</h2>
 
 <p>The main influence for the HTML rules is the <a href="https://github.com/mdo/code-guide">Code Guide by @mdo</a>.</p>
 
 <h3>
-<a name="html-summary" class="anchor" href="#html-summary"><span class="octicon octicon-link"></span></a>HTML Summary</h3>
+<a id="html-summary" class="anchor" href="#html-summary" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>HTML Summary</h3>
 
 <ol>
 <li><a href="#html-syntax">HTML Syntax</a></li>
@@ -87,102 +79,98 @@
 <li><a href="#html-attribute-order">HTML Attribute Order</a></li>
 <li><a href="#html-performance">HTML Performance</a></li>
 <li><a href="#html-base">HTML Base Code</a></li>
-</ol><p><a name="html-syntax"></a></p>
+</ol>
+
+<p><a name="html-syntax"></a></p>
 
 <h3>
-<a name="21-html-syntax" class="anchor" href="#21-html-syntax"><span class="octicon octicon-link"></span></a>2.1. HTML Syntax</h3>
+<a id="21-html-syntax" class="anchor" href="#21-html-syntax" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2.1. HTML Syntax</h3>
 
 <p>Use soft tabs with two spaces. You can configure your editor for this.</p>
 
-<div class="highlight highlight-html"><pre><span class="c">&lt;!-- Good --&gt;</span>
-<span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"nav"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav-menu"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span><span class="nt">&gt;</span>
+<div class="highlight highlight-text-html-basic"><pre><span class="pl-c">&lt;!-- Good --&gt;</span>
+&lt;<span class="pl-ent">nav</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>nav<span class="pl-pds">"</span></span>&gt;
+  &lt;<span class="pl-ent">ul</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>nav-menu<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">li</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>nav-item<span class="pl-pds">"</span></span>&gt;
+      &lt;<span class="pl-ent">a</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>nav-link<span class="pl-pds">"</span></span>&gt;
 
-<span class="c">&lt;!-- Bad--&gt;</span>
-<span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"nav"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav-menu"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span>
-                  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span><span class="nt">&gt;</span>
-</pre></div>
+<span class="pl-c">&lt;!-- Bad--&gt;</span>
+&lt;<span class="pl-ent">nav</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>nav<span class="pl-pds">"</span></span>&gt;
+      &lt;<span class="pl-ent">ul</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>nav-menu<span class="pl-pds">"</span></span>&gt;
+            &lt;<span class="pl-ent">li</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>nav-item<span class="pl-pds">"</span></span>&gt;
+                  &lt;<span class="pl-ent">a</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>nav-link<span class="pl-pds">"</span></span>&gt;</pre></div>
 
 <p>Always use double quotes.</p>
 
-<div class="highlight highlight-html"><pre><span class="c">&lt;!-- Good --&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"main"</span><span class="nt">&gt;</span>
+<div class="highlight highlight-text-html-basic"><pre><span class="pl-c">&lt;!-- Good --&gt;</span>
+&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>main<span class="pl-pds">"</span></span>&gt;
 
-<span class="c">&lt;!-- Bad--&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'main'</span><span class="nt">&gt;</span>
-</pre></div>
+<span class="pl-c">&lt;!-- Bad--&gt;</span>
+&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">'</span>main<span class="pl-pds">'</span></span>&gt;</pre></div>
 
 <p>Don't include a <code>/</code> in self-closing elements.</p>
 
-<div class="highlight highlight-html"><pre><span class="c">&lt;!-- Good --&gt;</span>
-<span class="nt">&lt;hr&gt;</span>
+<div class="highlight highlight-text-html-basic"><pre><span class="pl-c">&lt;!-- Good --&gt;</span>
+&lt;<span class="pl-ent">hr</span>&gt;
 
-<span class="c">&lt;!-- Bad--&gt;</span>
-<span class="nt">&lt;hr</span> <span class="nt">/&gt;</span>
-</pre></div>
+<span class="pl-c">&lt;!-- Bad--&gt;</span>
+&lt;<span class="pl-ent">hr</span> /&gt;</pre></div>
 
 <p>Separate block element by a blank line and agroup the inners block elements.</p>
 
-<div class="highlight highlight-html"><pre><span class="c">&lt;!-- Good --&gt;</span>
-<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav-tabs"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
-  <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
-  <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
-  <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
-<span class="nt">&lt;/ul&gt;</span>
+<div class="highlight highlight-text-html-basic"><pre><span class="pl-c">&lt;!-- Good --&gt;</span>
+&lt;<span class="pl-ent">ul</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>nav-tabs<span class="pl-pds">"</span></span>&gt;
+  &lt;<span class="pl-ent">li</span>&gt;...&lt;/<span class="pl-ent">li</span>&gt;
+  &lt;<span class="pl-ent">li</span>&gt;...&lt;/<span class="pl-ent">li</span>&gt;
+  &lt;<span class="pl-ent">li</span>&gt;...&lt;/<span class="pl-ent">li</span>&gt;
+  &lt;<span class="pl-ent">li</span>&gt;...&lt;/<span class="pl-ent">li</span>&gt;
+&lt;/<span class="pl-ent">ul</span>&gt;
 
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tab-content"</span><span class="nt">&gt;</span>
+&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>tab-content<span class="pl-pds">"</span></span>&gt;
   ...
-<span class="nt">&lt;/div&gt;</span>
+&lt;/<span class="pl-ent">div</span>&gt;
 
-<span class="c">&lt;!-- Bad--&gt;</span>
-<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav-tabs"</span><span class="nt">&gt;</span>
+<span class="pl-c">&lt;!-- Bad--&gt;</span>
+&lt;<span class="pl-ent">ul</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>nav-tabs<span class="pl-pds">"</span></span>&gt;
 
-  <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
+  &lt;<span class="pl-ent">li</span>&gt;...&lt;/<span class="pl-ent">li</span>&gt;
 
-  <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
+  &lt;<span class="pl-ent">li</span>&gt;...&lt;/<span class="pl-ent">li</span>&gt;
 
-  <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
+  &lt;<span class="pl-ent">li</span>&gt;...&lt;/<span class="pl-ent">li</span>&gt;
 
-  <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
+  &lt;<span class="pl-ent">li</span>&gt;...&lt;/<span class="pl-ent">li</span>&gt;
 
-<span class="nt">&lt;/ul&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tab-content"</span><span class="nt">&gt;</span>
+&lt;/<span class="pl-ent">ul</span>&gt;
+&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>tab-content<span class="pl-pds">"</span></span>&gt;
   ...
-<span class="nt">&lt;/div&gt;</span>
-</pre></div>
+&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
 
 <p><a name="html-comments"></a></p>
 
 <h3>
-<a name="22-html-comments" class="anchor" href="#22-html-comments"><span class="octicon octicon-link"></span></a>2.2. HTML Comments</h3>
+<a id="22-html-comments" class="anchor" href="#22-html-comments" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2.2. HTML Comments</h3>
 
 <p>Follow this rule to add comments in HTML.</p>
 
-<div class="highlight highlight-html"><pre><span class="c">&lt;!-- This is a good example --&gt;</span>
-<span class="c">&lt;!-- /Closing a good example --&gt;</span>
-</pre></div>
+<div class="highlight highlight-text-html-basic"><pre><span class="pl-c">&lt;!-- This is a good example --&gt;</span>
+<span class="pl-c">&lt;!-- /Closing a good example --&gt;</span></pre></div>
 
 <p><a name="html-encoding"></a></p>
 
 <h3>
-<a name="23-html-character-encoding" class="anchor" href="#23-html-character-encoding"><span class="octicon octicon-link"></span></a>2.3. HTML Character Encoding</h3>
+<a id="23-html-character-encoding" class="anchor" href="#23-html-character-encoding" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2.3. HTML Character Encoding</h3>
 
 <p>Always use UTF-8 for character encoding.</p>
 
-<div class="highlight highlight-html"><pre><span class="nt">&lt;head&gt;</span>
-  <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;/head&gt;</span>
-</pre></div>
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">head</span>&gt;
+  &lt;<span class="pl-ent">meta</span> <span class="pl-e">charset</span>=<span class="pl-s"><span class="pl-pds">"</span>UTF-8<span class="pl-pds">"</span></span>&gt;
+&lt;/<span class="pl-ent">head</span>&gt;</pre></div>
 
 <p><a name="html-attribute-order"></a></p>
 
 <h3>
-<a name="24-html-attribute-order" class="anchor" href="#24-html-attribute-order"><span class="octicon octicon-link"></span></a>2.4. HTML Attribute Order</h3>
+<a id="24-html-attribute-order" class="anchor" href="#24-html-attribute-order" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2.4. HTML Attribute Order</h3>
 
 <p>HTML attributes should be in this order for facilitate the reading.</p>
 
@@ -201,112 +189,108 @@
 <li>
 <code>aria-*</code>, <code>role</code>
 </li>
-</ol><div class="highlight highlight-html"><pre><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"..."</span> <span class="na">id=</span><span class="s">"..."</span> <span class="na">data-modal=</span><span class="s">"toggle"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+</ol>
 
-<span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">a</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>...<span class="pl-pds">"</span></span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>...<span class="pl-pds">"</span></span> <span class="pl-e">data-modal</span>=<span class="pl-s"><span class="pl-pds">"</span>toggle<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>#<span class="pl-pds">"</span></span>&gt;
 
-<span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"img-rounded"</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">alt=</span><span class="s">"..."</span><span class="nt">&gt;</span>
-</pre></div>
+&lt;<span class="pl-ent">input</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>form-control<span class="pl-pds">"</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text<span class="pl-pds">"</span></span>&gt;
+
+&lt;<span class="pl-ent">img</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>img-rounded<span class="pl-pds">"</span></span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>...<span class="pl-pds">"</span></span> <span class="pl-e">alt</span>=<span class="pl-s"><span class="pl-pds">"</span>...<span class="pl-pds">"</span></span>&gt;</pre></div>
 
 <p><a name="html-performance"></a></p>
 
 <h3>
-<a name="25-html-performance" class="anchor" href="#25-html-performance"><span class="octicon octicon-link"></span></a>2.5. HTML Performance</h3>
+<a id="25-html-performance" class="anchor" href="#25-html-performance" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2.5. HTML Performance</h3>
 
 <p>No need to specify a type when including CSS and JavaScript files as <code>text/css</code> and <code>text/javascript</code>.</p>
 
-<div class="highlight highlight-html"><pre><span class="c">&lt;!-- Good --&gt;</span>
-<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"assets/css/style.css"</span> <span class="nt">/&gt;</span>
-<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"scripts.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<div class="highlight highlight-text-html-basic"><pre><span class="pl-c">&lt;!-- Good --&gt;</span>
+&lt;<span class="pl-ent">link</span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>assets/css/style.css<span class="pl-pds">"</span></span> /&gt;
+&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>scripts.min.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;
 
-<span class="c">&lt;!-- Bad --&gt;</span>
-<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"scripts.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
-<span class="nt">&lt;/head&gt;</span>
-<span class="nt">&lt;body&gt;</span>
-</pre></div>
+<span class="pl-c">&lt;!-- Bad --&gt;</span>
+&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>scripts.min.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;
+&lt;/<span class="pl-ent">head</span>&gt;
+&lt;<span class="pl-ent">body</span>&gt;</pre></div>
 
 <p>For a better performance, all javascripts files must be at the end of the code. Before closing the <code>&lt;body&gt;</code>.</p>
 
-<div class="highlight highlight-html"><pre><span class="c">&lt;!-- Good --&gt;</span>
-<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"scripts.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
-<span class="nt">&lt;/body&gt;</span>
+<div class="highlight highlight-text-html-basic"><pre><span class="pl-c">&lt;!-- Good --&gt;</span>
+&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>scripts.min.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;
+&lt;/<span class="pl-ent">body</span>&gt;
 
-<span class="c">&lt;!-- Bad --&gt;</span>
-<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"scripts.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
-<span class="nt">&lt;/head&gt;</span>
-<span class="nt">&lt;body&gt;</span>
-</pre></div>
+<span class="pl-c">&lt;!-- Bad --&gt;</span>
+&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>scripts.min.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;
+&lt;/<span class="pl-ent">head</span>&gt;
+&lt;<span class="pl-ent">body</span>&gt;</pre></div>
 
 <p>Always minify the code in projects only in HTML. Task builders like <a href="http://gruntjs.com/">Grunt</a> leaves this easier.</p>
 
-<div class="highlight highlight-html"><pre><span class="c">&lt;!-- Good --&gt;</span>
-<span class="nt">&lt;html&gt;&lt;head&gt;</span>...<span class="nt">&lt;/head&gt;&lt;body&gt;&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</span>
+<div class="highlight highlight-text-html-basic"><pre><span class="pl-c">&lt;!-- Good --&gt;</span>
+&lt;<span class="pl-ent">html</span>&gt;&lt;<span class="pl-ent">head</span>&gt;...&lt;/<span class="pl-ent">head</span>&gt;&lt;<span class="pl-ent">body</span>&gt;&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>container<span class="pl-pds">"</span></span>&gt;...&lt;/<span class="pl-ent">div</span>&gt;&lt;/<span class="pl-ent">body</span>&gt;&lt;/<span class="pl-ent">html</span>&gt;
 
-<span class="c">&lt;!-- Bad --&gt;</span>
-<span class="nt">&lt;html&gt;</span>
-  <span class="nt">&lt;head&gt;</span>
+<span class="pl-c">&lt;!-- Bad --&gt;</span>
+&lt;<span class="pl-ent">html</span>&gt;
+  &lt;<span class="pl-ent">head</span>&gt;
     ...
-  <span class="nt">&lt;/head&gt;</span>
-  <span class="nt">&lt;body&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+  &lt;/<span class="pl-ent">head</span>&gt;
+  &lt;<span class="pl-ent">body</span>&gt;
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>container<span class="pl-pds">"</span></span>&gt;
       ...
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
-</pre></div>
+    &lt;/<span class="pl-ent">div</span>&gt;
+  &lt;/<span class="pl-ent">body</span>&gt;
+&lt;/<span class="pl-ent">html</span>&gt;</pre></div>
 
 <p><a name="html-base"></a></p>
 
 <h3>
-<a name="26-html-base-code" class="anchor" href="#26-html-base-code"><span class="octicon octicon-link"></span></a>2.6. HTML Base Code</h3>
+<a id="26-html-base-code" class="anchor" href="#26-html-base-code" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2.6. HTML Base Code</h3>
 
 <p>The following code is a HTML base for faster start the projects.</p>
 
-<div class="highlight highlight-html"><pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;head&gt;</span>
+<div class="highlight highlight-text-html-basic"><pre>&lt;!DOCTYPE html&gt;
+&lt;<span class="pl-ent">html</span> <span class="pl-e">lang</span>=<span class="pl-s"><span class="pl-pds">"</span>en<span class="pl-pds">"</span></span>&gt;
+&lt;<span class="pl-ent">head</span>&gt;
 
-<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"Content-Type"</span> <span class="na">content=</span><span class="s">"text/html; charset=utf-8"</span> <span class="nt">/&gt;</span>
-<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"format-detection"</span> <span class="na">content=</span><span class="s">"telephone=no"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width"</span><span class="nt">&gt;</span>
+&lt;<span class="pl-ent">meta</span> <span class="pl-e">http-equiv</span>=<span class="pl-s"><span class="pl-pds">"</span>Content-Type<span class="pl-pds">"</span></span> <span class="pl-e">content</span>=<span class="pl-s"><span class="pl-pds">"</span>text/html; charset=utf-8<span class="pl-pds">"</span></span> /&gt;
+&lt;<span class="pl-ent">meta</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>format-detection<span class="pl-pds">"</span></span> <span class="pl-e">content</span>=<span class="pl-s"><span class="pl-pds">"</span>telephone=no<span class="pl-pds">"</span></span>&gt;
+&lt;<span class="pl-ent">meta</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>viewport<span class="pl-pds">"</span></span> <span class="pl-e">content</span>=<span class="pl-s"><span class="pl-pds">"</span>width=device-width<span class="pl-pds">"</span></span>&gt;
 
-<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"shortcut icon"</span> <span class="na">href=</span><span class="s">"assets/img/ico/favicon.ico"</span> <span class="nt">/&gt;</span>
-<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"logo"</span> <span class="na">type=</span><span class="s">"image/svg"</span> <span class="na">href=</span><span class="s">"../assets/img/logo/logo.svg"</span> <span class="nt">/&gt;</span>
-<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"assets/css/style.css"</span> <span class="nt">/&gt;</span>
+&lt;<span class="pl-ent">link</span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>shortcut icon<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>assets/img/ico/favicon.ico<span class="pl-pds">"</span></span> /&gt;
+&lt;<span class="pl-ent">link</span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>logo<span class="pl-pds">"</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>image/svg<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>../assets/img/logo/logo.svg<span class="pl-pds">"</span></span> /&gt;
+&lt;<span class="pl-ent">link</span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>assets/css/style.css<span class="pl-pds">"</span></span> /&gt;
 
-<span class="nt">&lt;title&gt;&lt;/title&gt;</span>
+&lt;<span class="pl-ent">title</span>&gt;&lt;/<span class="pl-ent">title</span>&gt;
 
-<span class="nt">&lt;/head&gt;</span>
-<span class="nt">&lt;body&gt;</span>
+&lt;/<span class="pl-ent">head</span>&gt;
+&lt;<span class="pl-ent">body</span>&gt;
 
-<span class="c">&lt;!-- Scripts --&gt;</span>
-<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"assets/js/scripts.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="pl-c">&lt;!-- Scripts --&gt;</span>
+&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>assets/js/scripts.min.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;
 
-<span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
-</pre></div>
+&lt;/<span class="pl-ent">body</span>&gt;
+&lt;/<span class="pl-ent">html</span>&gt;</pre></div>
 
 <p>For give support a olds Internet Explorer...</p>
 
-<div class="highlight highlight-html"><pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="c">&lt;!--[if IE]&gt;&lt;![endif]--&gt;</span>
-<span class="c">&lt;!--[if IE 7 ]&gt; &lt;html lang="en" class="ie7"&gt;    &lt;![endif]--&gt;</span>
-<span class="c">&lt;!--[if IE 8 ]&gt;    &lt;html lang="en" class="ie8"&gt;    &lt;![endif]--&gt;</span>
-<span class="c">&lt;!--[if IE 9 ]&gt;    &lt;html lang="en" class="ie9"&gt;    &lt;![endif]--&gt;</span>
-<span class="c">&lt;!--[if (gt IE 9)|!(IE)]&gt;&lt;!--&gt;</span><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span><span class="c">&lt;!--&lt;![endif]--&gt;</span>
-<span class="nt">&lt;head&gt;</span>
-...
-</pre></div>
+<div class="highlight highlight-text-html-basic"><pre>&lt;!DOCTYPE html&gt;
+<span class="pl-c">&lt;!--[if IE]&gt;&lt;![endif]--&gt;</span>
+<span class="pl-c">&lt;!--[if IE 7 ]&gt; &lt;html lang="en" class="ie7"&gt;    &lt;![endif]--&gt;</span>
+<span class="pl-c">&lt;!--[if IE 8 ]&gt;    &lt;html lang="en" class="ie8"&gt;    &lt;![endif]--&gt;</span>
+<span class="pl-c">&lt;!--[if IE 9 ]&gt;    &lt;html lang="en" class="ie9"&gt;    &lt;![endif]--&gt;</span>
+<span class="pl-c">&lt;!--[if (gt IE 9)|!(IE)]&gt;&lt;!--&gt;</span>&lt;<span class="pl-ent">html</span> <span class="pl-e">lang</span>=<span class="pl-s"><span class="pl-pds">"</span>en<span class="pl-pds">"</span></span>&gt;<span class="pl-c">&lt;!--&lt;![endif]--&gt;</span>
+&lt;<span class="pl-ent">head</span>&gt;
+...</pre></div>
 
 <p><a name="css"></a></p>
 
 <h2>
-<a name="3-css" class="anchor" href="#3-css"><span class="octicon octicon-link"></span></a>3. CSS</h2>
+<a id="3-css" class="anchor" href="#3-css" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3. CSS</h2>
 
 <p>The main influences for the CSS rules are <a href="https://github.com/mdo/code-guide">Code Guide by @mdo</a> and <a href="https://github.com/necolas/idiomatic-css/">idiomatic CSS</a>.</p>
 
 <h3>
-<a name="css-summary" class="anchor" href="#css-summary"><span class="octicon octicon-link"></span></a>CSS Summary</h3>
+<a id="css-summary" class="anchor" href="#css-summary" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>CSS Summary</h3>
 
 <ol>
 <li><a href="#css-syntax">CSS Syntax</a></li>
@@ -316,573 +300,543 @@
 <li><a href="#mobile-first-and-media-queries">Mobile First and Media Queries</a></li>
 <li><a href="#css-pre-processors">Pre-Processors</a></li>
 <li><a href="#css-comments">CSS Comments</a></li>
-</ol><p><a name="css-syntax"></a></p>
+</ol>
+
+<p><a name="css-syntax"></a></p>
 
 <h3>
-<a name="31-css-syntax" class="anchor" href="#31-css-syntax"><span class="octicon octicon-link"></span></a>3.1. CSS Syntax</h3>
+<a id="31-css-syntax" class="anchor" href="#31-css-syntax" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3.1. CSS Syntax</h3>
 
 <p>Use soft tabs with two spaces. You can configure your editor for this.</p>
 
-<div class="highlight highlight-css"><pre><span class="c">/* Good */</span>
-<span class="nc">.nav-item</span> <span class="p">{</span>
-  <span class="k">display</span><span class="o">:</span> <span class="k">inline</span><span class="o">-</span><span class="k">block</span><span class="p">;</span>
-  <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="m">5px</span><span class="p">;</span>
-<span class="p">}</span>
+<div class="highlight highlight-source-css"><pre><span class="pl-c">/* Good */</span>
+<span class="pl-e">.nav-item</span> {
+  <span class="pl-c1"><span class="pl-c1">display</span></span>: <span class="pl-c1">inline-block</span>;
+  <span class="pl-c1"><span class="pl-c1">margin</span></span>: <span class="pl-c1">0</span> <span class="pl-c1">5<span class="pl-k">px</span></span>;
+}
 
-<span class="c">/* Bad */</span>
-<span class="nc">.nav-item</span> <span class="p">{</span>
-    <span class="k">display</span><span class="o">:</span> <span class="k">inline</span><span class="o">-</span><span class="k">block</span><span class="p">;</span>
-    <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="m">5px</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></div>
+<span class="pl-c">/* Bad */</span>
+<span class="pl-e">.nav-item</span> {
+    <span class="pl-c1"><span class="pl-c1">display</span></span>: <span class="pl-c1">inline-block</span>;
+    <span class="pl-c1"><span class="pl-c1">margin</span></span>: <span class="pl-c1">0</span> <span class="pl-c1">5<span class="pl-k">px</span></span>;
+}</pre></div>
 
 <p>Always use double quotes.</p>
 
-<div class="highlight highlight-css"><pre><span class="c">/* Good */</span>
-<span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="s2">"text"</span><span class="o">]</span>
-<span class="o">[</span><span class="nt">class</span><span class="o">^=</span><span class="s2">"..."</span><span class="o">]</span>
+<div class="highlight highlight-source-css"><pre><span class="pl-c">/* Good */</span>
+[type="text"]
+[class^="..."]
 
-<span class="nc">.nav-item</span><span class="nd">:after</span> <span class="p">{</span>
-  <span class="k">content</span><span class="o">:</span> <span class="s2">""</span><span class="p">;</span>
-<span class="p">}</span>
+<span class="pl-e">.nav-item</span><span class="pl-e">:after</span> {
+  <span class="pl-c1"><span class="pl-c1">content</span></span>: <span class="pl-s"><span class="pl-pds">"</span><span class="pl-pds">"</span></span>;
+}
 
-<span class="c">/* Bad */</span>
-<span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="s1">'text'</span><span class="o">]</span>
-<span class="o">[</span><span class="nt">class</span><span class="o">^=</span><span class="s1">'...'</span><span class="o">]</span>
+<span class="pl-c">/* Bad */</span>
+[type='text']
+[class^='...']
 
-<span class="nc">.nav-item</span><span class="nd">:after</span> <span class="p">{</span>
-  <span class="k">content</span><span class="o">:</span> <span class="s1">''</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></div>
+<span class="pl-e">.nav-item</span><span class="pl-e">:after</span> {
+  <span class="pl-c1"><span class="pl-c1">content</span></span>: <span class="pl-s"><span class="pl-pds">'</span><span class="pl-pds">'</span></span>;
+}</pre></div>
 
 <p>Include a single space before the opening brace of a ruleset.</p>
 
-<div class="highlight highlight-css"><pre><span class="c">/* Good */</span>
-<span class="nc">.header</span> <span class="p">{</span>
-  <span class="o">...</span>
-<span class="p">}</span>
+<div class="highlight highlight-source-css"><pre><span class="pl-c">/* Good */</span>
+<span class="pl-e">.header</span> {
+  ...
+}
 
-<span class="c">/* Bad */</span>
-<span class="nc">.header</span><span class="p">{</span>
-  <span class="o">...</span>
-<span class="p">}</span>
-</pre></div>
+<span class="pl-c">/* Bad */</span>
+<span class="pl-e">.header</span>{
+  ...
+}</pre></div>
 
 <p>Include a single space after the colon of a declaration.</p>
 
-<div class="highlight highlight-css"><pre><span class="c">/* Good */</span>
-<span class="nc">.header</span> <span class="p">{</span>
-  <span class="k">margin-bottom</span><span class="o">:</span> <span class="m">20px</span><span class="p">;</span>
-<span class="p">}</span>
+<div class="highlight highlight-source-css"><pre><span class="pl-c">/* Good */</span>
+<span class="pl-e">.header</span> {
+  <span class="pl-c1"><span class="pl-c1">margin-bottom</span></span>: <span class="pl-c1">20<span class="pl-k">px</span></span>;
+}
 
-<span class="c">/* Bad */</span>
-<span class="nc">.header</span><span class="p">{</span>
-  <span class="k">margin-bottom</span><span class="o">:</span><span class="m">20px</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></div>
+<span class="pl-c">/* Bad */</span>
+<span class="pl-e">.header</span>{
+  <span class="pl-c1"><span class="pl-c1">margin-bottom</span></span>:<span class="pl-c1">20<span class="pl-k">px</span></span>;
+}</pre></div>
 
 <p>Include a semi-colon at the end of the last declaration in a declaration block.</p>
 
-<div class="highlight highlight-css"><pre><span class="c">/* Good */</span>
-<span class="nc">.header</span> <span class="p">{</span>
-  <span class="k">margin-bottom</span><span class="o">:</span> <span class="m">20px</span><span class="p">;</span>
-<span class="p">}</span>
+<div class="highlight highlight-source-css"><pre><span class="pl-c">/* Good */</span>
+<span class="pl-e">.header</span> {
+  <span class="pl-c1"><span class="pl-c1">margin-bottom</span></span>: <span class="pl-c1">20<span class="pl-k">px</span></span>;
+}
 
-<span class="c">/* Bad */</span>
-<span class="nc">.header</span><span class="p">{</span>
-  <span class="k">margin-bottom</span><span class="o">:</span><span class="m">20px</span>
-<span class="p">}</span>
-</pre></div>
+<span class="pl-c">/* Bad */</span>
+<span class="pl-e">.header</span>{
+  <span class="pl-c1"><span class="pl-c1">margin-bottom</span></span>:<span class="pl-c1">20<span class="pl-k">px</span></span>
+}</pre></div>
 
 <p>Keep one declaration per line.</p>
 
-<div class="highlight highlight-css"><pre><span class="c">/* Good */</span>
-<span class="nc">.selector-1</span><span class="o">,</span>
-<span class="nc">.selector-2</span><span class="o">,</span>
-<span class="nc">.selector-3</span> <span class="p">{</span>
-  <span class="o">...</span>
-<span class="p">}</span>
+<div class="highlight highlight-source-css"><pre><span class="pl-c">/* Good */</span>
+<span class="pl-e">.selector-1</span>,
+<span class="pl-e">.selector-2</span>,
+<span class="pl-e">.selector-3</span> {
+  ...
+}
 
-<span class="c">/* Bad */</span>
-<span class="nc">.selector-1</span><span class="o">,</span> <span class="nc">.selector-2</span><span class="o">,</span> <span class="nc">.selector-3</span> <span class="p">{</span>
-  <span class="o">...</span>
-<span class="p">}</span>
-</pre></div>
+<span class="pl-c">/* Bad */</span>
+<span class="pl-e">.selector-1</span>, <span class="pl-e">.selector-2</span>, <span class="pl-e">.selector-3</span> {
+  ...
+}</pre></div>
 
 <p>Single declarations should remain in one line.</p>
 
-<div class="highlight highlight-css"><pre><span class="c">/* Good */</span>
-<span class="nc">.selector-1</span> <span class="p">{</span> <span class="k">width</span><span class="o">:</span> <span class="m">50</span><span class="o">%</span><span class="p">;</span> <span class="p">}</span>
+<div class="highlight highlight-source-css"><pre><span class="pl-c">/* Good */</span>
+<span class="pl-e">.selector-1</span> { <span class="pl-c1"><span class="pl-c1">width</span></span>: <span class="pl-c1">50<span class="pl-k">%</span></span>; }
 
-<span class="c">/* Bad */</span>
-<span class="nc">.selector-1</span> <span class="p">{</span>
-  <span class="k">width</span><span class="o">:</span> <span class="m">50</span><span class="o">%</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></div>
+<span class="pl-c">/* Bad */</span>
+<span class="pl-e">.selector-1</span> {
+  <span class="pl-c1"><span class="pl-c1">width</span></span>: <span class="pl-c1">50<span class="pl-k">%</span></span>;
+}</pre></div>
 
 <p>Separate each ruleset by a blank line.</p>
 
-<div class="highlight highlight-css"><pre><span class="c">/* Good */</span>
-<span class="nc">.selector-1</span> <span class="p">{</span>
-  <span class="o">...</span>
-<span class="p">}</span>
+<div class="highlight highlight-source-css"><pre><span class="pl-c">/* Good */</span>
+<span class="pl-e">.selector-1</span> {
+  ...
+}
 
-<span class="nc">.selector-2</span> <span class="p">{</span>
-  <span class="o">...</span>
-<span class="p">}</span>
+<span class="pl-e">.selector-2</span> {
+  ...
+}
 
-<span class="c">/* Bad */</span>
-<span class="nc">.selector-1</span> <span class="p">{</span>
-  <span class="o">...</span>
-<span class="p">}</span>
-<span class="nc">.selector-2</span> <span class="p">{</span>
-  <span class="o">...</span>
-<span class="p">}</span>
-</pre></div>
+<span class="pl-c">/* Bad */</span>
+<span class="pl-e">.selector-1</span> {
+  ...
+}
+<span class="pl-e">.selector-2</span> {
+  ...
+}</pre></div>
 
 <p>Use lowercase, shorthand hex values and avoid specifying units is zero-values.</p>
 
-<div class="highlight highlight-css"><pre><span class="c">/* Good */</span>
-<span class="nc">.selector-1</span> <span class="p">{</span>
-  <span class="k">color</span><span class="o">:</span> <span class="m">#aaa</span><span class="p">;</span>
-  <span class="k">margin</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
-<span class="p">}</span>
+<div class="highlight highlight-source-css"><pre><span class="pl-c">/* Good */</span>
+<span class="pl-e">.selector-1</span> {
+  <span class="pl-c1"><span class="pl-c1">color</span></span>: <span class="pl-c1">#aaa</span>;
+  <span class="pl-c1"><span class="pl-c1">margin</span></span>: <span class="pl-c1">0</span>;
+}
 
-<span class="c">/* Bad */</span>
-<span class="nc">.selector-1</span> <span class="p">{</span>
-  <span class="k">color</span><span class="o">:</span> <span class="m">#AAAAAA</span><span class="p">;</span>
-  <span class="k">margin</span><span class="o">:</span> <span class="m">0px</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></div>
+<span class="pl-c">/* Bad */</span>
+<span class="pl-e">.selector-1</span> {
+  <span class="pl-c1"><span class="pl-c1">color</span></span>: <span class="pl-c1">#AAAAAA</span>;
+  <span class="pl-c1"><span class="pl-c1">margin</span></span>: <span class="pl-c1">0<span class="pl-k">px</span></span>;
+}</pre></div>
 
 <p><a name="css-order"></a></p>
 
 <h3>
-<a name="32-css-declaration-order" class="anchor" href="#32-css-declaration-order"><span class="octicon octicon-link"></span></a>3.2. CSS Declaration Order</h3>
+<a id="32-css-declaration-order" class="anchor" href="#32-css-declaration-order" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3.2. CSS Declaration Order</h3>
 
 <p>The declarations should be added in alphabetical order.</p>
 
-<div class="highlight highlight-css"><pre><span class="c">/* Good */</span>
-<span class="nc">.selector-1</span> <span class="p">{</span>
-  <span class="k">background</span><span class="o">:</span> <span class="m">#fff</span><span class="p">;</span>
-  <span class="k">border</span><span class="o">:</span> <span class="m">#333</span> <span class="k">solid</span> <span class="m">1px</span><span class="p">;</span>
-  <span class="k">color</span><span class="o">:</span> <span class="m">#333</span><span class="p">;</span>
-  <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
-  <span class="k">height</span><span class="o">:</span> <span class="m">200px</span><span class="p">;</span>
-  <span class="k">margin</span><span class="o">:</span> <span class="m">5px</span><span class="p">;</span>
-  <span class="k">padding</span><span class="o">:</span> <span class="m">5px</span><span class="p">;</span>
-  <span class="k">width</span><span class="o">:</span> <span class="m">200px</span><span class="p">;</span>
-<span class="p">}</span>
+<div class="highlight highlight-source-css"><pre><span class="pl-c">/* Good */</span>
+<span class="pl-e">.selector-1</span> {
+  <span class="pl-c1"><span class="pl-c1">background</span></span>: <span class="pl-c1">#fff</span>;
+  <span class="pl-c1"><span class="pl-c1">border</span></span>: <span class="pl-c1">#333</span> <span class="pl-c1">solid</span> <span class="pl-c1">1<span class="pl-k">px</span></span>;
+  <span class="pl-c1"><span class="pl-c1">color</span></span>: <span class="pl-c1">#333</span>;
+  <span class="pl-c1"><span class="pl-c1">display</span></span>: <span class="pl-c1">block</span>;
+  <span class="pl-c1"><span class="pl-c1">height</span></span>: <span class="pl-c1">200<span class="pl-k">px</span></span>;
+  <span class="pl-c1"><span class="pl-c1">margin</span></span>: <span class="pl-c1">5<span class="pl-k">px</span></span>;
+  <span class="pl-c1"><span class="pl-c1">padding</span></span>: <span class="pl-c1">5<span class="pl-k">px</span></span>;
+  <span class="pl-c1"><span class="pl-c1">width</span></span>: <span class="pl-c1">200<span class="pl-k">px</span></span>;
+}
 
-<span class="c">/* Bad */</span>
-<span class="nc">.selector-1</span> <span class="p">{</span>
-  <span class="k">padding</span><span class="o">:</span> <span class="m">5px</span><span class="p">;</span>
-  <span class="k">height</span><span class="o">:</span> <span class="m">200px</span><span class="p">;</span>
-  <span class="k">background</span><span class="o">:</span> <span class="m">#fff</span><span class="p">;</span>
-  <span class="k">margin</span><span class="o">:</span> <span class="m">5px</span><span class="p">;</span>
-  <span class="k">width</span><span class="o">:</span> <span class="m">200px</span><span class="p">;</span>
-  <span class="k">color</span><span class="o">:</span> <span class="m">#333</span><span class="p">;</span>
-  <span class="k">border</span><span class="o">:</span> <span class="m">#333</span> <span class="k">solid</span> <span class="m">1px</span><span class="p">;</span>
-  <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></div>
+<span class="pl-c">/* Bad */</span>
+<span class="pl-e">.selector-1</span> {
+  <span class="pl-c1"><span class="pl-c1">padding</span></span>: <span class="pl-c1">5<span class="pl-k">px</span></span>;
+  <span class="pl-c1"><span class="pl-c1">height</span></span>: <span class="pl-c1">200<span class="pl-k">px</span></span>;
+  <span class="pl-c1"><span class="pl-c1">background</span></span>: <span class="pl-c1">#fff</span>;
+  <span class="pl-c1"><span class="pl-c1">margin</span></span>: <span class="pl-c1">5<span class="pl-k">px</span></span>;
+  <span class="pl-c1"><span class="pl-c1">width</span></span>: <span class="pl-c1">200<span class="pl-k">px</span></span>;
+  <span class="pl-c1"><span class="pl-c1">color</span></span>: <span class="pl-c1">#333</span>;
+  <span class="pl-c1"><span class="pl-c1">border</span></span>: <span class="pl-c1">#333</span> <span class="pl-c1">solid</span> <span class="pl-c1">1<span class="pl-k">px</span></span>;
+  <span class="pl-c1"><span class="pl-c1">display</span></span>: <span class="pl-c1">block</span>;
+}</pre></div>
 
 <p><a name="css-class-name"></a></p>
 
 <h3>
-<a name="33-css-class-name" class="anchor" href="#33-css-class-name"><span class="octicon octicon-link"></span></a>3.3. CSS Class Name</h3>
+<a id="33-css-class-name" class="anchor" href="#33-css-class-name" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3.3. CSS Class Name</h3>
 
 <p>Keep class lowercase and use dashes.</p>
 
-<div class="highlight highlight-css"><pre><span class="c">/* Good */</span>
-<span class="nc">.nav-item</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<div class="highlight highlight-source-css"><pre><span class="pl-c">/* Good */</span>
+<span class="pl-e">.nav-item</span> { ... }
 
-<span class="c">/* Bad */</span>
-<span class="nc">.NavItem</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
-<span class="nc">.nav_item</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
-</pre></div>
+<span class="pl-c">/* Bad */</span>
+<span class="pl-e">.NavItem</span> { ... }
+<span class="pl-e">.nav_item</span> { ... }</pre></div>
 
 <p>Dashes serve as natural breaks in related class. Prefix class based on the closest parent or base class.</p>
 
-<div class="highlight highlight-css"><pre><span class="c">/* Good */</span>
-<span class="nc">.navbar</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
-<span class="nc">.nav</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
-<span class="nc">.nav-item</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
-<span class="nc">.nav-link</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<div class="highlight highlight-source-css"><pre><span class="pl-c">/* Good */</span>
+<span class="pl-e">.navbar</span> { ... }
+<span class="pl-e">.nav</span> { ... }
+<span class="pl-e">.nav-item</span> { ... }
+<span class="pl-e">.nav-link</span> { ... }
 
-<span class="c">/* Bad */</span>
-<span class="nc">.item-nav</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
-<span class="nc">.link-nav</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
-</pre></div>
+<span class="pl-c">/* Bad */</span>
+<span class="pl-e">.item-nav</span> { ... }
+<span class="pl-e">.link-nav</span> { ... }</pre></div>
 
 <p>Avoid giving too short names for class and always choose meaningful names that provide the class function.</p>
 
-<div class="highlight highlight-css"><pre><span class="c">/* Good */</span>
-<span class="nc">.btn</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
-<span class="nc">.page-header</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
-<span class="nc">.progress-bar</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<div class="highlight highlight-source-css"><pre><span class="pl-c">/* Good */</span>
+<span class="pl-e">.btn</span> { ... }
+<span class="pl-e">.page-header</span> { ... }
+<span class="pl-e">.progress-bar</span> { ... }
 
-<span class="c">/* Bad */</span>
-<span class="nc">.s</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
-<span class="nc">.ph</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
-<span class="nc">.block</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
-</pre></div>
+<span class="pl-c">/* Bad */</span>
+<span class="pl-e">.s</span> { ... }
+<span class="pl-e">.ph</span> { ... }
+<span class="pl-e">.block</span> { ... }</pre></div>
 
 <p><a name="css-performance"></a></p>
 
 <h3>
-<a name="34-css-performance" class="anchor" href="#34-css-performance"><span class="octicon octicon-link"></span></a>3.4. CSS Performance</h3>
+<a id="34-css-performance" class="anchor" href="#34-css-performance" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3.4. CSS Performance</h3>
 
 <p>Never use IDs.</p>
 
-<div class="highlight highlight-css"><pre><span class="c">/* Good */</span>
-<span class="nc">.header</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
-<span class="nc">.section</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<div class="highlight highlight-source-css"><pre><span class="pl-c">/* Good */</span>
+<span class="pl-e">.header</span> { ... }
+<span class="pl-e">.section</span> { ... }
 
-<span class="c">/* Bad */</span>
-<span class="nf">#header</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
-<span class="nf">#section</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
-</pre></div>
+<span class="pl-c">/* Bad */</span>
+<span class="pl-e">#header</span> { ... }
+<span class="pl-e">#section</span> { ... }</pre></div>
 
 <p>Do not use selectors standards for not generic rules, always preferably for class.</p>
 
-<div class="highlight highlight-css"><pre><span class="c">/* Good */</span>
-<span class="nc">.form-control</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
-<span class="nc">.header</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
-<span class="nc">.section</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<div class="highlight highlight-source-css"><pre><span class="pl-c">/* Good */</span>
+<span class="pl-e">.form-control</span> { ... }
+<span class="pl-e">.header</span> { ... }
+<span class="pl-e">.section</span> { ... }
 
-<span class="c">/* Bad */</span>
-<span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="s2">"text"</span><span class="o">]</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
-<span class="nt">header</span>
-<span class="nt">section</span>
-</pre></div>
+<span class="pl-c">/* Bad */</span>
+<span class="pl-ent">input</span>[type="text"] { ... }
+<span class="pl-ent">header</span>
+<span class="pl-ent">section</span></pre></div>
 
 <p>Avoid nesting elements, the preference is always to use class.</p>
 
-<div class="highlight highlight-css"><pre><span class="c">/* Good */</span>
-<span class="nc">.navbar</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
-<span class="nc">.nav</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
-<span class="nc">.nav-item</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
-<span class="nc">.nav-link</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<div class="highlight highlight-source-css"><pre><span class="pl-c">/* Good */</span>
+<span class="pl-e">.navbar</span> { ... }
+<span class="pl-e">.nav</span> { ... }
+<span class="pl-e">.nav-item</span> { ... }
+<span class="pl-e">.nav-link</span> { ... }
 
-<span class="c">/* Bad */</span>
-<span class="nc">.navbar</span> <span class="nt">ul</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
-<span class="nc">.navbar</span> <span class="nt">ul</span> <span class="nt">li</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
-<span class="nc">.navbar</span> <span class="nt">ul</span> <span class="nt">li</span> <span class="nt">a</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
-</pre></div>
+<span class="pl-c">/* Bad */</span>
+<span class="pl-e">.navbar</span> <span class="pl-ent">ul</span> { ... }
+<span class="pl-e">.navbar</span> <span class="pl-ent">ul</span> <span class="pl-ent">li</span> { ... }
+<span class="pl-e">.navbar</span> <span class="pl-ent">ul</span> <span class="pl-ent">li</span> <span class="pl-ent">a</span> { ... }</pre></div>
 
 <p>Nest only when need change the class comportament with interference for other class. Keep the nested on max of three elements.</p>
 
-<div class="highlight highlight-css"><pre><span class="c">/* Good */</span>
-<span class="nc">.modal-footer</span> <span class="nc">.btn</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
-<span class="nc">.progress.active</span> <span class="nc">.progress-bar</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<div class="highlight highlight-source-css"><pre><span class="pl-c">/* Good */</span>
+<span class="pl-e">.modal-footer</span> <span class="pl-e">.btn</span> { ... }
+<span class="pl-e">.progress.active</span> <span class="pl-e">.progress-bar</span> { ... }
 
-<span class="c">/* Bad */</span>
-<span class="nc">.modal-btn</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
-<span class="nc">.progress.active</span> <span class="nc">.progress-bar</span> <span class="nc">.progress-item</span> <span class="nt">span</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
-</pre></div>
+<span class="pl-c">/* Bad */</span>
+<span class="pl-e">.modal-btn</span> { ... }
+<span class="pl-e">.progress.active</span> <span class="pl-e">.progress-bar</span> <span class="pl-e">.progress-item</span> <span class="pl-ent">span</span> { ... }</pre></div>
 
 <p>Always minify the CSS code. Task builders like <a href="http://gruntjs.com/">Grunt</a> leaves this easier.</p>
 
-<div class="highlight highlight-css"><pre><span class="o">&lt;!</span><span class="nt">--</span> <span class="nt">Good</span> <span class="nt">--</span><span class="o">&gt;</span>
-<span class="nc">.navbar</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span><span class="nc">.nav</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span><span class="nc">.nav-item</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span><span class="nc">.nav-link</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<div class="highlight highlight-source-css"><pre>&lt;!-- Good --&gt;
+<span class="pl-e">.navbar</span> { ... }<span class="pl-e">.nav</span> { ... }<span class="pl-e">.nav-item</span> { ... }<span class="pl-e">.nav-link</span> { ... }
 
-<span class="o">&lt;!</span><span class="nt">--</span> <span class="nt">Bad</span> <span class="nt">--</span><span class="o">&gt;</span>
-<span class="nc">.nav-item</span> <span class="p">{</span>
-  <span class="o">...</span>
-<span class="p">}</span>
-<span class="nc">.nav-link</span> <span class="p">{</span>
-  <span class="o">...</span>
-<span class="p">}</span>
-</pre></div>
+&lt;!-- Bad --&gt;
+<span class="pl-e">.nav-item</span> {
+  ...
+}
+<span class="pl-e">.nav-link</span> {
+  ...
+}</pre></div>
 
 <p><a name="mobile-first-and-media-queries"></a></p>
 
 <h3>
-<a name="35-mobile-first-and-media-queries" class="anchor" href="#35-mobile-first-and-media-queries"><span class="octicon octicon-link"></span></a>3.5 Mobile First and Media Queries</h3>
+<a id="35-mobile-first-and-media-queries" class="anchor" href="#35-mobile-first-and-media-queries" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3.5 Mobile First and Media Queries</h3>
 
 <p>Start the development with generic rules with and add media queries with mobile first.</p>
 
-<div class="highlight highlight-css"><pre><span class="c">/* Good */</span>
-<span class="nc">.navbar</span> <span class="p">{</span>
-  <span class="k">margin-bottom</span><span class="o">:</span> <span class="m">20px</span><span class="p">;</span>
-<span class="p">}</span>
+<div class="highlight highlight-source-css"><pre><span class="pl-c">/* Good */</span>
+<span class="pl-e">.navbar</span> {
+  <span class="pl-c1"><span class="pl-c1">margin-bottom</span></span>: <span class="pl-c1">20<span class="pl-k">px</span></span>;
+}
 
-<span class="k">@media</span> <span class="o">(</span><span class="nt">min-width</span><span class="o">:</span> <span class="nt">480px</span><span class="o">)</span> <span class="p">{</span>
-  <span class="nc">.navbar</span> <span class="p">{</span>
-    <span class="k">padding</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
-  <span class="p">}</span>
-<span class="p">}</span>
+<span class="pl-k">@media</span> (<span class="pl-c1">min-width</span>: <span class="pl-c1">480<span class="pl-k">px</span></span>) {
+  <span class="pl-e">.navbar</span> {
+    <span class="pl-c1"><span class="pl-c1">padding</span></span>: <span class="pl-c1">10<span class="pl-k">px</span></span>;
+  }
+}
 
-<span class="k">@media</span> <span class="o">(</span><span class="nt">min-width</span><span class="o">:</span> <span class="nt">768px</span><span class="o">)</span> <span class="p">{</span>
-  <span class="nc">.navbar</span> <span class="p">{</span>
-    <span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span>
-    <span class="k">top</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
-    <span class="k">left</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
-  <span class="p">}</span>
-<span class="p">}</span>
+<span class="pl-k">@media</span> (<span class="pl-c1">min-width</span>: <span class="pl-c1">768<span class="pl-k">px</span></span>) {
+  <span class="pl-e">.navbar</span> {
+    <span class="pl-c1"><span class="pl-c1">position</span></span>: <span class="pl-c1">absolute</span>;
+    <span class="pl-c1"><span class="pl-c1">top</span></span>: <span class="pl-c1">0</span>;
+    <span class="pl-c1"><span class="pl-c1">left</span></span>: <span class="pl-c1">0</span>;
+  }
+}
 
-<span class="k">@media</span> <span class="o">(</span><span class="nt">min-width</span><span class="o">:</span> <span class="nt">992px</span><span class="o">)</span> <span class="p">{</span>
-  <span class="nc">.navbar</span> <span class="p">{</span>
-    <span class="k">position</span><span class="o">:</span> <span class="k">fixed</span><span class="p">;</span>
-  <span class="p">}</span>
-<span class="p">}</span>
+<span class="pl-k">@media</span> (<span class="pl-c1">min-width</span>: <span class="pl-c1">992<span class="pl-k">px</span></span>) {
+  <span class="pl-e">.navbar</span> {
+    <span class="pl-c1"><span class="pl-c1">position</span></span>: <span class="pl-c1">fixed</span>;
+  }
+}
 
-<span class="c">/* Bad */</span>
-<span class="nc">.navbar</span> <span class="p">{</span>
-  <span class="k">position</span><span class="o">:</span> <span class="k">fixed</span><span class="p">;</span>
-  <span class="k">top</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
-  <span class="k">left</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
-<span class="p">}</span>
+<span class="pl-c">/* Bad */</span>
+<span class="pl-e">.navbar</span> {
+  <span class="pl-c1"><span class="pl-c1">position</span></span>: <span class="pl-c1">fixed</span>;
+  <span class="pl-c1"><span class="pl-c1">top</span></span>: <span class="pl-c1">0</span>;
+  <span class="pl-c1"><span class="pl-c1">left</span></span>: <span class="pl-c1">0</span>;
+}
 
-<span class="k">@media</span> <span class="o">(</span><span class="nt">max-width</span><span class="o">:</span> <span class="nt">767px</span><span class="o">)</span> <span class="p">{</span>
-  <span class="nc">.navbar</span> <span class="p">{</span>
-    <span class="k">position</span><span class="o">:</span> <span class="k">static</span><span class="p">;</span>
-    <span class="k">padding</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
-  <span class="p">}</span>
-<span class="p">}</span>
-
+<span class="pl-k">@media</span> (<span class="pl-c1">max-width</span>: <span class="pl-c1">767<span class="pl-k">px</span></span>) {
+  <span class="pl-e">.navbar</span> {
+    <span class="pl-c1"><span class="pl-c1">position</span></span>: <span class="pl-c1">static</span>;
+    <span class="pl-c1"><span class="pl-c1">padding</span></span>: <span class="pl-c1">10<span class="pl-k">px</span></span>;
+  }
+}
 </pre></div>
 
 <p>Keep the media queries as close to their relevant rule sets whenever possible. Don't bundle them all in a separate stylesheet or at the end of the document.</p>
 
-<div class="highlight highlight-css"><pre><span class="nc">.navbar</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
-<span class="nc">.nav</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
-<span class="nc">.nav-item</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<div class="highlight highlight-source-css"><pre><span class="pl-e">.navbar</span> { ... }
+<span class="pl-e">.nav</span> { ... }
+<span class="pl-e">.nav-item</span> { ... }
 
-<span class="k">@media</span> <span class="o">(</span><span class="nt">min-width</span><span class="o">:</span> <span class="nt">480px</span><span class="o">)</span> <span class="p">{</span>
-  <span class="nc">.navbar</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
-  <span class="nc">.nav</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
-  <span class="nc">.nav-item</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
-<span class="p">}</span>
-</pre></div>
+<span class="pl-k">@media</span> (<span class="pl-c1">min-width</span>: <span class="pl-c1">480<span class="pl-k">px</span></span>) {
+  <span class="pl-e">.navbar</span> { ... }
+  <span class="pl-e">.nav</span> { ... }
+  <span class="pl-e">.nav-item</span> { ... }
+}</pre></div>
 
 <p><a name="css-pre-processors"></a></p>
 
 <h3>
-<a name="36-pre-processors" class="anchor" href="#36-pre-processors"><span class="octicon octicon-link"></span></a>3.6. Pre-Processors</h3>
+<a id="36-pre-processors" class="anchor" href="#36-pre-processors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3.6. Pre-Processors</h3>
 
 <p>I use pre-processors in all projects. Today I use <code>LESS</code>.</p>
 
 <p>Warning with nesting rules of pre-processors. Continue keep without nesting.</p>
 
-<div class="highlight highlight-css"><pre><span class="c">/* Good */</span>
-<span class="nc">.nav-item</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<div class="highlight highlight-source-css"><pre><span class="pl-c">/* Good */</span>
+<span class="pl-e">.nav-item</span> { ... }
 
-<span class="c">/* Bad */</span>
-<span class="nc">.navbar</span> <span class="p">{</span>
-  <span class="o">.</span><span class="n">nav</span> <span class="err">{</span>
-    <span class="o">.</span><span class="n">nav</span><span class="o">-</span><span class="n">item</span> <span class="err">{</span>
-      <span class="o">...</span>
-    <span class="p">}</span>
-  <span class="err">}</span>
-<span class="err">}</span>
-</pre></div>
+<span class="pl-c">/* Bad */</span>
+<span class="pl-e">.navbar</span> {
+  .<span class="pl-c1"><span class="pl-c1">nav</span></span> {
+    .<span class="pl-c1"><span class="pl-c1">nav</span>-item</span> {
+      ...
+    }
+  }
+}</pre></div>
 
 <p>Provide semantic names for variables.</p>
 
-<div class="highlight highlight-css"><pre><span class="c">/* Good */</span>
-<span class="k">@brand-primary</span><span class="o">:</span> <span class="nf">#049cdb</span><span class="p">;</span>
+<div class="highlight highlight-source-css"><pre><span class="pl-c">/* Good */</span>
+@brand-primary: #049cdb;
 
-<span class="c">/* Bad */</span>
-<span class="k">@color-blue</span><span class="o">:</span> <span class="nf">#049cdb</span><span class="p">;</span>
-</pre></div>
+<span class="pl-c">/* Bad */</span>
+@color-blue: #049cdb;</pre></div>
 
 <p><a name="css-comments"></a></p>
 
 <h3>
-<a name="37-css-comments" class="anchor" href="#37-css-comments"><span class="octicon octicon-link"></span></a>3.7. CSS Comments</h3>
+<a id="37-css-comments" class="anchor" href="#37-css-comments" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3.7. CSS Comments</h3>
 
 <p>All comments must be made using the syntax of the preprocessor in use.</p>
 
-<div class="highlight highlight-js"><pre><span class="c1">//</span>
-<span class="c1">// Section</span>
-<span class="c1">// --------------------------------------------------</span>
+<div class="highlight highlight-source-js"><pre><span class="pl-c">//</span>
+<span class="pl-c">// Section</span>
+<span class="pl-c">// --------------------------------------------------</span>
 
-<span class="c1">// Sub-section</span>
-<span class="c1">// --------------------------------------------------</span>
+<span class="pl-c">// Sub-section</span>
+<span class="pl-c">// --------------------------------------------------</span>
 
-<span class="c1">//</span>
-<span class="c1">// Commentary block</span>
-<span class="c1">//</span>
-<span class="c1">//</span>
+<span class="pl-c">//</span>
+<span class="pl-c">// Commentary block</span>
+<span class="pl-c">//</span>
+<span class="pl-c">//</span>
 
-<span class="c1">// Simple commentary</span>
-</pre></div>
+<span class="pl-c">// Simple commentary</span></pre></div>
 
 <p><a name="js"></a></p>
 
 <h2>
-<a name="4-javascript" class="anchor" href="#4-javascript"><span class="octicon octicon-link"></span></a>4. Javascript</h2>
+<a id="4-javascript" class="anchor" href="#4-javascript" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>4. Javascript</h2>
 
 <p>The main influences for the javascript rules are <a href="https://github.com/rwldrn/idiomatic.js/">idiomatic.js</a> and <a href="https://github.com/zenorocha/my-coding-style/">Zeno Rocha Coding Style</a>.</p>
 
 <h3>
-<a name="javascript-summary" class="anchor" href="#javascript-summary"><span class="octicon octicon-link"></span></a>Javascript Summary</h3>
+<a id="javascript-summary" class="anchor" href="#javascript-summary" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Javascript Summary</h3>
 
 <ol>
 <li><a href="#js-syntax">Javascript Syntax</a></li>
 <li><a href="#js-variables">Javascript Variables</a></li>
 <li><a href="#js-performance">Javascript Performance</a></li>
 <li><a href="#js-comments">Javascript Comments</a></li>
-</ol><p><a name="js-syntax"></a></p>
+</ol>
+
+<p><a name="js-syntax"></a></p>
 
 <h3>
-<a name="41-javascript-syntax" class="anchor" href="#41-javascript-syntax"><span class="octicon octicon-link"></span></a>4.1. Javascript Syntax</h3>
+<a id="41-javascript-syntax" class="anchor" href="#41-javascript-syntax" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>4.1. Javascript Syntax</h3>
 
 <p>Use soft tabs with two spaces. You can configure your editor for this.</p>
 
-<div class="highlight highlight-js"><pre><span class="c1">// Good</span>
-<span class="k">while</span> <span class="p">(</span><span class="nx">condition</span><span class="p">)</span> <span class="p">{</span>
-  <span class="nx">statements</span>
-<span class="p">}</span>
+<div class="highlight highlight-source-js"><pre><span class="pl-c">// Good</span>
+<span class="pl-k">while</span> (condition) {
+  statements
+}
 
-<span class="c1">// Bad</span>
-<span class="k">while</span> <span class="p">(</span><span class="nx">condition</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nx">statements</span>
-<span class="p">}</span>
-</pre></div>
+<span class="pl-c">// Bad</span>
+<span class="pl-k">while</span> (condition) {
+    statements
+}</pre></div>
 
 <p>Always use semicolons.</p>
 
-<div class="highlight highlight-js"><pre><span class="c1">// Good</span>
-<span class="kd">var</span> <span class="nx">me</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
-<span class="nx">test</span><span class="p">();</span>
+<div class="highlight highlight-source-js"><pre><span class="pl-c">// Good</span>
+<span class="pl-k">var</span> me <span class="pl-k">=</span> <span class="pl-en">$</span>(<span class="pl-v">this</span>);
+<span class="pl-en">test</span>();
 
-<span class="c1">// Bad</span>
-<span class="kd">var</span> <span class="nx">me</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">)</span>
-<span class="nx">test</span><span class="p">()</span>
-</pre></div>
+<span class="pl-c">// Bad</span>
+<span class="pl-k">var</span> me <span class="pl-k">=</span> <span class="pl-en">$</span>(<span class="pl-v">this</span>)
+<span class="pl-en">test</span>()</pre></div>
 
 <p>Always use single quotes.</p>
 
-<div class="highlight highlight-js"><pre><span class="c1">// Good</span>
-<span class="kd">var</span> <span class="nx">string</span> <span class="o">=</span> <span class="s1">'&lt;p class="foo"&gt;Lorem Ipsum&lt;/p&gt;'</span><span class="p">;</span>
-<span class="kd">var</span> <span class="nx">noteClick</span> <span class="o">=</span> <span class="nx">me</span><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s1">'data-note'</span><span class="p">);</span>
+<div class="highlight highlight-source-js"><pre><span class="pl-c">// Good</span>
+<span class="pl-k">var</span> string <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>&lt;p class="foo"&gt;Lorem Ipsum&lt;/p&gt;<span class="pl-pds">'</span></span>;
+<span class="pl-k">var</span> noteClick <span class="pl-k">=</span> <span class="pl-smi">me</span>.<span class="pl-en">attr</span>(<span class="pl-s"><span class="pl-pds">'</span>data-note<span class="pl-pds">'</span></span>);
 
-<span class="c1">// Bad</span>
-<span class="kd">var</span> <span class="nx">string</span> <span class="o">=</span> <span class="s2">"&lt;p class='foo'&gt;Lorem Ipsum&lt;/p&gt;"</span><span class="p">;</span>
-<span class="kd">var</span> <span class="nx">noteClick</span> <span class="o">=</span> <span class="nx">me</span><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">"data-note"</span><span class="p">);</span>
-</pre></div>
+<span class="pl-c">// Bad</span>
+<span class="pl-k">var</span> string <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>&lt;p class='foo'&gt;Lorem Ipsum&lt;/p&gt;<span class="pl-pds">"</span></span>;
+<span class="pl-k">var</span> noteClick <span class="pl-k">=</span> <span class="pl-smi">me</span>.<span class="pl-en">attr</span>(<span class="pl-s"><span class="pl-pds">"</span>data-note<span class="pl-pds">"</span></span>);</pre></div>
 
 <p>Keep <code>else</code> in the same line of closure of the <code>if</code>.</p>
 
-<div class="highlight highlight-js"><pre><span class="c1">// Good</span>
-<span class="k">if</span> <span class="p">(</span> <span class="kc">true</span> <span class="p">)</span> <span class="p">{</span>
-  <span class="p">...</span>
-<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-  <span class="p">...</span>
-<span class="p">}</span>
+<div class="highlight highlight-source-js"><pre><span class="pl-c">// Good</span>
+<span class="pl-k">if</span> ( <span class="pl-c1">true</span> ) {
+  <span class="pl-k">...</span>
+} <span class="pl-k">else</span> {
+  <span class="pl-k">...</span>
+}
 
-<span class="c1">// Bad</span>
-<span class="k">if</span> <span class="p">(</span> <span class="kc">true</span> <span class="p">)</span> <span class="p">{</span>
-  <span class="p">...</span>
-<span class="p">}</span>
-<span class="k">else</span> <span class="p">{</span>
-  <span class="p">...</span>
-<span class="p">}</span>
-</pre></div>
+<span class="pl-c">// Bad</span>
+<span class="pl-k">if</span> ( <span class="pl-c1">true</span> ) {
+  <span class="pl-k">...</span>
+}
+<span class="pl-k">else</span> {
+  <span class="pl-k">...</span>
+}</pre></div>
 
 <p>Add spaces between operators.</p>
 
-<div class="highlight highlight-js"><pre><span class="c1">// Good</span>
-<span class="k">for</span> <span class="p">(</span><span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-  <span class="p">...</span>
-<span class="p">}</span>
+<div class="highlight highlight-source-js"><pre><span class="pl-c">// Good</span>
+<span class="pl-k">for</span> (i <span class="pl-k">=</span> <span class="pl-c1">0</span>; i <span class="pl-k">&lt;</span> <span class="pl-c1">10</span>; i<span class="pl-k">++</span>) {
+  <span class="pl-k">...</span>
+}
 
-<span class="c1">// Bad</span>
-<span class="k">for</span> <span class="p">(</span><span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="nx">i</span><span class="o">&lt;</span><span class="mi">10</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-  <span class="p">...</span>
-<span class="p">}</span>
-</pre></div>
+<span class="pl-c">// Bad</span>
+<span class="pl-k">for</span> (i<span class="pl-k">=</span><span class="pl-c1">0</span>;i<span class="pl-k">&lt;</span><span class="pl-c1">10</span>;i<span class="pl-k">++</span>) {
+  <span class="pl-k">...</span>
+}</pre></div>
 
 <p>Never add a space between the keyword function and the function name.</p>
 
-<div class="highlight highlight-js"><pre><span class="c1">// Good</span>
-<span class="nx">foo</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-  <span class="p">...</span>
-<span class="p">});</span>
+<div class="highlight highlight-source-js"><pre><span class="pl-c">// Good</span>
+<span class="pl-en">foo</span>(<span class="pl-k">function</span>() {
+  <span class="pl-k">...</span>
+});
 
-<span class="c1">// Bad</span>
-<span class="nx">foo</span> <span class="p">(</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
-  <span class="p">...</span>
-<span class="p">});</span>
-</pre></div>
+<span class="pl-c">// Bad</span>
+<span class="pl-en">foo</span> ( <span class="pl-k">function</span> () {
+  <span class="pl-k">...</span>
+});</pre></div>
 
 <p>Add spaces outside parentheses <code>()</code> but avoid it inside.</p>
 
-<div class="highlight highlight-js"><pre><span class="c1">// Good</span>
-<span class="k">if</span> <span class="p">(</span><span class="nx">condition</span><span class="p">)</span> <span class="p">{</span>
-  <span class="nx">statement</span>
-<span class="p">}</span>
+<div class="highlight highlight-source-js"><pre><span class="pl-c">// Good</span>
+<span class="pl-k">if</span> (condition) {
+  statement
+}
 
-<span class="c1">// Bad</span>
-<span class="k">if</span><span class="p">(</span> <span class="nx">condition</span> <span class="p">){</span>
-  <span class="nx">statement</span>
-<span class="p">}</span>
-</pre></div>
+<span class="pl-c">// Bad</span>
+<span class="pl-k">if</span>( condition ){
+  statement
+}</pre></div>
 
 <p>For conditionals always use curly brackets <code>{}</code>.</p>
 
-<div class="highlight highlight-js"><pre><span class="c1">// Good</span>
-<span class="k">if</span> <span class="p">(</span><span class="nx">condition</span><span class="p">)</span> <span class="p">{</span>
-  <span class="nx">statement</span>
-<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">condition</span><span class="p">)</span> <span class="p">{</span>
-  <span class="nx">statement</span>
-<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-  <span class="nx">statement</span>
-<span class="p">}</span>
+<div class="highlight highlight-source-js"><pre><span class="pl-c">// Good</span>
+<span class="pl-k">if</span> (condition) {
+  statement
+} <span class="pl-k">else</span> <span class="pl-k">if</span> (condition) {
+  statement
+} <span class="pl-k">else</span> {
+  statement
+}
 
-<span class="c1">// Bad</span>
-<span class="k">if</span> <span class="p">(</span><span class="nx">condition</span><span class="p">)</span> <span class="nx">statement</span><span class="p">;</span>
-<span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">condition</span><span class="p">)</span> <span class="nx">statement</span><span class="p">;</span>
-<span class="k">else</span> <span class="nx">statement</span><span class="p">;</span>
-</pre></div>
+<span class="pl-c">// Bad</span>
+<span class="pl-k">if</span> (condition) statement;
+<span class="pl-k">else</span> <span class="pl-k">if</span> (condition) statement;
+<span class="pl-k">else</span> statement;</pre></div>
 
 <p>For strict equality checks <code>===</code> should be used in favor of <code>==</code>.</p>
 
-<div class="highlight highlight-js"><pre><span class="c1">// Good</span>
-<span class="k">if</span> <span class="p">(</span><span class="nx">foo</span> <span class="o">===</span> <span class="s1">'foo'</span><span class="p">)</span> <span class="p">{</span>
-  <span class="nx">statement</span>
-<span class="p">}</span>
+<div class="highlight highlight-source-js"><pre><span class="pl-c">// Good</span>
+<span class="pl-k">if</span> (foo <span class="pl-k">===</span> <span class="pl-s"><span class="pl-pds">'</span>foo<span class="pl-pds">'</span></span>) {
+  statement
+}
 
-<span class="c1">// Bad</span>
-<span class="k">if</span> <span class="p">(</span><span class="nx">foo</span> <span class="o">==</span> <span class="s1">'foo'</span><span class="p">)</span> <span class="p">{</span>
-  <span class="nx">statement</span>
-<span class="p">}</span>
-</pre></div>
+<span class="pl-c">// Bad</span>
+<span class="pl-k">if</span> (foo <span class="pl-k">==</span> <span class="pl-s"><span class="pl-pds">'</span>foo<span class="pl-pds">'</span></span>) {
+  statement
+}</pre></div>
 
 <p><a name="js-variables"></a></p>
 
 <h3>
-<a name="42-javascript-variables" class="anchor" href="#42-javascript-variables"><span class="octicon octicon-link"></span></a>4.2. Javascript Variables</h3>
+<a id="42-javascript-variables" class="anchor" href="#42-javascript-variables" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>4.2. Javascript Variables</h3>
 
 <p>All variables should be declared before used.</p>
 
-<div class="highlight highlight-js"><pre><span class="c1">// Good</span>
-<span class="kd">var</span> <span class="nx">me</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
-<span class="kd">var</span> <span class="nx">noteClick</span> <span class="o">=</span> <span class="nx">me</span><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s1">'data-note'</span><span class="p">);</span>
-<span class="nx">notes</span><span class="p">[</span><span class="nx">noteClick</span><span class="p">].</span><span class="nx">play</span><span class="p">();</span>
+<div class="highlight highlight-source-js"><pre><span class="pl-c">// Good</span>
+<span class="pl-k">var</span> me <span class="pl-k">=</span> <span class="pl-en">$</span>(<span class="pl-v">this</span>);
+<span class="pl-k">var</span> noteClick <span class="pl-k">=</span> <span class="pl-smi">me</span>.<span class="pl-en">attr</span>(<span class="pl-s"><span class="pl-pds">'</span>data-note<span class="pl-pds">'</span></span>);
+notes[noteClick].<span class="pl-c1">play</span>();
 
-<span class="c1">// Bad</span>
-<span class="nx">notes</span><span class="p">[</span><span class="nx">noteClick</span><span class="p">].</span><span class="nx">play</span><span class="p">();</span>
-<span class="kd">var</span> <span class="nx">me</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
-<span class="kd">var</span> <span class="nx">noteClick</span> <span class="o">=</span> <span class="nx">me</span><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s1">'data-note'</span><span class="p">);</span>
-</pre></div>
+<span class="pl-c">// Bad</span>
+notes[noteClick].<span class="pl-c1">play</span>();
+<span class="pl-k">var</span> me <span class="pl-k">=</span> <span class="pl-en">$</span>(<span class="pl-v">this</span>);
+<span class="pl-k">var</span> noteClick <span class="pl-k">=</span> <span class="pl-smi">me</span>.<span class="pl-en">attr</span>(<span class="pl-s"><span class="pl-pds">'</span>data-note<span class="pl-pds">'</span></span>);</pre></div>
 
 <p>Always use <code>var</code> to declare variables.</p>
 
-<div class="highlight highlight-js"><pre><span class="c1">// Good</span>
-<span class="kd">var</span> <span class="nx">me</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+<div class="highlight highlight-source-js"><pre><span class="pl-c">// Good</span>
+<span class="pl-k">var</span> me <span class="pl-k">=</span> <span class="pl-en">$</span>(<span class="pl-v">this</span>);
 
-<span class="c1">// Bad</span>
-<span class="nx">me</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
-</pre></div>
+<span class="pl-c">// Bad</span>
+me <span class="pl-k">=</span> <span class="pl-en">$</span>(<span class="pl-v">this</span>);</pre></div>
 
 <p><a name="js-performance"></a></p>
 
 <h3>
-<a name="43-javascript-performance" class="anchor" href="#43-javascript-performance"><span class="octicon octicon-link"></span></a>4.3. Javascript Performance</h3>
+<a id="43-javascript-performance" class="anchor" href="#43-javascript-performance" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>4.3. Javascript Performance</h3>
 
 <p>Use <a href="http://www.jshint.com/">JSHint</a> to detect errors and potential problems.</p>
 
@@ -891,22 +845,21 @@
 <p><a name="js-comments"></a></p>
 
 <h3>
-<a name="44-javascript-comments" class="anchor" href="#44-javascript-comments"><span class="octicon octicon-link"></span></a>4.4. Javascript Comments</h3>
+<a id="44-javascript-comments" class="anchor" href="#44-javascript-comments" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>4.4. Javascript Comments</h3>
 
 <p>A single line above the code that is commented.</p>
 
-<div class="highlight highlight-js"><pre><span class="c1">// Good</span>
-<span class="c1">// Good example of comment</span>
-<span class="kd">var</span> <span class="nx">me</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+<div class="highlight highlight-source-js"><pre><span class="pl-c">// Good</span>
+<span class="pl-c">// Good example of comment</span>
+<span class="pl-k">var</span> me <span class="pl-k">=</span> <span class="pl-en">$</span>(<span class="pl-v">this</span>);
 
-<span class="c1">// Bad</span>
-<span class="kd">var</span> <span class="nx">me</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">);</span> <span class="c1">// Bad example of comment</span>
-</pre></div>
+<span class="pl-c">// Bad</span>
+<span class="pl-k">var</span> me <span class="pl-k">=</span> <span class="pl-en">$</span>(<span class="pl-v">this</span>); <span class="pl-c">// Bad example of comment</span></pre></div>
 
 <p><a name="references"></a></p>
 
 <h2>
-<a name="5-references" class="anchor" href="#5-references"><span class="octicon octicon-link"></span></a>5. References</h2>
+<a id="5-references" class="anchor" href="#5-references" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>5. References</h2>
 
 <ul>
 <li><a href="https://github.com/mdo/code-guide">Code Guide by @mdo</a></li>
@@ -914,37 +867,31 @@
 <li><a href="https://github.com/rwldrn/idiomatic.js/">idiomatic.js</a></li>
 <li><a href="https://github.com/zenorocha/my-coding-style/">Zeno Rocha Coding Style</a></li>
 <li><a href="https://github.com/airbnb/javascript">Airbnb JavaScript Style Guide</a></li>
-</ul><p><a name="translations"></a></p>
+</ul>
+
+<p><a name="translations"></a></p>
 
 <h2>
-<a name="6-translations" class="anchor" href="#6-translations"><span class="octicon octicon-link"></span></a>6. Translations</h2>
+<a id="6-translations" class="anchor" href="#6-translations" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>6. Translations</h2>
 
 <ul>
 <li><a href="/translations/pt-BR/">Português (Brasil)</a></li>
-</ul><p><a name="license"></a></p>
+</ul>
+
+<p><a name="license"></a></p>
 
 <h2>
-<a name="7-license" class="anchor" href="#7-license"><span class="octicon octicon-link"></span></a>7. License</h2>
+<a id="7-license" class="anchor" href="#7-license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>7. License</h2>
 
 <p><a href="http://felipefialho.mit-license.org/">MIT License</a> © Luiz Felipe Tartarotti Fialho</p>
-        </section>
 
-        <aside id="sidebar">
-          <a href="https://github.com/LFeh/coding-style/zipball/master" class="button">
-            <small>Download</small>
-            .zip file
-          </a>
-          <a href="https://github.com/LFeh/coding-style/tarball/master" class="button">
-            <small>Download</small>
-            .tar.gz file
-          </a>
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/LFeh/coding-style">Felipe Fialho - Coding Style</a> is maintained by <a href="https://github.com/LFeh">LFeh</a>.</span>
 
-          <p class="repo-owner"><a href="https://github.com/LFeh/coding-style"></a> is maintained by <a href="https://github.com/LFeh">LFeh</a>.</p>
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
 
-          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
-        </aside>
-      </div>
-    </div>
+    </section>
 
   
   </body>
