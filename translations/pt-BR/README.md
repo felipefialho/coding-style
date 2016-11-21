@@ -162,7 +162,7 @@ Os atributos do HTML devem estar na seguinte ordem para facilitar a leitura.
 1. `aria-*`, `role`
 
 ```html
-<a class="..." id="..." data-modal="toggle" href="#">
+<a class="..." id="..." data-modal="#overlay" href="#">
 
 <input class="form-control" type="text">
 
@@ -286,10 +286,10 @@ Sempre use aspas simples.
 
 ```javascript
 //- Bom
-button.btn(data-toggle='collapse')
+button.btn(data-component='collapse')
 
 //- Ruim
-button.btn(data-toggle="collapse")
+button.btn(data-component="collapse")
 ```
 
 Insira o título do bloco, separe usando **duas** linhas em branco e agrupe os elementos internos do bloco. 
@@ -583,10 +583,18 @@ Use um hífem para separar o nome do elemento, dois underlines para separar o bl
 /* Bom */
 .page-header__action { ... }
 .page-header__action__title { ... }
+.page-header--active { ... }
+
+.btn { ... }
+.btn--primary { ... }
 
 /* Ruim */
 .page-header-action { ... }
 .page-header-action-title { ... }
+.page-header-active { ... }
+
+.btn { ... }
+.btn-primary { ... }
 ```
 
 Evite usar nomes muito curtos e sempre use nomes relacionados com a função da classe.
@@ -1167,7 +1175,7 @@ Evite usar classes para iniciar interações em JavaScript. Prefira usar ***HTML
 
 ```js
 // Bom
-$('[data-toggle="tab"]');
+$('[data-component="tab"]');
 
 // Ruim
 $('.tab');

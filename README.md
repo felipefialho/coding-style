@@ -162,7 +162,7 @@ HTML attributes should be in this order for facilitate the reading.
 1. `aria-*`, `role`
 
 ```html
-<a class="..." id="..." data-modal="toggle" href="#">
+<a class="..." id="..." data-modal="#overlay" href="#">
 
 <input class="form-control" type="text">
 
@@ -287,10 +287,10 @@ Always use single quotes.
 
 ```javascript
 //- Good
-button.btn(data-toggle='collapse')
+button.btn(data-component='collapse')
 
 //- Bad
-button.btn(data-toggle="collapse")
+button.btn(data-component="collapse")
 ```
  
 Insert the title of block, separate block element by a **two** blanks lines and agroup the inners block elements.
@@ -1149,7 +1149,7 @@ Avoid using classes to start in a JavaScript interaction. To do so, use ***HTML5
 
 ```js
 // Good
-$('[data-toggle="tab"]');
+$('[data-component="tab"]');
 
 // Bad
 $('.tab');
