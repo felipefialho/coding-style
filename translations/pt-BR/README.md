@@ -570,19 +570,19 @@ Hífens e underlines servem como uma transição natural entre classes relaciona
 .navbar { ... }
 .nav { ... }
 .nav__item { ... }
-.nav--link { ... }
+.nav__link { ... }
 
 /* Ruim */
 .item-nav { ... }
 .link-nav { ... }
 ```
 
-Use um hífem para separar o nome do elemento, dois underlines para separar o bloco e dois hífens para separar o modificador ou conteúdo do elemento.
+Use um hífem para separar o nome do elemento, dois underlines para separar o bloco e dois hífens para separar o modificador de estilo.
 
 ```css
 /* Bom */
 .page-header__action { ... }
-.page-header__action--title { ... }
+.page-header__action__title { ... }
 
 /* Ruim */
 .page-header-action { ... }

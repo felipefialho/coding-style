@@ -564,16 +564,24 @@ Keep class lowercase and use dashes to separate the classname.
 .page_header { ... }
 ```
 
-Use single dash to element name, double underline to element block and double dash to element modification or element content.
+Use single dash to element name, double underline to element block and double dash to style modification.
 
 ```css
 /* Good */
 .page-header__action { ... }
-.page-header__action--title { ... }
+.page-header__action__title { ... }
+.page-header--active { ... }
+
+.btn { ... }
+.btn--primary { ... }
 
 /* Bad */
 .page-header-action { ... }
 .page-header-action-title { ... }
+.page-header-active { ... }
+
+.btn { ... }
+.btn-primary { ... }
 ```
 
 Dashes and underline serve as natural breaks in related class. Prefix class based on the closest parent or base class.
@@ -582,7 +590,7 @@ Dashes and underline serve as natural breaks in related class. Prefix class base
 /* Good */ 
 .nav { ... }
 .nav__item { ... }
-.nav--link { ... }
+.nav__link { ... }
 
 /* Bad */
 .item-nav { ... }
@@ -639,7 +647,7 @@ Avoid nesting elements, the preference is always to use class.
 .navbar { ... }
 .nav { ... }
 .nav__item { ... }
-.nav--link { ... }
+.nav__link { ... }
 
 /* Bad */
 .navbar ul { ... }
