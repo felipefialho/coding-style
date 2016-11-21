@@ -19,7 +19,7 @@ Este é um documento vivo e mudanças podem acontecer a qualquer momento.
 
 1. [Commits](#commits)
 1. [HTML](#html)
-1. [Jade](#jade)
+1. [Pug](#Pug)
 1. [CSS](#css)
 1. [CSS Pré-processadores](#css-preprocessors) 
 1. [JavaScript](#js)
@@ -260,19 +260,19 @@ Para fornecer suporte para versões antigas do Internet Explorer...
 ...
 ```
 
-<a name="jade"></a>
-## 3. Jade
+<a name="Pug"></a>
+## 3. Pug
 
-Atualmente usando Jade como template engine.
+Atualmente usando Pug como template engine.
 
-### Jade Sumário
+### Pug Sumário
 
-1. [Jade Sintaxe](#jade-syntax)
-1. [Jade Comentários](#jade-comments) 
-1. [Jade Código Base](#jade-base)
+1. [Pug Sintaxe](#Pug-syntax)
+1. [Pug Comentários](#Pug-comments) 
+1. [Pug Código Base](#Pug-base)
 
-<a name="jade-syntax"></a>
-### 3.1. Jade Syntax
+<a name="Pug-syntax"></a>
+### 3.1. Pug Syntax
 
 Use soft-tabs com dois espaços. Você pode configurar o seu editor dessa forma.
 
@@ -323,8 +323,8 @@ main.main(role='main')
   section.content
 ```
 
-<a name="jade-comments"></a>
-### 3.2. Jade Comentários
+<a name="Pug-comments"></a>
+### 3.2. Pug Comentários
 
 Siga esta regra para adicionar comentários no HTML.
 
@@ -336,10 +336,10 @@ Siga esta regra para adicionar comentários no HTML.
 
 Os comentários usando `//-` não são compilados no código final. 
   
-<a name="jade-base"></a>
-### 3.3. Jade Base Code
+<a name="Pug-base"></a>
+### 3.3. Pug Base Code
 
-O código a seguir é uma base em Jade para iniciar rápidamente os projetos. 
+O código a seguir é uma base em Pug para iniciar rápidamente os projetos. 
 
 ```javascript
 doctype html
