@@ -226,23 +226,15 @@ O código a seguir é uma base em HTML para iniciar rápidamente os projetos.
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-
-<meta charset="utf-8">
-<meta name="format-detection" content="telephone=no">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-
-<link rel="shortcut icon" href="assets/img/ico/favicon.ico">
-<link rel="logo" type="image/svg" href="assets/img/logo/logo.svg">
-<link rel="stylesheet" href="assets/css/style.css">
-
-<title></title>
-
+  <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <link rel="shortcut icon" href="assets/img/ico/favicon.ico">
+  <link rel="logo" type="image/svg" href="assets/img/logo/logo.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title></title>
 </head>
-<body>
-
-<!-- Scripts -->
-<script src="js/scripts.min.js"></script>
-
+<body> 
 </body>
 </html>
 ```
@@ -352,7 +344,7 @@ html(lang='en')
 
     //- Title
     //- ===================================
-    title The project title here
+    title 
 
     //- Favicon and SVG logo
     //- ===================================
@@ -363,11 +355,7 @@ html(lang='en')
     //- ===================================
     link(href='css/style.css', rel='stylesheet')  
 
-  body 
- 
-    //- Scripts
-    //- ===================================
-    script(src='js/scripts.min.js') 
+  body  
 ```
 
 <a name="css"></a>
