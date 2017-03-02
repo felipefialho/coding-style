@@ -2,8 +2,10 @@
   <img src="https://cloud.githubusercontent.com/assets/3603793/15085619/b7b0423a-13b1-11e6-8e47-e8ed523f6ff6.png" width="200">
 </p>
 
-My Coding Style
-============
+# My Coding Style
+
+[![license](https://img.shields.io/github/license/LFeh/coding-style.svg)](./license.md)
+[![GitHub contributors](https://img.shields.io/github/contributors/LFeh/coding-style.svg)](https://github.com/LFeh/coding-style/graphs/contributors)
 
 > "Every line of code should appear to be written by a single person, no matter the number of contributors." - Chinese Proverb.
 
@@ -25,8 +27,7 @@ This is a live document and changes can occur at any time.
 1. [JavaScript](#js)
 1. [Boilerplate](#boilerplate) 
 1. [References](#references)
-1. [Translations](#translations)
-1. [License](#license)
+1. [Translations](#translations) 
 
 <a name="commits"></a>
 ## 1. Commits
@@ -1197,9 +1198,4 @@ It's call [Kratos Boilerplate](https://github.com/LFeh/kratos-boilerplate).
 ## 9. Translations
 
 * [Português (Brasil)](/translations/pt-BR/)
-* [Russian (by Vbifonixor)](https://github.com/vbifonixor/coding-style)
-
-<a name="license"></a>
-## 10. License
-
-[MIT License](http://felipefialho.mit-license.org/) © Luiz Felipe Tartarotti Fialho
+* [Russian (by Vbifonixor)](https://github.com/vbifonixor/coding-style) 
