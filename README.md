@@ -81,7 +81,7 @@ Always use double quotes.
 
 ```html
 <!-- Good -->
-<main class="main">
+<div class="main">
 
 <!-- Bad-->
 <div class='main'>
